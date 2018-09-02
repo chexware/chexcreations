@@ -48,8 +48,6 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['mysql://nky5ksc7bp12cqmi:c8zfojj8ta1vvo9n@b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/nvecamje46qnv4x2L'] %>
   database: chexcreations_production
-  username: albrayanov
   password: <%= ENV['DATABASE_PASSWORD'] %>
