@@ -1,0 +1,38 @@
+= render 'layouts/navigation'
+.row.thought-modify
+	.col-3
+	.thought-form.jumbotron.jumbotron-fluid.col-6
+		h4.display-4.text-center Write a Thought
+		= form_tag("/thoughts/new", method: "post") do
+			- unless @thought.blank?
+				- unless  @thought.errors.messages[:title].blank?
+					.bg-inverse.text-danger.text-center role="alert"
+						| Title must be between 10 and 100 symbols and must include only letters, numbers, and whitespaces !
+			.row.form-group.lead
+				.col-1
+				= label_tag(:title, "Title:", class: "col-2 control-label")
+				.col-8
+					- unless @thought.blank?
+						= text_field_tag(:title, "#{@thought.title}", class: 'form-control thought-field') 
+					- else
+						= text_field_tag(:title, nil, class: 'form-control thought-field')
+				.col-1
+				
+			- unless @thought.blank?
+				- unless @thought.errors.messages[:content].blank?
+					.bg-inverse.text-danger.text-center role="alert" Content must be more than 1000 symbols!			
+			.row.form-group.lead
+				.col-1
+				= label_tag(:content, "Content:", class: "col-2 control-label")
+				.col-8
+					- unless @thought.blank?
+						= text_area_tag(:content, "#{@thought.content}", class: 'form-control thought-field tcontent')
+					- else
+						= text_area_tag(:content, nil, class: 'form-control thought-field tcontent')
+				.col-3
+			.row
+				.col-5
+				.col-2
+					= submit_tag( "Submit", class: "btn btn-default btn-link")
+				.col-2
+	.col-1

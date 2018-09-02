@@ -1,0 +1,37 @@
+= render 'layouts/navigation'
+.jumbotron.jumbotron-fluid.thought-content
+	.container	
+		h1.display-4.text-center.post-date #{@thought.title}
+		p.date #{@thought.publish_date.to_date}
+		p.lead  #{@thought.content}
+		
+- unless @comments.blank?
+	#accordion aria-multiselectable="true" role="tablist" 
+	- @comments.each_with_index do |c,i| 
+		.card.comment-card
+			div id="heading#{i.to_s}" class="card-header comment-header" role="tab" 
+			  h5.mb-0
+				a aria-controls="collapse#{i.to_s}" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse#{i.to_s}" 
+					span.badge.badge-default #{c.publish_date.to_formatted_s(:short)} #{c.author}: 
+			div id="collapse#{i.to_s}" class="collapse card-block" aria-labelledby="heading#{i.to_s}" role="tabpanel" 
+				.row
+					.col-12
+						p #{c.content}
+				- if current_user
+					.row
+						.col-12
+							= form_tag("/thoughts/#{@thought.id}/comment/#{c.id}/delete", method: "post") do
+								= submit_tag "Delete Comment", class: "btn btn-link danger small"
+					
+- else
+	h4.display-4.text-center Be the first one  to submit a comment...
+	
+= render 'thoughts/comment-form'
+		
+- if current_user	
+	.row
+		.col-6
+			a.btn.btn-link.btn-lg.btn-block href="/thoughts/#{@thought.id}/edit" role="button" Edit Thought
+		.col-6
+			= form_tag("/thoughts/#{@thought.id}/delete", method: "post") do
+				= submit_tag "Delete Thought", class: "btn btn-link btn-lg btn-block danger"

@@ -1,0 +1,9 @@
+- unless @logout.blank?
+	.bg-inverse.text-success.text-center role="alert"
+		| Logged out successfully
+- unless @login.blank?
+	.bg-inverse.text-success.text-center role="alert"
+		| Welcome to admin mode. You can modify the content of the webpage now
+h1.display-3.text-center CHEX
+= render 'layouts/navigation'
+	

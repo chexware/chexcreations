@@ -1,0 +1,24 @@
+h1.display-3.text-center Art
+= render 'layouts/navigation'
+- unless @projects.blank?
+	.row
+		- @projects.each do |p|
+			.col-4
+				.card.text-center.project
+					= image_tag("#{p.image}", alt: "Art Image", class: "card-img img-fluid")			
+					.card-img-overlay
+						h6.card-title  
+							a.card-text.text-center href="#{p.link}" 
+								| #{p.title} 
+						- if current_user
+							.row
+								.col-6
+									a.btn.btn-link.small href="/projects/#{p.id}/edit" role="button" Edit
+								.col-6
+									= form_tag("/projects/#{p.id}/delete", method: "post") do
+										= submit_tag "Delete", class: "btn btn-link danger small"
+- else
+	p There aren't any projects
+- if current_user
+	a.btn.btn-link.btn-lg.btn-block href="/projects/new" role="button"
+		| New Project
