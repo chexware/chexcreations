@@ -51,6 +51,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
+  <<: *default
   username: nky5ksc7bp12cqmi
   password: c8zfojj8ta1vvo9n
   port: 3306
