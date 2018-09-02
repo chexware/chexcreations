@@ -13,12 +13,12 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password:
-  host: localhost
 
 development:
   <<: *default
+  username: root
+  password:
+  host: localhost
   database: chexcreations_development
 
 # Warning: The database defined as "test" will be erased and
@@ -26,6 +26,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  username: root
+  password:
+  host: localhost
   database: chexcreations_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -49,6 +52,7 @@ test:
 #
 production:
   <<: *default
+  username: nky5ksc7bp12cqmi
+  password: c8zfojj8ta1vvo9n
   url: <%= ENV['mysql://nky5ksc7bp12cqmi:c8zfojj8ta1vvo9n@b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/nvecamje46qnv4x2L'] %>
   database: chexcreations_production
-  password: <%= ENV['DATABASE_PASSWORD'] %>
