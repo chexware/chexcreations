@@ -40,7 +40,7 @@ test:
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-#   DATABASE_URL="mysql2://myuser:mypass@localhost/somedatabase"
+DATABASE_URL="mysql://nky5ksc7bp12cqmi:c8zfojj8ta1vvo9n@b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/nvecamje46qnv4x2L"
 #
 # You can use this database configuration with:
 #
@@ -48,6 +48,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  url: <%= ENV['mysql://nky5ksc7bp12cqmi:c8zfojj8ta1vvo9n@b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/nvecamje46qnv4x2L'] %>
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  url: <%= ENV['DATABASE_URL'] %>
   database: chexcreations_production
   password: <%= ENV['DATABASE_PASSWORD'] %>
