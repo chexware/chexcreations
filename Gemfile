@@ -48,6 +48,10 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 
+# Prevent security vulnerabilities
+gem "rack", ">= 2.0.6"
+gem "loofah", ">= 2.2.3"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
