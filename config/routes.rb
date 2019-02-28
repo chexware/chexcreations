@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   post 'thoughts/:id/comment', to: 'thoughts#create_comment'
   post 'thoughts/:tid/comment/:cid/delete', to: 'thoughts#destroy_comment'
   get 'thoughts/:id', to: 'thoughts#load_post'
-  get 'projects/new', to: 'project#new'
+  get 'projects/new/:mode', to: 'project#new'
   post 'projects/new', to: 'project#create'
   get  'projects/:id/edit', to: 'project#edit'
   post 'projects/:id/edit', to: 'project#update'

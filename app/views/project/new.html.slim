@@ -73,5 +73,14 @@
 								= link_to "#{v["title"]}", "#{v["url"]}", class: "btn btn-link text-blue small"
 							.col-4
 								= link_to "Select", "/projects/new/vimeo/#{v["id"]}", class: "btn btn-link text-blue small"
-								 
+				- unless @repositories.blank?
+					.row
+						.col-12
+							h4 Github Repositories:
+					- @repositories.each do |r|
+						.row.bg-faded
+							.col-8
+								
+							.col-4
+								
 	.col-2

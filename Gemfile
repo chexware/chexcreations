@@ -5,8 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby ENV['CUSTOM_RUBY_VERSION'] || '2.3.0'
+ruby ENV['CUSTOM_RUBY_VERSION'] || '2.3.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'mini_racer', platforms: :ruby
 gem 'rails', '~> 5.1.6'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.5'
@@ -17,7 +18,7 @@ gem 'slim-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Bootstrap
-gem 'bootstrap'
+gem "bootstrap", ">= 4.3.1"
 # Use Font Awesome
 gem 'font-awesome-rails'
 # Use jQuery
@@ -27,6 +28,7 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # Use Vimeo API
 gem 'vimeo'
+gem "octokit", "~> 4.0"
 # Use Pundit
 gem 'pundit'
 # Use Pundit extra
