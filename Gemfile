@@ -31,6 +31,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'vimeo'
 # Use mail_form as contact form
 gem 'mail_form'
+gem 'sendgrid-ruby'
 # Use devise for authentication
 gem 'devise'
 # Use octokit as GitHub API

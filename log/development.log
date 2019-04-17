@@ -17465,3 +17465,31 @@ Content-Transfer-Encoding: 7bit
 Completed 200 OK in 8744ms (Views: 604.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-04-17 03:21:46 +0100
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (8.4ms)
+  Rendered home/index.html.slim within layouts/application (84.0ms)
+Started GET "/" for ::1 at 2019-04-17 03:21:49 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (8.7ms)
+  Rendered home/index.html.slim within layouts/application (122.3ms)
+  Rendered layouts/_footer.html.slim (92.1ms)
+Completed 200 OK in 17704ms (Views: 17588.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_footer.html.slim (16.9ms)
+Completed 200 OK in 67278ms (Views: 67160.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2019-04-17 03:23:01 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered contacts/new.html.slim within layouts/application (86.1ms)
+  Rendered layouts/_footer.html.slim (15.0ms)
+Completed 200 OK in 822ms (Views: 713.9ms | ActiveRecord: 0.0ms)
+
+
