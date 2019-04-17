@@ -7,9 +7,8 @@ end
 
 ruby ENV['CUSTOM_RUBY_VERSION'] || '2.3.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "actionview", ">= 5.1.6.2"
 gem 'mini_racer', platforms: :ruby
-gem 'rails', '~> 5.1.6'
+gem 'rails', '~> 5.1.7'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
@@ -32,14 +31,11 @@ gem 'vimeo'
 # Use mail_form as contact form
 gem 'mail_form'
 gem 'sendgrid-ruby'
-# Use devise for authentication
-gem 'devise'
 # Use octokit as GitHub API
 gem "octokit", "~> 4.0"
-# Use Pundit
-gem 'pundit'
-# Use Pundit extra
-gem 'pundit_extra'
+# Use trestle as admin panel
+gem "trestle"
+gem 'trestle-auth'
 # gem 'therubyracer', platforms: :ruby
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -60,6 +56,7 @@ gem 'mini_magick'
 # Prevent security vulnerabilities
 gem "rack", ">= 2.0.6"
 gem "loofah", ">= 2.2.3"
+gem "actionview", ">= 5.1.6.2"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

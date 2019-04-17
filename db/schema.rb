@@ -10,16 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170718175935) do
+ActiveRecord::Schema.define(version: 20190417232922) do
 
-  create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "author"
-    t.datetime "publish_date"
-    t.text "content"
-    t.bigint "thought_id"
+  create_table "administrators", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "email"
+    t.string "password_digest"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "remember_token"
+    t.datetime "remember_token_expires_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["thought_id"], name: "index_comments_on_thought_id"
   end
 
   create_table "projects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -44,14 +45,6 @@ ActiveRecord::Schema.define(version: 20170718175935) do
     t.index ["thought_id"], name: "index_tags_thoughts_on_thought_id"
   end
 
-  create_table "thoughts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "title"
-    t.datetime "publish_date"
-    t.text "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -59,5 +52,4 @@ ActiveRecord::Schema.define(version: 20170718175935) do
     t.string "password_digest", limit: 128, null: false
   end
 
-  add_foreign_key "comments", "thoughts"
 end

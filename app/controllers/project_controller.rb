@@ -1,5 +1,4 @@
 class ProjectController < ApplicationController
-  authorize_resource except: [:load_art, :load_software]
   def load_art
 	@projects = Project.where(kind: "Art")
   end

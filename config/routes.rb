@@ -19,9 +19,5 @@ Rails.application.routes.draw do
   post 'projects/:id/delete', to: 'project#delete'
   get 'projects/:mode/vimeo/:id', to: 'project#get_vimeo_info'
   get 'projects/:mode/:pid/vimeo/:id', to: 'project#get_vimeo_info'
-  get 'sign_in', to: 'session#sign_in'
-  post 'sign_in', to: 'session#authenticate' 
-  post 'sign_out', to: 'session#sign_out'
-  get  'access_denied', to: 'session#access_denied'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

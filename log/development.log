@@ -17493,3 +17493,788 @@ Processing by ContactsController#new as HTML
 Completed 200 OK in 822ms (Views: 713.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-04-17 11:22:32 +0100
+  
+Mysql2::Error (Can't connect to MySQL server on 'localhost' (10061)):
+  
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `connect'
+mysql2-0.4.10-x86 (mingw32) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.1.7) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.7) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:761:in `new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:805:in `checkout_new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:784:in `try_to_checkout_new_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:745:in `acquire_connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:502:in `checkout'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:376:in `connection'
+activerecord (5.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `retrieve_connection'
+activerecord (5.1.7) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.7) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.7) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.7) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-04-17 11:22:59 +0100
+  [1m[35m (12.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.0ms)
+  Rendered home/index.html.slim within layouts/application (49.9ms)
+  Rendered layouts/_footer.html.slim (2.0ms)
+Completed 200 OK in 13217ms (Views: 13190.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-04-17 11:23:30 +0100
+Processing by Trestle::DashboardController#index as HTML
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as :require_authenticated_user rendered or redirected
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('656870319402549000', 0)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAdministrators (20190417173247)
+  [1m[35m (52.7ms)[0m  [1m[35mCREATE TABLE `administrators` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255), `password_digest` varchar(255), `first_name` varchar(255), `last_name` varchar(255), `remember_token` varchar(255), `remember_token_expires_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190417173247')[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('656870319402549000')[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `administrators` (`email`, `password_digest`, `first_name`, `last_name`, `created_at`, `updated_at`) VALUES ('aleksandar@chexvisual.co.uk', '$2a$10$MyL6rvRRyfBOLcIizG/U9.4PSPAu4ODFJg.wrcJsCUlugCMuKyiDq', 'Aleksandar', 'Brayanov', '2019-04-17 17:38:08', '2019-04-17 17:38:08')[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2019-04-17 23:05:01 +0100
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (4.0ms)
+  Rendered home/index.html.slim within layouts/application (67.6ms)
+  Rendered layouts/_footer.html.slim (11.6ms)
+Completed 200 OK in 9711ms (Views: 9641.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-04-17 23:11:57 +0100
+Processing by Trestle::DashboardController#index as HTML
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as :require_authenticated_user rendered or redirected
+Completed 302 Found in 37ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for ::1 at 2019-04-17 23:11:58 +0100
+Processing by Trestle::Auth::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth (370.1ms)
+Completed 500 Internal Server Error in 5266ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( turbolinks.js )` to `config/initializers/assets.rb` and restart your server):
+    13: 
+    14:     <%= stylesheet_link_tag "trestle/auth", 'data-turbolinks-track': 'reload' %>
+    15: 
+    16:     <%= javascript_include_tag "turbolinks" if defined?(Turbolinks) %>
+    17:     <%= javascript_include_tag "trestle/auth", 'data-turbolinks-track': 'reload' %>
+    18:   </head>
+    19: 
+  
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:363:in `raise_unless_precompiled_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:348:in `find_debug_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:229:in `block in lookup_debug_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:242:in `block in resolve_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:241:in `each'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:241:in `detect'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:241:in `resolve_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:228:in `lookup_debug_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:141:in `block in javascript_include_tag'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:140:in `map'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:140:in `javascript_include_tag'
+trestle-auth (0.2.5) app/views/layouts/trestle/auth.html.erb:16:in `_____ails_nstaller__uby______lib_ruby_gems_______gems_trestle_auth_______app_views_layouts_trestle_auth_html_erb__129557891_84232584'
+actionview (5.1.7) lib/action_view/template.rb:157:in `block in render'
+activesupport (5.1.7) lib/active_support/notifications.rb:168:in `instrument'
+actionview (5.1.7) lib/action_view/template.rb:352:in `instrument_render_template'
+actionview (5.1.7) lib/action_view/template.rb:155:in `render'
+actionview (5.1.7) lib/action_view/renderer/template_renderer.rb:64:in `render_with_layout'
+actionview (5.1.7) lib/action_view/renderer/template_renderer.rb:50:in `render_template'
+actionview (5.1.7) lib/action_view/renderer/template_renderer.rb:14:in `render'
+actionview (5.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+actionview (5.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+actionview (5.1.7) lib/action_view/rendering.rb:103:in `_render_template'
+actionpack (5.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+actionview (5.1.7) lib/action_view/rendering.rb:83:in `render_to_body'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (5.1.7) lib/action_controller/metal/renderers.rb:141:in `render_to_body'
+actionpack (5.1.7) lib/abstract_controller/rendering.rb:24:in `render'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+activesupport (5.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+activesupport (5.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:29:in `cleanup_view_runtime'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:43:in `render'
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:33:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+activesupport (5.1.7) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+railties (5.1.7) lib/rails/railtie.rb:185:in `public_send'
+railties (5.1.7) lib/rails/railtie.rb:185:in `method_missing'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin" for ::1 at 2019-04-17 23:16:25 +0100
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Trestle::DashboardController#index as HTML
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as :require_authenticated_user rendered or redirected
+Completed 302 Found in 74ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for ::1 at 2019-04-17 23:16:47 +0100
+Processing by Trestle::Auth::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth (93.9ms)
+Completed 200 OK in 5147ms (Views: 5020.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2019-04-17 23:17:19 +0100
+Processing by Trestle::Auth::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfy+RvG1OWKKVN7qzZvyq5wS6Bkvv7MS2kpv0c6jJ9VUPUg1gt1xj2S7SBKo7YDaeBToXRnaGg+84ktGJCmh6Q==", "email"=>"aleksandar@chexvisual.co.uk", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAdministrator Load (2.8ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`email` = 'aleksandar@chexvisual.co.uk' LIMIT 1[0m
+Redirected to http://localhost:3000/admin/
+Completed 302 Found in 284ms (ActiveRecord: 32.3ms)
+
+
+Started GET "/admin/" for ::1 at 2019-04-17 23:17:20 +0100
+Processing by Trestle::DashboardController#index as HTML
+  [1m[36mAdministrator Load (1.5ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/admin/projects
+Completed 302 Found in 296ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/projects" for ::1 at 2019-04-17 23:17:20 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (0.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (79.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (1.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (0.0ms)
+  [1m[36mProject Load (1.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` LIMIT 25 OFFSET 0[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (85.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (227.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (4464.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (5505.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (249.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (3.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (121.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 10555ms (Views: 9920.9ms | ActiveRecord: 27.6ms)
+
+
+Started GET "/admin/projects/new" for ::1 at 2019-04-17 23:18:43 +0100
+Processing by ProjectsAdmin::AdminController#new as HTML
+  [1m[36mAdministrator Load (1.1ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (1310.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (2241.4ms)
+Completed 500 Internal Server Error in 3751ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (The asset "default.jpg" is not present in the asset pipeline.):
+    1: <% if admin.form -%>
+    2:   <%= admin.form.render(self, instance) %>
+    3: <% else %>
+    4:   <p><%= t("trestle.onboarding.no_form", default: "Please define a form block or create a <code>_form.html</code> partial.").html_safe %></p>
+    5: <% end %>
+  
+app/uploaders/image_uploader.rb:20:in `default_url'
+Started GET "/admin/projects?order=asc&sort=id" for ::1 at 2019-04-17 23:19:58 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  Parameters: {"order"=>"asc", "sort"=>"id"}
+  [1m[36mAdministrator Load (1.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+Started GET "/admin/auth/administrators" for ::1 at 2019-04-17 23:20:00 +0100
+Processing by Auth::AdministratorsAdmin::AdminController#index as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  [1m[35m (225.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mAdministrator Load (197.6ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (5.6ms)
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (36.4ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (7.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (1.0ms)
+  [1m[36mProject Load (3.9ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`id` ASC LIMIT 25 OFFSET 0[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (603.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (277.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (9079.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (10710.6ms)
+  [1m[36mAdministrator Load (17.9ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` LIMIT 25 OFFSET 0[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (38.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (251.4ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (6167.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (7887.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (198.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (2.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (124.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 15801ms (Views: 14959.4ms | ActiveRecord: 4.9ms)
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (196.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (119.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 14783ms (Views: 12901.7ms | ActiveRecord: 441.1ms)
+
+
+Started GET "/admin/projects" for ::1 at 2019-04-17 23:40:22 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (1.6ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (6.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (4.4ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.1ms)
+  [1m[36mProject Load (0.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` LIMIT 25 OFFSET 0[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (22.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (239.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (4707.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (5767.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (294.4ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (117.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 9659ms (Views: 9034.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/projects/new" for ::1 at 2019-04-17 23:41:04 +0100
+Processing by ProjectsAdmin::AdminController#new as HTML
+  [1m[36mAdministrator Load (1.7ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (1736.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (2452.2ms)
+Completed 500 Internal Server Error in 4220ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (The asset "default.jpg" is not present in the asset pipeline.):
+    1: <% if admin.form -%>
+    2:   <%= admin.form.render(self, instance) %>
+    3: <% else %>
+    4:   <p><%= t("trestle.onboarding.no_form", default: "Please define a form block or create a <code>_form.html</code> partial.").html_safe %></p>
+    5: <% end %>
+  
+app/uploaders/image_uploader.rb:20:in `default_url'
+Started GET "/" for ::1 at 2019-04-17 23:57:45 +0100
+  [1m[35m (4.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (6.2ms)
+  Rendered home/index.html.slim within layouts/application (69.5ms)
+Started GET "/admin" for ::1 at 2019-04-17 23:57:47 +0100
+  Rendered layouts/_footer.html.slim (8.0ms)
+Completed 200 OK in 13711ms (Views: 13655.0ms | ActiveRecord: 0.0ms)
+
+
+Processing by Trestle::DashboardController#index as HTML
+  [1m[36mAdministrator Load (0.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/admin/projects
+Completed 302 Found in 215ms (ActiveRecord: 13.0ms)
+
+
+Started GET "/admin/projects" for ::1 at 2019-04-17 23:58:20 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (0.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (38.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (0.0ms)
+  [1m[36mProject Load (0.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` LIMIT 25 OFFSET 0[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (43.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (92.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (1790.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (2314.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (98.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (15.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (78.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 4357ms (Views: 4124.7ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/admin/projects/new" for ::1 at 2019-04-18 00:02:43 +0100
+Processing by ProjectsAdmin::AdminController#new as HTML
+  [1m[36mAdministrator Load (1.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (1608.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (1946.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (77.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (47.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 3126ms (Views: 2915.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/admin/projects" for ::1 at 2019-04-18 00:03:22 +0100
+Processing by ProjectsAdmin::AdminController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hyrxbZua5R7SltQgUSSeq6faJl8Dj2DfEbFvVMsiYd3NwAyfu4T015PCA2xVsCdUO8CFO8cYAgS7FdaQLNwSpQ==", "project"=>{"title"=>"Test", "kind"=>"Software", "link"=>"https://github.com/albrayanov/chexcreations", "image"=>"default.jpg", "created_at"=>"2019-04-18 12:00", "updated_at"=>"2019-04-24 12:00"}, "button"=>""}
+  [1m[36mAdministrator Load (0.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `kind`, `link`, `image`, `created_at`, `updated_at`) VALUES ('Test', 'Software', 'https://github.com/albrayanov/chexcreations', NULL, '2019-04-18 12:00:00', '2019-04-24 12:00:00')[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/projects/1
+Completed 302 Found in 55ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/admin/projects/1" for ::1 at 2019-04-18 00:03:22 +0100
+Processing by ProjectsAdmin::AdminController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1[0m
+  [1m[36mAdministrator Load (0.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_alert.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (88.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (1869.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb (2070.5ms)
+Completed 200 OK in 2540ms (Views: 2292.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/projects" for ::1 at 2019-04-18 00:03:27 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (1.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (0.0ms)
+  [1m[36mProject Load (0.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` LIMIT 25 OFFSET 0[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (13.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (74.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (1472.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (1853.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (76.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (49.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 3005ms (Views: 2795.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-18 00:03:36 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.0ms)
+  Rendered home/index.html.slim within layouts/application (25.0ms)
+  Rendered layouts/_footer.html.slim (9.0ms)
+Completed 200 OK in 404ms (Views: 361.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/software" for ::1 at 2019-04-18 00:03:39 +0100
+Processing by ProjectController#load_software as HTML
+  Rendering project/load_software.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.0ms)
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Software'[0m
+  Rendered project/load_software.html.slim within layouts/application (33.9ms)
+  Rendered layouts/_footer.html.slim (4.0ms)
+Completed 200 OK in 320ms (Views: 294.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/auth/administrators" for ::1 at 2019-04-18 00:04:11 +0100
+Processing by Auth::AdministratorsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (0.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.0ms)
+  [1m[36mAdministrator Load (1.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` LIMIT 25 OFFSET 0[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (78.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (1446.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (1824.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (90.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (46.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 3059ms (Views: 2864.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/projects" for ::1 at 2019-04-18 00:04:16 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (1.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (0.0ms)
+  [1m[36mProject Load (0.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` LIMIT 25 OFFSET 0[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (15.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (74.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (1478.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (1863.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (77.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (46.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 3049ms (Views: 2852.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2019-04-18 00:04:38 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered contacts/new.html.slim within layouts/application (10.0ms)
+  Rendered layouts/_footer.html.slim (3.0ms)
+Completed 200 OK in 349ms (Views: 280.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/projects/new" for ::1 at 2019-04-18 00:04:57 +0100
+Processing by ProjectsAdmin::AdminController#new as HTML
+  [1m[36mAdministrator Load (1.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (1739.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (1946.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (77.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (49.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 3130ms (Views: 2938.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-04-18 00:19:16 +0100
+Processing by Trestle::DashboardController#index as HTML
+  [1m[36mAdministrator Load (1.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/admin/projects
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/projects" for ::1 at 2019-04-18 00:19:16 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (0.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.0ms)
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` LIMIT 25 OFFSET 0[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (13.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (77.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (1513.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (1910.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (83.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (56.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 3139ms (Views: 2945.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/projects/new" for ::1 at 2019-04-18 00:19:24 +0100
+Processing by ProjectsAdmin::AdminController#new as HTML
+  [1m[36mAdministrator Load (0.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (1587.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (1765.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (80.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (47.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 2907ms (Views: 2714.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/projects" for ::1 at 2019-04-18 00:19:31 +0100
+Processing by ProjectsAdmin::AdminController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rj+FVOBQv/mRtU3FtppAnitjIoNH8OsrejHdduUOiZ7k1XimwE6uMNDhmomyDvlht3mB54NnifDQlWSyAvD65g==", "project"=>{"title"=>"", "kind"=>"", "link"=>"", "image"=>"default.jpg", "created_at"=>"", "updated_at"=>""}, "button"=>""}
+  [1m[36mAdministrator Load (0.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_debug.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_alert.html.erb (101.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (198.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (2142.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb (2356.7ms)
+Completed 422 Unprocessable Entity in 2606ms (Views: 2580.6ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/admin/projects" for ::1 at 2019-04-18 00:19:51 +0100
+Processing by ProjectsAdmin::AdminController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R8D4Ica6ETXz77HnQZn7LFlSlyt4/IGwVszM1rKUK8UlYfgPuuoOyvnjSTkyd1/otCWN814IUNAHzLNVG7mzqw==", "project"=>{"title"=>"Test", "kind"=>"Software", "link"=>"hello", "image"=>"default.jpg", "created_at"=>"", "updated_at"=>""}, "button"=>""}
+  [1m[36mAdministrator Load (1.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_debug.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_alert.html.erb (125.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (231.4ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (2476.4ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb (2684.8ms)
+Completed 422 Unprocessable Entity in 2926ms (Views: 2881.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-18 00:25:38 +0100
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (uninitialized constant ApplicationController::Pundit):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/home_controller.rb:1:in `<top (required)>'
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('656870319402549000', 0)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to DropThoughtsTable (20190417232922)
+  [1m[35m (30.0ms)[0m  [1m[35mDROP TABLE `thoughts`[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('656870319402549000')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT GET_LOCK('656870319402549000', 0)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to DropThoughtsTable (20190417232922)
+  [1m[35m (11.0ms)[0m  [1m[35mDROP TABLE `comments`[0m
+  [1m[35m (9.0ms)[0m  [1m[35mDROP TABLE `thoughts`[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190417232922')[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('656870319402549000')[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2019-04-18 00:47:31 +0100
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (458.8ms)
+  Rendered home/index.html.slim within layouts/application (499.7ms)
+Completed 500 Internal Server Error in 686ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x3f3d188>:0x3f25d40>
+Did you mean?  current_page?):
+     9: 				= link_to "Software", "/software",  class: "nav-link"
+    10: 		    li.nav-item.font-weight-bold
+    11: 				= link_to "Art", "/art",  class: "nav-link"
+    12: 			- if current_user
+    13: 				li class="nav-item"
+    14: 					= form_tag("/sign_out", method: "post") do
+    15: 						= submit_tag "Sign out", class: "nav-link sign-out font-weight-bold"
+  
+app/views/layouts/_navigation.html.slim:12:in `_app_views_layouts__navigation_html_slim__697761709_63818136'
+app/views/home/index.html.slim:8:in `_app_views_home_index_html_slim__768438054_33169920'
+Started GET "/" for ::1 at 2019-04-18 00:50:30 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (5.0ms)
+  Rendered home/index.html.slim within layouts/application (29.9ms)
+  Rendered layouts/_footer.html.slim (6.0ms)
+Completed 200 OK in 6553ms (Views: 6536.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/software" for ::1 at 2019-04-18 00:50:57 +0100
+  
+ActionController::RoutingError (undefined method `authorize_resource' for ProjectController:Class):
+  
+app/controllers/project_controller.rb:2:in `<class:ProjectController>'
+app/controllers/project_controller.rb:1:in `<top (required)>'
+Started GET "/software" for ::1 at 2019-04-18 00:51:48 +0100
+  [1m[35m (0.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProjectController#load_software as HTML
+  Rendering project/load_software.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.0ms)
+  [1m[36mProject Load (0.0ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Software'[0m
+  Rendered project/load_software.html.slim within layouts/application (1354.4ms)
+Completed 500 Internal Server Error in 1550ms (ActiveRecord: 8.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x7acb8c0>:0x7ab32a8>
+Did you mean?  current_page?):
+    12: 								| #{p.title} 			
+    13: - else
+    14: 	p There aren't any projects
+    15: - if current_user				
+    16: 	a.btn.btn-link.btn-lg.btn-block href="/projects/new/software" role="button"
+    17: 		| New Project
+  
+app/views/project/load_software.html.slim:15:in `_app_views_project_load_software_html_slim___12523002_23808996'
+Started GET "/software" for ::1 at 2019-04-18 00:52:23 +0100
+Processing by ProjectController#load_software as HTML
+  Rendering project/load_software.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (4.0ms)
+  [1m[36mProject Load (0.0ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Software'[0m
+  Rendered project/load_software.html.slim within layouts/application (33.9ms)
+  Rendered layouts/_footer.html.slim (2.0ms)
+Completed 200 OK in 365ms (Views: 342.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-18 00:52:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.0ms)
+  Rendered home/index.html.slim within layouts/application (19.9ms)
+  Rendered layouts/_footer.html.slim (3.0ms)
+Completed 200 OK in 339ms (Views: 317.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2019-04-18 00:52:59 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered contacts/new.html.slim within layouts/application (130.7ms)
+  Rendered layouts/_footer.html.slim (3.0ms)
+Completed 200 OK in 413ms (Views: 380.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-04-18 00:53:04 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.0ms)
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  Rendered project/load_art.html.slim within layouts/application (26.0ms)
+  Rendered layouts/_footer.html.slim (2.0ms)
+Completed 200 OK in 327ms (Views: 303.5ms | ActiveRecord: 1.0ms)
+
+

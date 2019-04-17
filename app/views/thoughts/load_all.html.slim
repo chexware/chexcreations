@@ -1,8 +1,0 @@
-h1.display-3.text-center My Thougths 
-= render 'layouts/navigation'
-ul.list-group
-- @thoughts.each do |t|
-    li.list-group-item.list-group-item-success.thought.text-center
-        = link_to "#{t.title}", "/thoughts/#{t.id}", class: "thought-link" 
-- if current_user
-	a.btn.btn-link.btn-lg.btn-block href="/thoughts/new" role="button" New Thought

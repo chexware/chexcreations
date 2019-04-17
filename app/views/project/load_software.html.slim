@@ -9,17 +9,6 @@ h1.display-3.text-center Software
 					.card-img-overlay
 						h6.card-title.text-center
 							a.card-text href="#{p.link}" 
-								| #{p.title} 
-						- if current_user
-							.row
-								.col-6
-									a.btn.btn-link.small href="/projects/#{p.id}/edit" role="button" Edit
-								.col-6
-									= form_tag("/projects/#{p.id}/delete", method: "post") do
-										= submit_tag "Delete", class: "btn btn-link danger small"
-				
+								| #{p.title} 			
 - else
 	p There aren't any projects
-- if current_user				
-	a.btn.btn-link.btn-lg.btn-block href="/projects/new/software" role="button"
-		| New Project
