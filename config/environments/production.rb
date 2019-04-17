@@ -94,8 +94,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   config.serve_static_assets = false
   # Contact form configuration
-  config.action_mailer.default_url_options = {host: 'https://chexcreations.herokuapp.com'}
-  config.action_mailer.delivery_method = :smtp
   
 }
 end
