@@ -7,6 +7,7 @@ end
 
 ruby ENV['CUSTOM_RUBY_VERSION'] || '2.3.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem "actionview", ">= 5.1.6.2"
 gem 'mini_racer', platforms: :ruby
 gem 'rails', '~> 5.1.6'
 # Use mysql as the database for Active Record
@@ -28,8 +29,11 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # Use Vimeo API
 gem 'vimeo'
+# Use mail_form as contact form
 gem 'mail_form'
+# Use devise for authentication
 gem 'devise'
+# Use octokit as GitHub API
 gem "octokit", "~> 4.0"
 # Use Pundit
 gem 'pundit'
