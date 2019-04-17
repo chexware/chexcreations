@@ -77,7 +77,7 @@ class ProjectController < ApplicationController
 		end
 	end
 	def  get_github_repos
-		client = Octokit::Client.new(:access_token => 'a334ebda8d57588f2d74626e9705e1f37cf6b6cb')
+		client = Octokit::Client.new(:access_token => '')
 		user = client.user
 		@repos = client.repos({}, query: {type: 'owner', sort: 'asc'})
 	end

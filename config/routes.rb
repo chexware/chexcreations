@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  resources :contacts, only: [:new, :create]
   root to: 'home#index'
-  get 'about', to: 'home#about'
   get 'thoughts', to: 'thoughts#load_all'
   get 'art', to: 'project#load_art'
   get 'software', to: 'project#load_software'
