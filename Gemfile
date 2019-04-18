@@ -24,8 +24,8 @@ gem 'font-awesome-rails'
 # Use jQuery
 gem 'jquery-rails'
 # Use React.js 
-gem 'webpacker'
-gem 'react-rails'
+#gem 'webpacker'
+#gem 'react-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
