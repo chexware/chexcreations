@@ -23,6 +23,9 @@ gem "bootstrap", ">= 4.3.1"
 gem 'font-awesome-rails'
 # Use jQuery
 gem 'jquery-rails'
+# Use React.js 
+gem 'webpacker'
+gem 'react-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -31,12 +34,12 @@ gem 'vimeo'
 # Use mail_form as contact form
 gem 'mail_form'
 gem 'sendgrid-ruby'
-# Use octokit as GitHub API
-gem "octokit", "~> 4.0"
 # Use trestle as admin panel
 gem "trestle"
 gem 'trestle-auth'
 # gem 'therubyracer', platforms: :ruby
+# Use octokit as GitHub API
+gem "octokit", "~> 4.0"
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
  gem 'coffee-script-source', '1.8.0'
