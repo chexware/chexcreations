@@ -1,0 +1,21 @@
+{:uriI"‚file://app/assets/fonts/koliko/koliko-Bold.html?type=text/html&id=64cadb3a954ed060fcabae28ba485c66ef71e6e3eea4f3e04513cdcb366627f7:ET:load_pathI"app/assets/fonts;T:filenameI"-app/assets/fonts/koliko/koliko-Bold.html;T:	nameI"koliko/koliko-Bold;T:logical_pathI"koliko/koliko-Bold.html;T:content_typeI"text/html;T:sourceI"¥<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<meta content="en-us" http-equiv="Content-Language"/>
+<title>koliko Bold - Web Font Specimen</title>
+<link rel="stylesheet" type="text/css" media="screen" href="koliko-Bold.css" />
+<style type="text/css" media="screen">
+body { font-size: 42px; font-family: "kolikoBold", Georgia; }
+</style>
+</head>
+<body>
+<p contenteditable="true"><strong>The quick brown fox jumps over the lazy dog. $123.45!</strong></p>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI";file-digest://app/assets/fonts/koliko/koliko-Bold.html;TTF:charsetI"
+utf-8;F:digest"%ˆ’[7|ê#‚¯àå#kéJã­^eF²-YkB¤
+µ;æ:lengthi¥:dependencies_digest"%§ÂÎéxqÐ‚¬à2«u1'•8“ÐPtKVUOÉ/lÜ:idI"E64cadb3a954ed060fcabae28ba485c66ef71e6e3eea4f3e04513cdcb366627f7;F:
+mtimel+ø^–\

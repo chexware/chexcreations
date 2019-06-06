@@ -5,7 +5,10 @@ h1.display-3.text-center Software
 		- @projects.each do |p|
 			.col-4
 				.card.text-center.project
-					= image_tag("#{p.image}", alt: "Software Image", class: "card-img img-fluid")	
+					- if p.image.attached?
+ 						 = image_tag("/#{p.image}.jpg", alt: "Software Image", class: "card-img img-fluid")	
+					- else
+ 						 = image_tag("default.jpg", alt: "Software Image", class: "card-img img-fluid")
 					.card-img-overlay
 						h6.card-title.text-center
 							a.card-text href="#{p.link}" 

@@ -2,6 +2,16 @@ Trestle.resource(:projects) do
   menu do
     item :projects, icon: "fa fa-star"
   end
+  active_storage_fields do
+    [:image]
+  end
+  form do |project|
+    text_field :title
+    text_field :link
+    select :kind, ["Art", "Software"]
+    active_storage_field :image
+  end
+
 
   # Customize the table columns shown on the index view.
   #

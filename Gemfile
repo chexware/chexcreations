@@ -5,10 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby ENV['CUSTOM_RUBY_VERSION'] || '2.3.3'
+ruby ENV['CUSTOM_RUBY_VERSION'] || '2.6.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'mini_racer', platforms: :ruby
-gem 'rails', '~> 5.1.7'
+gem 'rails', '~> 5.2.0'
+gem 'bootsnap'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
@@ -24,7 +25,6 @@ gem 'font-awesome-rails'
 # Use jQuery
 gem 'jquery-rails'
 # Use React.js 
-#gem 'webpacker'
 #gem 'react-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -37,6 +37,7 @@ gem 'sendgrid-ruby'
 # Use trestle as admin panel
 gem "trestle"
 gem 'trestle-auth'
+gem 'trestle-active_storage'
 # gem 'therubyracer', platforms: :ruby
 # Use octokit as GitHub API
 gem "octokit", "~> 4.0"
@@ -51,11 +52,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
-# Image uploading gem(s)
-gem 'carrierwave', '~> 1.0'
-gem 'mini_magick'
-
 # Prevent security vulnerabilities
 gem "rack", ">= 2.0.6"
 gem "loofah", ">= 2.2.3"
@@ -75,6 +71,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  gem 'listen'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
