@@ -20325,3 +20325,35 @@ Completed 200 OK in 24113ms (Views: 24096.8ms | ActiveRecord: 0.0ms)
 Completed 200 OK in 22174ms (Views: 22168.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-06-08 12:16:42 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (4.1ms)
+  Rendered home/index.html.slim within layouts/application (24.1ms)
+Started GET "/" for ::1 at 2019-06-08 12:16:46 +0100
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (2.8ms)
+  Rendered home/index.html.slim within layouts/application (12.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (5.7ms)
+Completed 200 OK in 18144ms (Views: 18126.4ms | ActiveRecord: 0.0ms)
+
+
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (9.0ms)
+Completed 200 OK in 16790ms (Views: 16785.4ms | ActiveRecord: 0.0ms)
+
+
