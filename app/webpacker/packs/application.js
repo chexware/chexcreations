@@ -17,8 +17,8 @@
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
-require("channels")
-require("trestle/custom")
+require("src/javascript/channels")
+require("src/javascript/trestle/custom")
 import 'bootstrap/dist/js/bootstrap';
 $(function () {
     console.log('Hello World from Webpacker');

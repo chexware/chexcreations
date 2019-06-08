@@ -20357,3 +20357,216 @@ Completed 200 OK in 18144ms (Views: 18126.4ms | ActiveRecord: 0.0ms)
 Completed 200 OK in 16790ms (Views: 16785.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-06-08 12:28:37 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (2.5ms)
+  Rendered home/index.html.slim within layouts/application (15.0ms)
+Started GET "/" for ::1 at 2019-06-08 12:28:40 +0100
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (2.1ms)
+  Rendered home/index.html.slim within layouts/application (10.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (4.5ms)
+Completed 200 OK in 18500ms (Views: 18488.9ms | ActiveRecord: 0.0ms)
+
+
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (3.3ms)
+Completed 200 OK in 16599ms (Views: 16594.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 14:47:05 +0100
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (5.5ms)
+  Rendered home/index.html.slim within layouts/application (16.7ms)
+  Rendered layouts/_footer.html.slim (3.3ms)
+Completed 200 OK in 88ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 15:47:01 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (2.5ms)
+  Rendered home/index.html.slim within layouts/application (14.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (6.5ms)
+Completed 200 OK in 13015ms (Views: 13005.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 16:00:43 +0100
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.3ms)
+  Rendered home/index.html.slim within layouts/application (25.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (6.5ms)
+Completed 200 OK in 5396ms (Views: 5385.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 16:02:02 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (13.0ms)
+  Rendered home/index.html.slim within layouts/application (32.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (8.3ms)
+Completed 200 OK in 5263ms (Views: 5255.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2019-06-08 16:02:10 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered contacts/new.html.slim within layouts/application (212.9ms)
+  Rendered layouts/_footer.html.slim (2.1ms)
+Completed 200 OK in 281ms (Views: 250.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 16:03:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (5.8ms)
+  Rendered home/index.html.slim within layouts/application (14.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (12.6ms)
+Completed 200 OK in 12415ms (Views: 12408.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 16:03:46 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (9.7ms)
+  Rendered home/index.html.slim within layouts/application (32.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (9.0ms)
+Completed 200 OK in 8161ms (Views: 8155.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 16:03:59 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (2.2ms)
+  Rendered home/index.html.slim within layouts/application (11.3ms)
+  Rendered layouts/_footer.html.slim (2.6ms)
+Completed 200 OK in 82ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2019-06-08 16:04:00 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered contacts/new.html.slim within layouts/application (7.5ms)
+  Rendered layouts/_footer.html.slim (5.2ms)
+Completed 200 OK in 109ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 16:04:03 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (4.1ms)
+  Rendered home/index.html.slim within layouts/application (17.2ms)
+  Rendered layouts/_footer.html.slim (4.4ms)
+Completed 200 OK in 63ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 16:06:39 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (2.0ms)
+  Rendered home/index.html.slim within layouts/application (14.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (5.5ms)
+Completed 200 OK in 8117ms (Views: 8111.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-08 16:06:55 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.7ms)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+  Rendered project/load_art.html.slim within layouts/application (12760.0ms)
+  Rendered layouts/_footer.html.slim (12.9ms)
+Completed 200 OK in 12880ms (Views: 12793.6ms | ActiveRecord: 34.3ms)
+
+
+Started GET "/art" for ::1 at 2019-06-08 16:08:12 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.2ms)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+  Rendered project/load_art.html.slim within layouts/application (36.2ms)
+  Rendered layouts/_footer.html.slim (3.1ms)
+Completed 200 OK in 96ms (Views: 90.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/software" for ::1 at 2019-06-08 16:08:13 +0100
+Processing by ProjectController#load_software as HTML
+  Rendering project/load_software.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.1ms)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Software'[0m
+  ↳ app/views/project/load_software.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+  Rendered project/load_software.html.slim within layouts/application (252.7ms)
+  Rendered layouts/_footer.html.slim (10.5ms)
+Completed 200 OK in 331ms (Views: 305.9ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 16:08:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (8.3ms)
+  Rendered home/index.html.slim within layouts/application (29.4ms)
+  Rendered layouts/_footer.html.slim (17.1ms)
+Completed 200 OK in 145ms (Views: 139.4ms | ActiveRecord: 0.0ms)
+
+
