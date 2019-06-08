@@ -16,18 +16,14 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.7'
 # Use SLIM as template language
 gem 'slim-rails'
+# Use webpacker instead of sprockets
+gem 'webpacker', '~> 4.x'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Bootstrap
 gem "bootstrap", ">= 4.3.1"
 # Use Font Awesome
 gem 'font-awesome-rails'
-# Use jQuery
-gem 'jquery-rails'
-# Use React.js 
-#gem 'react-rails'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # Use Vimeo API
 gem 'vimeo'

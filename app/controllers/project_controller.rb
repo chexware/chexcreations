@@ -84,7 +84,7 @@ class ProjectController < ApplicationController
   private
   
   def project_params
-    params.require(:project).permit(:title, :link, :kind, :image, :image_cache)
+    params.require(:project).permit(:title, :link, :kind, :image)
   end
   
 end
