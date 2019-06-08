@@ -20,10 +20,6 @@ gem 'slim-rails'
 gem 'webpacker', '~> 4.x'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-# Use Bootstrap
-gem "bootstrap", ">= 4.3.1"
-# Use Font Awesome
-gem 'font-awesome-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # Use Vimeo API
 gem 'vimeo'
@@ -37,11 +33,6 @@ gem 'trestle-active_storage'
 # gem 'therubyracer', platforms: :ruby
 # Use octokit as GitHub API
 gem "octokit", "~> 4.0"
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
- gem 'coffee-script-source', '1.8.0'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
