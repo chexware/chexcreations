@@ -20714,3 +20714,1015 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 7884ms (Views: 7880.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-06-08 17:25:07 +0100
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (2.8ms)
+  Rendered home/index.html.slim within layouts/application (15.7ms)
+  Rendered layouts/_footer.html.slim (3.9ms)
+Completed 200 OK in 86ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-08 17:25:18 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (7.3ms)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+  Rendered project/load_art.html.slim within layouts/application (15168.9ms)
+  Rendered layouts/_footer.html.slim (3.9ms)
+Completed 200 OK in 15239ms (Views: 15203.8ms | ActiveRecord: 21.1ms)
+
+
+Started GET "/art" for ::1 at 2019-06-08 17:25:52 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (2.0ms)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+  Rendered project/load_art.html.slim within layouts/application (15.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (3.5ms)
+Completed 200 OK in 8740ms (Views: 8732.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 17:43:06 +0100
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (2.3ms)
+  Rendered home/index.html.slim within layouts/application (26.0ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Unknown line indicator
+  /mnt/c/Sites/chexcreations/app/views/layouts/application.html.slim, Line 7, Column 4
+    !-- UIkit CSS -->
+    ^
+):
+    4:     title CHEX
+    5:     meta name="viewport" content="width=device-width, initial-scale=1.0"
+    6:     = csrf_meta_tags
+    7:     !-- UIkit CSS -->
+    8:     = stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css'
+    9: 
+   10:     <!-- UIkit JS -->
+  
+app/views/layouts/application.html.slim:7
+Started GET "/" for ::1 at 2019-06-08 17:43:20 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (4.7ms)
+  Rendered home/index.html.slim within layouts/application (11.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning package.json: No license field
+
+Completed 500 Internal Server Error in 5722ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application in /mnt/c/Sites/chexcreations/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-204d8555cece0c176143.js",
+  "application.js.map": "/packs/js/application-204d8555cece0c176143.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-204d8555cece0c176143.js"
+      ],
+      "js.map": [
+        "/packs/js/application-204d8555cece0c176143.js.map"
+      ]
+    },
+    "hello_coffee": {
+      "js": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map"
+      ]
+    },
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map"
+      ]
+    }
+  },
+  "hello_coffee.js": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js",
+  "hello_coffee.js.map": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map",
+  "hello_react.js": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js",
+  "hello_react.js.map": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map"
+}
+):
+    10:     <!-- UIkit JS -->
+    11:     = javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js'
+    12:     = javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js'
+    13:     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    14:     = javascript_pack_tag  'application', 'data-turbolinks-track': 'reload'
+    15:   body
+    16:     .container
+  
+app/views/layouts/application.html.slim:13:in `_app_views_layouts_application_html_slim__656397790694267907_70368512133980'
+Started GET "/" for ::1 at 2019-06-08 17:44:09 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (26.9ms)
+  Rendered home/index.html.slim within layouts/application (43.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning package.json: No license field
+
+Completed 500 Internal Server Error in 6900ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css in /mnt/c/Sites/chexcreations/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-204d8555cece0c176143.js",
+  "application.js.map": "/packs/js/application-204d8555cece0c176143.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-204d8555cece0c176143.js"
+      ],
+      "js.map": [
+        "/packs/js/application-204d8555cece0c176143.js.map"
+      ]
+    },
+    "hello_coffee": {
+      "js": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map"
+      ]
+    },
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map"
+      ]
+    }
+  },
+  "hello_coffee.js": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js",
+  "hello_coffee.js.map": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map",
+  "hello_react.js": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js",
+  "hello_react.js.map": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map"
+}
+):
+     5:     meta name="viewport" content="width=device-width, initial-scale=1.0"
+     6:     = csrf_meta_tags
+     7:     <!-- UIkit CSS -->
+     8:     = stylesheet_pack_tag 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css'
+     9: 
+    10:     <!-- UIkit JS -->
+    11:     = javascript_pack_tag 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js'
+  
+app/views/layouts/application.html.slim:8:in `_app_views_layouts_application_html_slim__656397790694267907_70368509560940'
+Started GET "/" for ::1 at 2019-06-08 17:44:32 +0100
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (2.3ms)
+  Rendered home/index.html.slim within layouts/application (15.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning package.json: No license field
+
+Completed 500 Internal Server Error in 5131ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css in /mnt/c/Sites/chexcreations/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-204d8555cece0c176143.js",
+  "application.js.map": "/packs/js/application-204d8555cece0c176143.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-204d8555cece0c176143.js"
+      ],
+      "js.map": [
+        "/packs/js/application-204d8555cece0c176143.js.map"
+      ]
+    },
+    "hello_coffee": {
+      "js": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map"
+      ]
+    },
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map"
+      ]
+    }
+  },
+  "hello_coffee.js": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js",
+  "hello_coffee.js.map": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map",
+  "hello_react.js": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js",
+  "hello_react.js.map": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map"
+}
+):
+     5:     meta name="viewport" content="width=device-width, initial-scale=1.0"
+     6:     = csrf_meta_tags
+     7:     <!-- UIkit CSS -->
+     8:     = stylesheet_pack_tag 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css'
+     9: 
+    10:     <!-- UIkit JS -->
+    11:     = javascript_pack_tag 'https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js'
+  
+app/views/layouts/application.html.slim:8:in `_app_views_layouts_application_html_slim___2455002269872716525_70368417669400'
+Started GET "/" for ::1 at 2019-06-08 17:48:11 +0100
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.8ms)
+  Rendered home/index.html.slim within layouts/application (16.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (7.3ms)
+Completed 200 OK in 9243ms (Views: 9238.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2019-06-08 17:48:27 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered contacts/new.html.slim within layouts/application (201.5ms)
+  Rendered layouts/_footer.html.slim (8.1ms)
+Completed 200 OK in 297ms (Views: 260.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 17:50:41 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (27.5ms)
+  Rendered home/index.html.slim within layouts/application (36.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (3.4ms)
+Completed 200 OK in 9012ms (Views: 9005.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2019-06-08 17:51:27 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered contacts/new.html.slim within layouts/application (4.3ms)
+  Rendered layouts/_footer.html.slim (12.2ms)
+Completed 200 OK in 65ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 17:52:53 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (9.1ms)
+  Rendered home/index.html.slim within layouts/application (16.8ms)
+  Rendered layouts/_footer.html.slim (7.5ms)
+Completed 200 OK in 78ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2019-06-08 17:52:57 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered contacts/new.html.slim within layouts/application (3.9ms)
+  Rendered layouts/_footer.html.slim (2.1ms)
+Completed 200 OK in 73ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 17:55:23 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (9.0ms)
+  Rendered home/index.html.slim within layouts/application (32.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (11.3ms)
+Completed 200 OK in 21648ms (Views: 21625.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/software" for ::1 at 2019-06-08 17:55:52 +0100
+Processing by ProjectController#load_software as HTML
+  Rendering project/load_software.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (11.9ms)
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Software'[0m
+  ↳ app/views/project/load_software.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+  Rendered project/load_software.html.slim within layouts/application (950.0ms)
+  Rendered layouts/_footer.html.slim (9.0ms)
+Completed 200 OK in 1269ms (Views: 1046.4ms | ActiveRecord: 118.7ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 17:55:54 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (3.9ms)
+  Rendered home/index.html.slim within layouts/application (15.1ms)
+  Rendered layouts/_footer.html.slim (3.6ms)
+Completed 200 OK in 121ms (Views: 105.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-08 17:55:58 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (5.3ms)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+Started GET "/" for ::1 at 2019-06-08 17:56:02 +0100
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (8.7ms)
+  Rendered home/index.html.slim within layouts/application (31.4ms)
+  Rendered layouts/_footer.html.slim (11.3ms)
+Completed 200 OK in 223ms (Views: 210.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendered project/load_art.html.slim within layouts/application (20182.8ms)
+  Rendered layouts/_footer.html.slim (7.2ms)
+Completed 200 OK in 20277ms (Views: 20270.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 18:02:37 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (8.1ms)
+  Rendered home/index.html.slim within layouts/application (48.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (5.2ms)
+Completed 200 OK in 21480ms (Views: 21467.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-08 18:04:56 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (20.3ms)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+  Rendered project/load_art.html.slim within layouts/application (229.3ms)
+Completed 500 Internal Server Error in 344ms (ActiveRecord: 52.5ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find default.jpg in /mnt/c/Sites/chexcreations/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.css": "/packs/css/application-6acac792.css",
+  "application.css.map": "/packs/css/application-6acac792.css.map",
+  "application.js": "/packs/js/application-a27781102807b23b4f0b.js",
+  "application.js.map": "/packs/js/application-a27781102807b23b4f0b.js.map",
+  "entrypoints": {
+    "application": {
+      "css": [
+        "/packs/css/application-6acac792.css"
+      ],
+      "js": [
+        "/packs/js/application-a27781102807b23b4f0b.js"
+      ],
+      "css.map": [
+        "/packs/css/application-6acac792.css.map"
+      ],
+      "js.map": [
+        "/packs/js/application-a27781102807b23b4f0b.js.map"
+      ]
+    },
+    "hello_coffee": {
+      "js": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map"
+      ]
+    },
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map"
+      ]
+    }
+  },
+  "hello_coffee.js": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js",
+  "hello_coffee.js.map": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map",
+  "hello_react.js": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js",
+  "hello_react.js.map": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map",
+  "media/webfonts/fa-solid-900.eot": "/packs/media/webfonts/fa-solid-900-ef3df984.eot",
+  "media/webfonts/fa-solid-900.svg": "/packs/media/webfonts/fa-solid-900-b557f56e.svg",
+  "media/webfonts/fa-solid-900.ttf": "/packs/media/webfonts/fa-solid-900-acf50f59.ttf",
+  "media/webfonts/fa-solid-900.woff": "/packs/media/webfonts/fa-solid-900-4bced7c4.woff",
+  "media/webfonts/fa-solid-900.woff2": "/packs/media/webfonts/fa-solid-900-b5cf8ae2.woff2"
+}
+):
+     9: 					- if p.image.attached?
+    10:  						 = image_tag("#{p.image}", alt: "Art Image", class: "card-img img-fluid")	
+    11: 					- else
+    12:  						 = image_pack_tag 'default.jpg'
+    13: 					.card-img-overlay
+    14: 						h6.card-title  
+    15: 							a.card-text.text-center href="#{p.link}" 
+  
+app/views/project/load_art.html.slim:12:in `block in _app_views_project_load_art_html_slim___616274453771174045_70368559849740'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim___616274453771174045_70368559849740'
+Started GET "/art" for ::1 at 2019-06-08 18:07:15 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (10.6ms)
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+  Rendered project/load_art.html.slim within layouts/application (568.2ms)
+Completed 500 Internal Server Error in 657ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `imagePath' for #<#<Class:0x00007fffea0e7918>:0x00007fffea10dc80>
+Did you mean?  image_path
+               image_alt):
+     9: 					- if p.image.attached?
+    10:  						 = image_tag("#{p.image}", alt: "Art Image", class: "card-img img-fluid")	
+    11: 					- else
+    12:  						 = image_tag(imagePath('default.jpg'), alt: "Art Image", class: "card-img img-fluid")	
+    13: 					.card-img-overlay
+    14: 						h6.card-title  
+    15: 							a.card-text.text-center href="#{p.link}" 
+  
+app/views/project/load_art.html.slim:12:in `block in _app_views_project_load_art_html_slim___616274453771174045_70368560182400'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim___616274453771174045_70368560182400'
+Started GET "/art" for ::1 at 2019-06-08 18:07:52 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (13.1ms)
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered project/load_art.html.slim within layouts/application (24183.2ms)
+Completed 500 Internal Server Error in 24302ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find default.jpg in /mnt/c/Sites/chexcreations/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.css": "/packs/css/application-6acac792.css",
+  "application.css.map": "/packs/css/application-6acac792.css.map",
+  "application.js": "/packs/js/application-a27781102807b23b4f0b.js",
+  "application.js.map": "/packs/js/application-a27781102807b23b4f0b.js.map",
+  "entrypoints": {
+    "application": {
+      "css": [
+        "/packs/css/application-6acac792.css"
+      ],
+      "js": [
+        "/packs/js/application-a27781102807b23b4f0b.js"
+      ],
+      "css.map": [
+        "/packs/css/application-6acac792.css.map"
+      ],
+      "js.map": [
+        "/packs/js/application-a27781102807b23b4f0b.js.map"
+      ]
+    },
+    "hello_coffee": {
+      "js": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map"
+      ]
+    },
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map"
+      ]
+    }
+  },
+  "hello_coffee.js": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js",
+  "hello_coffee.js.map": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map",
+  "hello_react.js": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js",
+  "hello_react.js.map": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map",
+  "media/webfonts/fa-solid-900.eot": "/packs/media/webfonts/fa-solid-900-ef3df984.eot",
+  "media/webfonts/fa-solid-900.svg": "/packs/media/webfonts/fa-solid-900-b557f56e.svg",
+  "media/webfonts/fa-solid-900.ttf": "/packs/media/webfonts/fa-solid-900-acf50f59.ttf",
+  "media/webfonts/fa-solid-900.woff": "/packs/media/webfonts/fa-solid-900-4bced7c4.woff",
+  "media/webfonts/fa-solid-900.woff2": "/packs/media/webfonts/fa-solid-900-b5cf8ae2.woff2"
+}
+):
+     9: 					- if p.image.attached?
+    10:  						 = image_tag("#{p.image}", alt: "Art Image", class: "card-img img-fluid")	
+    11: 					- else
+    12:  						 = image_pack_tag("default.jpg", alt: "Art Image", class: "card-img img-fluid")	
+    13: 					.card-img-overlay
+    14: 						h6.card-title  
+    15: 							a.card-text.text-center href="#{p.link}" 
+  
+app/views/project/load_art.html.slim:12:in `block in _app_views_project_load_art_html_slim___616274453771174045_70368560237800'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim___616274453771174045_70368560237800'
+Started GET "/art" for ::1 at 2019-06-08 18:09:06 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (9.7ms)
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+  Rendered project/load_art.html.slim within layouts/application (19819.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (16.8ms)
+Completed 200 OK in 41831ms (Views: 41804.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/art" for ::1 at 2019-06-08 18:15:48 +0100
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (13.9ms)
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+  Rendered project/load_art.html.slim within layouts/application (904.2ms)
+Completed 500 Internal Server Error in 1079ms (ActiveRecord: 59.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `asset_pack_tag' for #<#<Class:0x00007fffdd45ae68>:0x00007fffdd4735a8>
+Did you mean?  asset_pack_path
+               asset_pack_url):
+     9: 					- if p.image.attached?
+    10:  						 = image_tag("#{p.image}", alt: "Art Image", class: "card-img img-fluid")	
+    11: 					- else
+    12:  						 = image_tag(asset_pack_tag('images/default.jpg'), alt: "Art Image", class: "card-img img-fluid")	
+    13: 					.card-img-overlay
+    14: 						h6.card-title  
+    15: 							a.card-text.text-center href="#{p.link}" 
+  
+app/views/project/load_art.html.slim:12:in `block in _app_views_project_load_art_html_slim___1865854295374324144_70368452763880'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim___1865854295374324144_70368452763880'
+Started GET "/art" for ::1 at 2019-06-08 18:16:23 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (10.6ms)
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered project/load_art.html.slim within layouts/application (22842.9ms)
+Completed 500 Internal Server Error in 22946ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find images/default.jpg in /mnt/c/Sites/chexcreations/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.css": "/packs/css/application-6acac792.css",
+  "application.css.map": "/packs/css/application-6acac792.css.map",
+  "application.js": "/packs/js/application-a27781102807b23b4f0b.js",
+  "application.js.map": "/packs/js/application-a27781102807b23b4f0b.js.map",
+  "entrypoints": {
+    "application": {
+      "css": [
+        "/packs/css/application-6acac792.css"
+      ],
+      "js": [
+        "/packs/js/application-a27781102807b23b4f0b.js"
+      ],
+      "css.map": [
+        "/packs/css/application-6acac792.css.map"
+      ],
+      "js.map": [
+        "/packs/js/application-a27781102807b23b4f0b.js.map"
+      ]
+    },
+    "hello_coffee": {
+      "js": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map"
+      ]
+    },
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map"
+      ]
+    }
+  },
+  "hello_coffee.js": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js",
+  "hello_coffee.js.map": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map",
+  "hello_react.js": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js",
+  "hello_react.js.map": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map",
+  "media/webfonts/fa-solid-900.eot": "/packs/media/webfonts/fa-solid-900-ef3df984.eot",
+  "media/webfonts/fa-solid-900.svg": "/packs/media/webfonts/fa-solid-900-b557f56e.svg",
+  "media/webfonts/fa-solid-900.ttf": "/packs/media/webfonts/fa-solid-900-acf50f59.ttf",
+  "media/webfonts/fa-solid-900.woff": "/packs/media/webfonts/fa-solid-900-4bced7c4.woff",
+  "media/webfonts/fa-solid-900.woff2": "/packs/media/webfonts/fa-solid-900-b5cf8ae2.woff2"
+}
+):
+     9: 					- if p.image.attached?
+    10:  						 = image_tag("#{p.image}", alt: "Art Image", class: "card-img img-fluid")	
+    11: 					- else
+    12:  						 = image_tag(asset_pack_path('images/default.jpg'), alt: "Art Image", class: "card-img img-fluid")	
+    13: 					.card-img-overlay
+    14: 						h6.card-title  
+    15: 							a.card-text.text-center href="#{p.link}" 
+  
+app/views/project/load_art.html.slim:12:in `block in _app_views_project_load_art_html_slim___1865854295374324144_70368454787480'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim___1865854295374324144_70368454787480'
+Started GET "/art" for ::1 at 2019-06-08 18:17:14 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (9.5ms)
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered project/load_art.html.slim within layouts/application (26093.9ms)
+Completed 500 Internal Server Error in 26175ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find images/default.jpg in /mnt/c/Sites/chexcreations/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.css": "/packs/css/application-6acac792.css",
+  "application.css.map": "/packs/css/application-6acac792.css.map",
+  "application.js": "/packs/js/application-a27781102807b23b4f0b.js",
+  "application.js.map": "/packs/js/application-a27781102807b23b4f0b.js.map",
+  "entrypoints": {
+    "application": {
+      "css": [
+        "/packs/css/application-6acac792.css"
+      ],
+      "js": [
+        "/packs/js/application-a27781102807b23b4f0b.js"
+      ],
+      "css.map": [
+        "/packs/css/application-6acac792.css.map"
+      ],
+      "js.map": [
+        "/packs/js/application-a27781102807b23b4f0b.js.map"
+      ]
+    },
+    "hello_coffee": {
+      "js": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map"
+      ]
+    },
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map"
+      ]
+    }
+  },
+  "hello_coffee.js": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js",
+  "hello_coffee.js.map": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map",
+  "hello_react.js": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js",
+  "hello_react.js.map": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map",
+  "media/webfonts/fa-solid-900.eot": "/packs/media/webfonts/fa-solid-900-ef3df984.eot",
+  "media/webfonts/fa-solid-900.svg": "/packs/media/webfonts/fa-solid-900-b557f56e.svg",
+  "media/webfonts/fa-solid-900.ttf": "/packs/media/webfonts/fa-solid-900-acf50f59.ttf",
+  "media/webfonts/fa-solid-900.woff": "/packs/media/webfonts/fa-solid-900-4bced7c4.woff",
+  "media/webfonts/fa-solid-900.woff2": "/packs/media/webfonts/fa-solid-900-b5cf8ae2.woff2"
+}
+):
+     9: 					- if p.image.attached?
+    10:  						 = image_tag("#{p.image}", alt: "Art Image", class: "card-img img-fluid")	
+    11: 					- else
+    12:  						 = image_tag(asset_pack_path('images/default.jpg'), alt: "Art Image", class: "card-img img-fluid")	
+    13: 					.card-img-overlay
+    14: 						h6.card-title  
+    15: 							a.card-text.text-center href="#{p.link}" 
+  
+app/views/project/load_art.html.slim:12:in `block in _app_views_project_load_art_html_slim___1865854295374324144_70368450516640'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim___1865854295374324144_70368450516640'
+Started GET "/" for ::1 at 2019-06-08 18:20:36 +0100
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (4.8ms)
+  Rendered home/index.html.slim within layouts/application (45.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (11.9ms)
+Completed 200 OK in 22858ms (Views: 22842.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-08 18:23:39 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (27.3ms)
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+  Rendered project/load_art.html.slim within layouts/application (315.3ms)
+Completed 500 Internal Server Error in 497ms (ActiveRecord: 103.3ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find images/default.jpg in /mnt/c/Sites/chexcreations/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.css": "/packs/css/application-d8209c6a.css",
+  "application.css.map": "/packs/css/application-d8209c6a.css.map",
+  "application.js": "/packs/js/application-a27781102807b23b4f0b.js",
+  "application.js.map": "/packs/js/application-a27781102807b23b4f0b.js.map",
+  "entrypoints": {
+    "application": {
+      "css": [
+        "/packs/css/application-d8209c6a.css"
+      ],
+      "js": [
+        "/packs/js/application-a27781102807b23b4f0b.js"
+      ],
+      "css.map": [
+        "/packs/css/application-d8209c6a.css.map"
+      ],
+      "js.map": [
+        "/packs/js/application-a27781102807b23b4f0b.js.map"
+      ]
+    },
+    "hello_coffee": {
+      "js": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map"
+      ]
+    },
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map"
+      ]
+    }
+  },
+  "hello_coffee.js": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js",
+  "hello_coffee.js.map": "/packs/js/hello_coffee-aa2ed85ba315c4244742.js.map",
+  "hello_react.js": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js",
+  "hello_react.js.map": "/packs/js/hello_react-3f2c3789a546c7b26e5f.js.map",
+  "media/webfonts/fa-solid-900.eot": "/packs/media/webfonts/fa-solid-900-ef3df984.eot",
+  "media/webfonts/fa-solid-900.svg": "/packs/media/webfonts/fa-solid-900-b557f56e.svg",
+  "media/webfonts/fa-solid-900.ttf": "/packs/media/webfonts/fa-solid-900-acf50f59.ttf",
+  "media/webfonts/fa-solid-900.woff": "/packs/media/webfonts/fa-solid-900-4bced7c4.woff",
+  "media/webfonts/fa-solid-900.woff2": "/packs/media/webfonts/fa-solid-900-b5cf8ae2.woff2"
+}
+):
+     9: 					- if p.image.attached?
+    10:  						 = image_tag("#{p.image}", alt: "Art Image", class: "card-img img-fluid")	
+    11: 					- else
+    12:  						 = image_tag(asset_pack_path('images/default.jpg'), alt: "Art Image", class: "card-img img-fluid")	
+    13: 					.card-img-overlay
+    14: 						h6.card-title  
+    15: 							a.card-text.text-center href="#{p.link}" 
+  
+app/views/project/load_art.html.slim:12:in `block in _app_views_project_load_art_html_slim___2392299648068039766_70368598574120'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim___2392299648068039766_70368598574120'
+Started GET "/art" for ::1 at 2019-06-08 18:25:31 +0100
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (9.4ms)
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:9
+Started GET "/" for ::1 at 2019-06-08 18:25:35 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered project/load_art.html.slim within layouts/application (17882.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (10.5ms)
+Completed 200 OK in 40047ms (Views: 39931.8ms | ActiveRecord: 79.8ms)
+
+
+Processing by HomeController#index as HTML
+Started GET "/" for ::1 at 2019-06-08 18:26:12 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (6.6ms)
+  Rendered home/index.html.slim within layouts/application (47.7ms)
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (0.2ms)
+  Rendered home/index.html.slim within layouts/application (11.6ms)
+  Rendered layouts/_footer.html.slim (5.9ms)
+Completed 200 OK in 233ms (Views: 217.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 191ms (Views: 183.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for ::1 at 2019-06-08 18:26:51 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered contacts/new.html.slim within layouts/application (109.9ms)
+  Rendered layouts/_footer.html.slim (13.3ms)
+Completed 200 OK in 359ms (Views: 314.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-08 18:30:52 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (10.7ms)
+  Rendered home/index.html.slim within layouts/application (35.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+  Rendered layouts/_footer.html.slim (7.0ms)
+Completed 200 OK in 18161ms (Views: 18133.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-10 18:47:38 +0100
+  
+Mysql2::Error (Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")):
+  
+mysql2 (0.4.10) lib/mysql2/client.rb:89:in `connect'
+mysql2 (0.4.10) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'

@@ -1,12 +1,13 @@
-.row
-	.col-12
-		ul.nav.justify-content-center
-			li.nav-item.font-weight-bold
-					= link_to "Home", "/",  class: "nav-link"
-			li.nav-item.font-weight-bold
-					= link_to "Contact", "/contacts/new",  class: "nav-link"
-		    li.nav-item.font-weight-bold
-				= link_to "Software", "/software",  class: "nav-link"
-		    li.nav-item.font-weight-bold
-				= link_to "Art", "/art",  class: "nav-link"
+.uk-width-1-6
+	ul.uk-nav-primary.uk-nav
+		li.uk-nav-header
+			= link_to "CHEX", "/",  class: "uk-link-heading"
+		li
+			= link_to "Contact", "/contacts/new",  class: "uk-link-heading"
+		li
+			= link_to "Software", "/software",  class: "uk-link-heading"
+		li
+			= link_to "Art", "/art",  class: "uk-link-heading"
+		li
+			= link_to "Patreon", "#",  class: "uk-link-heading"
 				

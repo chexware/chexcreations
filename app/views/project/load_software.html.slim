@@ -1,17 +1,17 @@
-h1.display-3.text-center Software
-= render 'layouts/navigation'
-- unless @projects.blank?
-    .row
-		- @projects.each do |p|
-			.col-4
-				.card.text-center.project
-					- if p.image.attached?
- 						 = image_tag("/#{p.image}.jpg", alt: "Software Image", class: "card-img img-fluid")	
-					- else
- 						 = image_tag("default.jpg", alt: "Software Image", class: "card-img img-fluid")
-					.card-img-overlay
-						h6.card-title.text-center
-							a.card-text href="#{p.link}" 
-								| #{p.title} 			
-- else
-	p There aren't any projects
+.uk-grid.uk-grid-collapse.uk-child-width-expand
+	= render 'layouts/navigation'
+	- unless @projects.blank?
+		.uk-grid.uk-grid-collapse
+			- @projects.each do |p|
+				.uk-width-1-3
+					.card.text-center.project
+						- if p.image.attached?
+							= image_tag("/#{p.image}.jpg", alt: "Software Image", class: "card-img img-fluid")	
+						- else
+							= image_tag("default.jpg", alt: "Software Image", class: "card-img img-fluid")
+						.card-img-overlay
+							h6.card-title.text-center
+								a.card-text href="#{p.link}" 
+									| #{p.title} 			
+	- else
+		p There aren't any projects

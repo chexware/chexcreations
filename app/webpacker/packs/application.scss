@@ -1,6 +1,10 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 //@import '../src/stylesheets/shared/variables';
+@import '~uikit/dist/css/uikit';
 @import '~bootstrap/scss/bootstrap';
+@import "uikit/src/scss/variables-theme";
+@import "uikit/src/scss/mixins-theme";
+
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/solid';
@@ -12,12 +16,21 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '../src/stylesheets/home';
 @import '../src/stylesheets/project';
 
-
-.nav, .footer, body{
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color:black;
+}
+.uk-container-expand {
+	height: 100%;	
+	padding: 0;
+}
+.nav, .footer {
 	background-color: black;
 }
 
-.footer-text, .footer-link, body, .nav-link, .nav-link:hover, .thought-link {
+.footer-text, .footer-link, .nav-link, .nav-link:hover {
 	color: #ecf0f1;
 }
 
@@ -28,8 +41,6 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
    padding-top: 20%;
    padding-bottom: 25%;
 }
-
-
 .project > .card-img-overlay {
 	padding-top: 30%;
 }
@@ -45,9 +56,6 @@ img {
 }
 .btn-link:hover {
 	text-decoration: none;
-}
-.badge-default, h1.display-3 {
-	background-color: #58cb60;
 }
 
 .footer-link, .small:hover {
@@ -73,7 +81,7 @@ img {
 .danger:hover{
 	color: #c0392b;
 }
-.thought, .bg-inverse.text-danger, .bg-inverse.text-success, .custom-control-description {
+.bg-inverse.text-danger, .bg-inverse.text-success, .custom-control-description {
 	border: none;
 	font-size: 150%;
 }
@@ -86,17 +94,9 @@ img {
 
 .nav-link{
 	background-color: black;
-	margin-left: 0.2em;
-	font-size: 150%;
 }
 
 
-h1.display-3 {
-	box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
-	display: block;
-	opacity: 0.8;
-	filter: alpha(opacity=80); /* For IE8 and earlier */
-}
 
 .tcontent {
 	height: 16em;

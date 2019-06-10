@@ -1,9 +1,9 @@
-- unless @logout.blank?
-	.bg-inverse.text-success.text-center role="alert"
-		| Logged out successfully
-- unless @login.blank?
-	.bg-inverse.text-success.text-center role="alert"
-		| Welcome to admin mode. You can modify the content of the webpage now
-h1.display-3.text-center CHEX
-= render 'layouts/navigation'
-	
+.uk-grid.uk-grid-collapse.uk-child-width-expand.uk-text-center
+    .uk-width-1-3.uk-height-large.uk-position-center-left
+        = link_to "Software", "/software",  class: "uk-heading-xlarge nav-link"
+    .uk-width-1-3.uk-height-large.uk-position-bottom-center
+        .uk-heading-xlarge CHEX
+    .uk-width-1-3.uk-height-large.uk-position-center-right
+        = link_to "Art", "/art",  class: "uk-heading-xlarge nav-link"
+    .uk-width-1-3.uk-position-bottom-center
+        = link_to "Contact", "/contacts/new",  class: "nav-link uk-heading-xlarge"
