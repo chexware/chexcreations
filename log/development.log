@@ -24273,3 +24273,99 @@ Processing by ProjectController#load_art as HTML
 Completed 200 OK in 19665ms (Views: 19647.0ms | ActiveRecord: 3.4ms)
 
 
+Started GET "/" for ::1 at 2019-06-10 23:45:39 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (21.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /mnt/c/Sites/chexcreations/public/packs
+[Webpacker] warning package.json: No license field
+
+Completed 200 OK in 17257ms (Views: 17251.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/software" for ::1 at 2019-06-10 23:46:01 +0100
+Processing by ProjectController#load_software as HTML
+  Rendering project/load_software.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (18.3ms)
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Software'[0m
+  ↳ app/views/project/load_software.html.slim:3
+  Rendered project/load_software.html.slim within layouts/application (93.6ms)
+Completed 200 OK in 457ms (Views: 304.0ms | ActiveRecord: 45.6ms)
+
+
+Started GET "/art" for ::1 at 2019-06-10 23:46:05 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_navigation.html.slim (13.2ms)
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (17992.8ms)
+Completed 200 OK in 18125ms (Views: 18061.5ms | ActiveRecord: 44.5ms)
+
+
+Started GET "/contacts/new" for ::1 at 2019-06-10 23:46:27 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered contacts/new.html.slim within layouts/application (554.9ms)
+Completed 200 OK in 807ms (Views: 678.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-10 23:46:33 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (7.8ms)
+Completed 200 OK in 190ms (Views: 164.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-06-10 23:46:36 +0100
+Processing by Trestle::DashboardController#index as HTML
+  [1m[36mAdministrator Load (0.4ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/projects
+Completed 302 Found in 195ms (ActiveRecord: 32.1ms)
+
+
+Started GET "/admin/projects" for ::1 at 2019-06-10 23:46:37 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (0.4ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (66.4ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (0.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (0.9ms)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` LIMIT 25 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (160.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (16.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (498.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (591.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (22.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (19.1ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (36.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 1529ms (Views: 1452.0ms | ActiveRecord: 2.7ms)
+
+
