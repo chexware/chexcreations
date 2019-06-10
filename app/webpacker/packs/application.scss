@@ -1,12 +1,7 @@
 
 @import '~uikit/dist/css/uikit';
-@import '~bootstrap/scss/bootstrap';
 @import "uikit/src/scss/variables-theme";
 @import "uikit/src/scss/mixins-theme";
-
-$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/solid';
 @import '../src/stylesheets/trestle/_custom';
 @import '../src/stylesheets/trestle/_variables';
 @import '../src/stylesheets/scaffolds';
@@ -28,39 +23,16 @@ html, body {
 .hidden {
 	display: none;
 }
-.nav, .footer {
-	background-color: black;
-}
 
-.footer-text, .footer-link, .nav-link, .nav-link:hover {
+
+.nav-link, .nav-link:hover {
 	color: #ecf0f1;
-}
-
-.title-block > .card-img-overlay{
-   color: white;
-   font-weight: none;
-   max-width: 100%;
-   padding-top: 20%;
-   padding-bottom: 25%;
-}
-.project > .card-img-overlay {
-	padding-top: 30%;
 }
 
 img {
   height: auto;
   width: 100%;
   max-width: 100%;
-}
-
-
-.project, .badge{
-	border-radius: 0em;
-}
-
-.card, .card-img {
-	border: none;
-	border-radius: 0px;
 }
 
 .nav-link:hover{

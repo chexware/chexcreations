@@ -20,8 +20,6 @@ require("@rails/activestorage").start()
 require("src/javascript/channels")
 require("src/javascript/trestle/custom")
 
-
-import 'bootstrap/dist/js/bootstrap';
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
 // loads the Icon plugin
