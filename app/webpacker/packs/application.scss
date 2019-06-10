@@ -1,5 +1,4 @@
-// Custom bootstrap variables must be set or imported *before* bootstrap.
-//@import '../src/stylesheets/shared/variables';
+
 @import '~uikit/dist/css/uikit';
 @import '~bootstrap/scss/bootstrap';
 @import "uikit/src/scss/variables-theme";
@@ -26,6 +25,9 @@ html, body {
 	height: 100%;	
 	padding: 0;
 }
+.hidden {
+	display: none;
+}
 .nav, .footer {
 	background-color: black;
 }
@@ -51,16 +53,6 @@ img {
   max-width: 100%;
 }
 
-.btn-link{
-	font-size: 200%;
-}
-.btn-link:hover {
-	text-decoration: none;
-}
-
-.footer-link, .small:hover {
-	font-size: 125%;
-}
 
 .project, .badge{
 	border-radius: 0em;
@@ -71,23 +63,6 @@ img {
 	border-radius: 0px;
 }
 
-.small {
-	font-size: 100%;
-}
-
-.danger {
-	color: #e74c3c;
-}
-.danger:hover{
-	color: #c0392b;
-}
-.bg-inverse.text-danger, .bg-inverse.text-success, .custom-control-description {
-	border: none;
-	font-size: 150%;
-}
-.footer-link:hover {
-	text-decoration: none;
-}
 .nav-link:hover{
 	background-color: #27ae60;
 }
@@ -97,14 +72,3 @@ img {
 }
 
 
-
-.tcontent {
-	height: 16em;
-}
-
-.img-thumbnail {
-	border: none;
-}
-.hidden {
-	display: none;
-}

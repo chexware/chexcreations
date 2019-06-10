@@ -1,13 +1,20 @@
-h1.display-3.text-center Contact
+.uk-text-center
+  .uk-heading-large Contact
 = form_for @contact do |f|
-  .col-md-6
-    = f.label :name
-    = f.text_field  :name, required: true
-    = f.label :email
-    = f.text_field :email, required: true
-    = f.label :message
-    = f.text_area :message, rows: 8, cols: 40, required: true, placeholder: "Send me a message"                                                          
+  .uk-form-stacked.uk-margin-large.uk-position-center
+    .uk-margin
+      = f.label :name, class: "uk-form-label"
+      .uk-form-controls
+        = f.text_field  :name, required: true, class: "uk-input uk-form-width-large"
+    .uk-margin
+      = f.label :email, class: "uk-form-label"
+      .uk-form-controls
+        = f.text_field :email, required: true, class: "uk-input uk-form-width-large"
+    .uk-margin
+      = f.label :message, class: "uk-form-label"
+      .uk-form-controls
+        = f.text_area :message, rows: 8, cols: 40, required: true, placeholder: "Send me a message", class: "uk-textarea uk-form-width-large"                                                        
     .hidden
       = f.label :nickname
       = f.text_field :nickname, :hint => 'Leave this field blank!'
-    = f.submit 'Send Message', class: 'btn btn-primary'
+    = f.submit 'Send Message', class: 'uk-button uk-button-primary uk-width-1-1 uk-button-large'
