@@ -19,15 +19,3 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("src/javascript/channels")
 require("src/javascript/trestle/custom")
-require("uikit")
-
-import UIkit from 'uikit';
-import Icons from 'uikit/uikit-icons';
-// loads the Icon plugin
-UIkit.use(Icons);
-
-// components can be called from the imported UIkit reference
-UIkit.notification('Hello world.');
-UIkit.util.ready(function() {
-    UIkit.offcanvas('#offcanvas-nav-primary').show();
-});
