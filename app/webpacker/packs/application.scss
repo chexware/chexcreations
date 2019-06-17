@@ -1,7 +1,5 @@
 
 @import '~uikit/dist/css/uikit';
-@import "uikit/src/scss/variables-theme";
-@import "uikit/src/scss/mixins-theme";
 @import '../src/stylesheets/trestle/_custom';
 @import '../src/stylesheets/trestle/_variables';
 @import '../src/stylesheets/scaffolds';
@@ -14,16 +12,14 @@ html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background-color:black;
+	background-color: rgb(24,25,24); 
+	color: rgb(98, 102, 98);
 }
 .uk-container-expand {
 	height: 100%;	
 	padding: 0;
 }
 
-.nav-link, .nav-link:hover {
-	color: #ecf0f1;
-}
 
 img {
   height: auto;
@@ -31,12 +27,14 @@ img {
   max-width: 100%;
 }
 
-.nav-link:hover{
-	background-color: #27ae60;
+.uk-heading-xlarge, .uk-link-heading {
+	color: rgb(98, 102, 98);
+	background-color: rgb(24,25,24);
 }
 
-.nav-link{
-	background-color: black;
+.uk-heading-xlarge:hover ,.uk-link-heading:hover {
+	color:rgb(159, 166, 159);
+	background-color: rgb(24,25,24);
 }
 
 

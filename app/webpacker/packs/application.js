@@ -12,18 +12,22 @@
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
 //
-const images = require.context('../images', true)
+// /const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("src/javascript/channels")
 require("src/javascript/trestle/custom")
+require("uikit")
 
 import UIkit from 'uikit';
-import Icons from 'uikit/dist/js/uikit-icons';
+import Icons from 'uikit/uikit-icons';
 // loads the Icon plugin
 UIkit.use(Icons);
 
 // components can be called from the imported UIkit reference
 UIkit.notification('Hello world.');
+UIkit.util.ready(function() {
+    UIkit.offcanvas('#offcanvas-nav-primary').show();
+});
