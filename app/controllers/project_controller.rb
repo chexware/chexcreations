@@ -1,9 +1,11 @@
 class ProjectController < ApplicationController
   def load_art
+	@contact = Contact.new
 	@projects = Project.where(kind: "Art")
   end
   
   def load_software
+	@contact = Contact.new
     @projects = Project.where(kind: "Software")
   end
   

@@ -34,9 +34,20 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_caching = true
   config.action_mailer.perform_deliveries = true
+  config.action_mailer.default :charset => "utf-8"
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = { :address => 'localhost', :port => 1025 }
-  config.action_mailer.default_url_options = {host: 'localhost:3000'}
+  #SECURE THIS
+  ActionMailer::Base.smtp_settings = {
+    :user_name => 'apikey',
+    :password => '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',
+    :domain => 'localhost:3000',
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
+
+  config.action_mailer.default_url_options = {:host => 'localhost:3000'}
 
   # Print deprecation notices to the Rails logger. 
   config.active_support.deprecation = :log

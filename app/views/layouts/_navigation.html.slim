@@ -6,7 +6,8 @@
 				li.uk-nav-header
 					= link_to "CHEX", "/",  class: "uk-link-heading"
 				li
-					= link_to "Contact", "/contacts/new",  class: "uk-link-heading"
+					<a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Contact</a>
+    				= render 'layouts/contact'
 				li
 					= link_to "Software", "/software",  class: "uk-link-heading"
 				li
