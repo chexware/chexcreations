@@ -20,6 +20,8 @@ gem 'slim-rails'
 gem 'webpacker', '~> 4.x'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Enable image resizing
+gem 'image_processing', '~> 1.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # Use Vimeo API
 gem 'vimeo'

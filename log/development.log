@@ -29107,3 +29107,1157 @@ Content-Transfer-Encoding: 7bit
 Completed 200 OK in 1885ms (Views: 151.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-06-19 02:15:59 +0100
+  [1m[35m (6.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (573.2ms)
+  Rendered home/index.html.slim within layouts/application (613.6ms)
+Completed 200 OK in 1032ms (Views: 949.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:18:15 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (39.3ms)
+  Rendered home/index.html.slim within layouts/application (84.6ms)
+Completed 200 OK in 191ms (Views: 184.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:21:42 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (16.7ms)
+  Rendered home/index.html.slim within layouts/application (51.9ms)
+Completed 200 OK in 154ms (Views: 144.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:23:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (8.3ms)
+  Rendered home/index.html.slim within layouts/application (37.9ms)
+Completed 200 OK in 118ms (Views: 108.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:23:19 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (6.3ms)
+  Rendered home/index.html.slim within layouts/application (14.2ms)
+Completed 200 OK in 83ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:24:49 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (12.0ms)
+  Rendered home/index.html.slim within layouts/application (33.1ms)
+Completed 200 OK in 118ms (Views: 111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:25:25 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (16.2ms)
+  Rendered home/index.html.slim within layouts/application (38.7ms)
+Completed 200 OK in 149ms (Views: 141.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:28:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (34.8ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Malformed indentation
+  /mnt/c/Sites/chexcreations/app/views/home/index.html.slim, Line 14, Column 13
+    // = link_to "Contact", "/contacts/new",  class: "uk-heading-xlarge uk-link-heading"
+    ^
+):
+    11:         .uk-modal-dialog.uk
+    12:             <button class="uk-modal-close-default" type="button" uk-close></button>
+    13:               = render 'layouts/contact'
+    14:              // = link_to "Contact", "/contacts/new",  class: "uk-heading-xlarge uk-link-heading"
+  
+app/views/home/index.html.slim:14
+Started GET "/" for ::1 at 2019-06-19 02:28:42 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (8.3ms)
+  Rendered home/index.html.slim within layouts/application (20.7ms)
+Completed 200 OK in 155ms (Views: 139.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:29:09 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (10.1ms)
+  Rendered home/index.html.slim within layouts/application (22.5ms)
+Completed 200 OK in 118ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:30:46 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (9.2ms)
+  Rendered home/index.html.slim within layouts/application (29.9ms)
+Completed 200 OK in 91ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:32:24 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (6.3ms)
+  Rendered home/index.html.slim within layouts/application (19.1ms)
+Completed 200 OK in 125ms (Views: 112.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:33:28 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (12.1ms)
+  Rendered home/index.html.slim within layouts/application (29.2ms)
+Completed 200 OK in 110ms (Views: 94.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:33:53 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (11.1ms)
+  Rendered home/index.html.slim within layouts/application (40.1ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:34:43 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (4.7ms)
+  Rendered home/index.html.slim within layouts/application (14.9ms)
+Completed 200 OK in 73ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2019-06-19 02:35:14 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aXiP0S74irHFSJKCBLYna2eIL++0BdpvjhUMEoy3kFIN9GE+GwzSfdRW3DhsExw+bYVyuc4k7ilq4nmmm4gxnQ==", "contact"=>{"name"=>"hlp", "email"=>"aleksandar@chexvisual.co.uk", "message"=>"babhda", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/mail_form-1.7.1/lib/mail_form/views/mail_form/contact.erb
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/mail_form-1.7.1/lib/mail_form/views/mail_form/contact.erb (1.4ms)
+MailForm::Notifier#contact: processed outbound mail in 556.1ms
+Sent mail to aleksandar@chexvisual.co.uk (2253.4ms)
+Date: Wed, 19 Jun 2019 02:35:15 +0100
+From: hlp <aleksandar@chexvisual.co.uk>
+To: aleksandar@chexvisual.co.uk
+Message-ID: <5d0991536df55_12a63ffff7235fb48153e@CHEXPS.mail>
+Subject: portfolio contact request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">portfolio contact request</h4>
+
+
+  <p><b>Name:</b>
+  hlp</p>
+
+  <p><b>Email:</b>
+  aleksandar@chexvisual.co.uk</p>
+
+  <p><b>Message:</b>
+  babhda</p>
+
+
+  Rendering contacts/create.html.slim within layouts/application
+  Rendered contacts/create.html.slim within layouts/application (2.2ms)
+Completed 200 OK in 3211ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2019-06-19 02:49:02 +0100
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aXiP0S74irHFSJKCBLYna2eIL++0BdpvjhUMEoy3kFIN9GE+GwzSfdRW3DhsExw+bYVyuc4k7ilq4nmmm4gxnQ==", "contact"=>{"name"=>"hlp", "email"=>"aleksandar@chexvisual.co.uk", "message"=>"babhda", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/mail_form-1.7.1/lib/mail_form/views/mail_form/contact.erb
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/mail_form-1.7.1/lib/mail_form/views/mail_form/contact.erb (1.1ms)
+MailForm::Notifier#contact: processed outbound mail in 187.5ms
+Sent mail to aleksandar@chexvisual.co.uk (1098.8ms)
+Date: Wed, 19 Jun 2019 02:49:02 +0100
+From: hlp <aleksandar@chexvisual.co.uk>
+To: aleksandar@chexvisual.co.uk
+Message-ID: <5d09948e94703_12a63ffff72321848161a@CHEXPS.mail>
+Subject: portfolio contact request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">portfolio contact request</h4>
+
+
+  <p><b>Name:</b>
+  hlp</p>
+
+  <p><b>Email:</b>
+  aleksandar@chexvisual.co.uk</p>
+
+  <p><b>Message:</b>
+  babhda</p>
+
+
+  Rendering contacts/create.html.slim within layouts/application
+  Rendered contacts/create.html.slim within layouts/application (15.7ms)
+Completed 200 OK in 1525ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:49:08 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (9.9ms)
+  Rendered home/index.html.slim within layouts/application (29.1ms)
+Completed 200 OK in 106ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 02:50:17 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (4.7ms)
+  Rendered home/index.html.slim within layouts/application (11.1ms)
+Completed 200 OK in 74ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 02:50:18 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (19.3ms)
+  Rendered layouts/_navigation.html.slim (30.7ms)
+  Rendered project/load_art.html.slim within layouts/application (46.4ms)
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 38.7ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    4:         .uk-modal-header.uk-text-center
+    5:           .uk-heading-large Contact
+    6:         .uk-modal-body
+    7:           = form_for @contact do |f|
+    8:               .uk-form-stacked.uk-margin-large
+    9:                 .uk-margin
+   10:                   = f.label :name, class: "uk-form-label"
+  
+app/views/layouts/_contact.html.slim:7:in `_app_views_layouts__contact_html_slim___2301747284110415260_70135576923220'
+app/views/layouts/_navigation.html.slim:10:in `_app_views_layouts__navigation_html_slim___445817968055313284_70368596760100'
+app/views/project/load_art.html.slim:2:in `_app_views_project_load_art_html_slim___3154332193078251178_70368595710900'
+Started GET "/art" for ::1 at 2019-06-19 02:51:09 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (6.9ms)
+  Rendered layouts/_navigation.html.slim (18.8ms)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (18129.1ms)
+Completed 200 OK in 18272ms (Views: 18181.4ms | ActiveRecord: 65.9ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0/aa.png" for ::1 at 2019-06-19 02:51:28 +0100
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0", "filename"=>"aa"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (3.0ms) [0m[34mGenerated URL for file at key: 1ThQYzwXMu3hUY5PdUgCT9TK (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMTo1NjoyOC4yNzZaIiwicHVyIjoiYmxvYl9rZXkifX0=--3fd0e77a23f7b457bd4ad7d05d40df55109710cb/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMTo1NjoyOC4yNzZaIiwicHVyIjoiYmxvYl9rZXkifX0=--3fd0e77a23f7b457bd4ad7d05d40df55109710cb/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png
+Completed 302 Found in 122ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMTo1NjoyOC4yNzZaIiwicHVyIjoiYmxvYl9rZXkifX0=--3fd0e77a23f7b457bd4ad7d05d40df55109710cb/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-06-19 02:51:28 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMTo1NjoyOC4yNzZaIiwicHVyIjoiYmxvYl9rZXkifX0=--3fd0e77a23f7b457bd4ad7d05d40df55109710cb", "filename"=>"aa"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2019-06-19 02:52:10 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6IjOgLOg0nPR1V8GZDjBJDFWIVMIggxlzrtqbBLPVzXLs3VNzrbhd5ZG8ZxNdhRmsgF0zYDPHdzzZgdp3Sckw==", "contact"=>{"name"=>"test", "email"=>"aleksandar.brayanov@gmail.com", "message"=>"test", "nickname"=>""}, "commit"=>"Send Message"}
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/mail_form-1.7.1/lib/mail_form/views/mail_form/contact.erb
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/mail_form-1.7.1/lib/mail_form/views/mail_form/contact.erb (1.8ms)
+MailForm::Notifier#contact: processed outbound mail in 214.7ms
+Sent mail to aleksandar@chexvisual.co.uk (775.1ms)
+Date: Wed, 19 Jun 2019 02:52:10 +0100
+From: test <aleksandar.brayanov@gmail.com>
+To: aleksandar@chexvisual.co.uk
+Message-ID: <5d09954a6efc0_12a63ffff7235e888176@CHEXPS.mail>
+Subject: portfolio contact request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">portfolio contact request</h4>
+
+
+  <p><b>Name:</b>
+  test</p>
+
+  <p><b>Email:</b>
+  aleksandar.brayanov@gmail.com</p>
+
+  <p><b>Message:</b>
+  test</p>
+
+
+  Rendering contacts/create.html.slim within layouts/application
+  Rendered contacts/create.html.slim within layouts/application (3.6ms)
+Completed 200 OK in 1235ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 03:33:24 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (10.8ms)
+  Rendered layouts/_navigation.html.slim (31.1ms)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (186.3ms)
+Completed 200 OK in 439ms (Views: 415.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 03:33:26 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (6.6ms)
+  Rendered layouts/_navigation.html.slim (16.6ms)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (206.2ms)
+Completed 200 OK in 300ms (Views: 284.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0/aa.png" for ::1 at 2019-06-19 03:33:26 +0100
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0", "filename"=>"aa"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: 1ThQYzwXMu3hUY5PdUgCT9TK (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjozODoyNi45OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--9ab28609934fb1d828b4d13f95816813d6f39c5b/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjozODoyNi45OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--9ab28609934fb1d828b4d13f95816813d6f39c5b/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png
+Completed 302 Found in 94ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjozODoyNi45OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--9ab28609934fb1d828b4d13f95816813d6f39c5b/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-06-19 03:33:27 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjozODoyNi45OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--9ab28609934fb1d828b4d13f95816813d6f39c5b", "filename"=>"aa"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 03:37:40 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (6.1ms)
+  Rendered layouts/_navigation.html.slim (16.0ms)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (157.6ms)
+Completed 200 OK in 233ms (Views: 222.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjozODoyNi45OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--9ab28609934fb1d828b4d13f95816813d6f39c5b/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-06-19 03:37:41 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjozODoyNi45OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--9ab28609934fb1d828b4d13f95816813d6f39c5b", "filename"=>"aa"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 03:37:43 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (6.2ms)
+  Rendered layouts/_navigation.html.slim (14.4ms)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (160.4ms)
+Completed 200 OK in 219ms (Views: 210.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjozODoyNi45OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--9ab28609934fb1d828b4d13f95816813d6f39c5b/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-06-19 03:37:43 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjozODoyNi45OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--9ab28609934fb1d828b4d13f95816813d6f39c5b", "filename"=>"aa"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 03:46:20 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (6.3ms)
+  Rendered layouts/_navigation.html.slim (14.9ms)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (129.9ms)
+Completed 200 OK in 228ms (Views: 210.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0/aa.png" for ::1 at 2019-06-19 03:46:20 +0100
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0", "filename"=>"aa"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: 1ThQYzwXMu3hUY5PdUgCT9TK (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png
+Completed 302 Found in 59ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-06-19 03:46:21 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902", "filename"=>"aa"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 03:46:22 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (4.9ms)
+  Rendered layouts/_navigation.html.slim (13.3ms)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (170.7ms)
+Completed 200 OK in 246ms (Views: 233.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-06-19 03:46:22 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902", "filename"=>"aa"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 03:46:55 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (6.3ms)
+  Rendered layouts/_navigation.html.slim (20.6ms)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (177.7ms)
+Completed 200 OK in 255ms (Views: 238.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-06-19 03:46:56 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902", "filename"=>"aa"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 03:48:32 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (11.3ms)
+  Rendered layouts/_navigation.html.slim (37.4ms)
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (243.5ms)
+Completed 200 OK in 349ms (Views: 325.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-06-19 03:48:33 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902", "filename"=>"aa"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 03:50:22 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (10.8ms)
+  Rendered layouts/_navigation.html.slim (24.4ms)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (155.5ms)
+Completed 200 OK in 226ms (Views: 214.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-06-19 03:50:22 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTNhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZV0V1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZGhZUzV3Ym1jR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnNXBiV0ZuWlM5d2JtY0dPd1pVIiwiZXhwIjoiMjAxOS0wNi0xOVQwMjo1MToyMC45ODRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e1d01aaff9287744950d639cf9e31fa6002f6902", "filename"=>"aa"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 04:18:31 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (530.9ms)
+  Rendered home/index.html.slim within layouts/application (605.3ms)
+Completed 200 OK in 834ms (Views: 760.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 04:18:34 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (13.6ms)
+  Rendered layouts/_navigation.html.slim (32.0ms)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (298.1ms)
+Completed 500 Internal Server Error in 424ms (ActiveRecord: 48.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `variant' for "default.jpg":String):
+     8: 						- if p.image.attached?
+     9: 							= image_tag(url_for(p.image).variant(resize: '200x200'), alt: "Art Image",)	
+    10: 						- else
+    11: 							= image_tag("default.jpg".variant(resize: '200x200'), alt: "Art Image")	
+    12: 						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
+    13: 								a.uk-h4.uk-margin-remove.uk-link-heading href="#{p.link}" 
+    14: 									| #{p.title} 
+  
+app/views/project/load_art.html.slim:11:in `block in _app_views_project_load_art_html_slim__1857422262121340095_70152653844340'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim__1857422262121340095_70152653844340'
+Started GET "/art" for ::1 at 2019-06-19 04:19:09 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (8.7ms)
+  Rendered layouts/_navigation.html.slim (21.5ms)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (79.7ms)
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `variant' for "default.jpg":String):
+     8: 						- if p.image.attached?
+     9: 							= image_tag(url_for(p.image).variant(resize: '200x200'), alt: "Art Image",)	
+    10: 						- else
+    11: 							= image_tag(url_for("default.jpg").variant(resize: '200x200'), alt: "Art Image")	
+    12: 						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
+    13: 								a.uk-h4.uk-margin-remove.uk-link-heading href="#{p.link}" 
+    14: 									| #{p.title} 
+  
+app/views/project/load_art.html.slim:11:in `block in _app_views_project_load_art_html_slim__1857422262121340095_70152687244840'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim__1857422262121340095_70152687244840'
+Started GET "/art" for ::1 at 2019-06-19 04:19:53 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (6.3ms)
+  Rendered layouts/_navigation.html.slim (18.9ms)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (17639.5ms)
+Completed 500 Internal Server Error in 17682ms (ActiveRecord: 25.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `variant' for #<String:0x00007f9b5a3e8a58>):
+     6: 				.uk-width-1-3.uk-height-1-3
+     7: 					.uk-inline-clip.uk-transition-toggle
+     8: 						- if p.image.attached?
+     9: 							= image_tag(url_for(p.image).variant(resize: '550x550'), alt: "Art Image",)	
+    10: 						- else
+    11: 							= image_tag("default.jpg", alt: "Art Image")	
+    12: 						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
+  
+app/views/project/load_art.html.slim:9:in `block in _app_views_project_load_art_html_slim__1857422262121340095_70152657030280'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim__1857422262121340095_70152657030280'
+Started GET "/art" for ::1 at 2019-06-19 04:20:34 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (14.5ms)
+  Rendered layouts/_navigation.html.slim (33.1ms)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  Rendered project/load_art.html.slim within layouts/application (289.8ms)
+Completed 200 OK in 377ms (Views: 360.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTlRVd2VEVTFNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--55d76169ebde9896f7802dade87bb91eeda85574/aa.png" for ::1 at 2019-06-19 04:20:34 +0100
+Processing by ActiveStorage::RepresentationsController#show as PNG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTlRVd2VEVTFNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--55d76169ebde9896f7802dade87bb91eeda85574", "filename"=>"aa"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.3ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 (no)[0m
+[36m  Disk Storage (22.5ms) [0m[34mDownloaded file from key: 1ThQYzwXMu3hUY5PdUgCT9TK[0m
+Completed 500 Internal Server Error in 563ms (ActiveRecord: 0.5ms)
+
+
+  
+MiniMagick::Invalid (You must have ImageMagick or GraphicsMagick installed):
+  
+mini_magick (4.9.3) lib/mini_magick/image.rb:208:in `rescue in validate!'
+mini_magick (4.9.3) lib/mini_magick/image.rb:205:in `validate!'
+mini_magick (4.9.3) lib/mini_magick/image.rb:118:in `block in create'
+mini_magick (4.9.3) lib/mini_magick/image.rb:117:in `tap'
+mini_magick (4.9.3) lib/mini_magick/image.rb:117:in `create'
+activestorage (5.2.3) app/models/active_storage/variant.rb:118:in `download_image'
+activestorage (5.2.3) app/models/active_storage/variant.rb:107:in `open_image'
+activestorage (5.2.3) app/models/active_storage/variant.rb:85:in `process'
+activestorage (5.2.3) app/models/active_storage/variant.rb:53:in `processed'
+activestorage (5.2.3) app/controllers/active_storage/representations_controller.rb:12:in `show'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/art" for ::1 at 2019-06-19 04:22:19 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (15.7ms)
+  Rendered layouts/_navigation.html.slim (33.9ms)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+[36m  Disk Storage (0.3ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 (no)[0m
+[36m  Disk Storage (19.3ms) [0m[34mDownloaded file from key: 1ThQYzwXMu3hUY5PdUgCT9TK[0m
+  Rendered project/load_art.html.slim within layouts/application (240.0ms)
+Completed 500 Internal Server Error in 272ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (You must have ImageMagick or GraphicsMagick installed):
+     6: 				.uk-width-1-3.uk-height-1-3
+     7: 					.uk-inline-clip.uk-transition-toggle
+     8: 						- if p.image.attached?
+     9: 							= image_tag(p.image.variant(resize: '550x550').processed.service_url ,  alt: "Art Image",)	
+    10: 						- else
+    11: 							= image_tag("default.jpg", alt: "Art Image")	
+    12: 						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
+  
+app/views/project/load_art.html.slim:9:in `block in _app_views_project_load_art_html_slim__1857422262121340095_70152612144500'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim__1857422262121340095_70152612144500'
+Started GET "/art" for ::1 at 2019-06-19 04:24:27 +0100
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (73.8ms)
+  Rendered layouts/_navigation.html.slim (90.4ms)
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+[36m  Disk Storage (0.3ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 (no)[0m
+[36m  Disk Storage (32.1ms) [0m[34mDownloaded file from key: 1ThQYzwXMu3hUY5PdUgCT9TK[0m
+  Rendered project/load_art.html.slim within layouts/application (15320.5ms)
+Completed 500 Internal Server Error in 15379ms (ActiveRecord: 54.8ms)
+
+
+  
+ActionView::Template::Error (You must have ImageMagick or GraphicsMagick installed):
+     6: 				.uk-width-1-3.uk-height-1-3
+     7: 					.uk-inline-clip.uk-transition-toggle
+     8: 						- if p.image.attached?
+     9: 							= image_tag(p.image.variant(resize: '550x550').processed.service_url ,  alt: "Art Image",)	
+    10: 						- else
+    11: 							= image_tag("default.jpg", alt: "Art Image")	
+    12: 						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
+  
+app/views/project/load_art.html.slim:9:in `block in _app_views_project_load_art_html_slim__4115661477778401243_70279825750480'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim__4115661477778401243_70279825750480'
+Started GET "/art" for ::1 at 2019-06-19 04:31:22 +0100
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (34.8ms)
+  Rendered layouts/_navigation.html.slim (42.6ms)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 (no)[0m
+[36m  Disk Storage (15.4ms) [0m[34mDownloaded file from key: 1ThQYzwXMu3hUY5PdUgCT9TK[0m
+[36m  Disk Storage (6.7ms) [0m[32mUploaded file to key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0[0m
+[36m  Disk Storage (5.7ms) [0m[34mGenerated URL for file at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 ()[0m
+  Rendered project/load_art.html.slim within layouts/application (9688.5ms)
+Completed 500 Internal Server Error in 9738ms (ActiveRecord: 41.0ms)
+
+
+  
+ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+     6: 				.uk-width-1-3.uk-height-1-3
+     7: 					.uk-inline-clip.uk-transition-toggle
+     8: 						- if p.image.attached?
+     9: 							= image_tag(p.image.variant(resize: '550x550').processed.service_url ,  alt: "Art Image",)	
+    10: 						- else
+    11: 							= image_tag("default.jpg", alt: "Art Image")	
+    12: 						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
+  
+app/views/project/load_art.html.slim:9:in `block in _app_views_project_load_art_html_slim___3610046633215182545_70368304627740'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim___3610046633215182545_70368304627740'
+Started GET "/art" for ::1 at 2019-06-19 04:33:21 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (9.2ms)
+  Rendered layouts/_navigation.html.slim (22.0ms)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+[36m  Disk Storage (0.3ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 (yes)[0m
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 ()[0m
+  Rendered project/load_art.html.slim within layouts/application (88.1ms)
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+     6: 				.uk-width-1-3.uk-height-1-3
+     7: 					.uk-inline-clip.uk-transition-toggle
+     8: 						- if p.image.attached?
+     9: 							= image_tag(url_for(p.image.variant(resize: '550x550').processed.service_url) ,  alt: "Art Image",)	
+    10: 						- else
+    11: 							= image_tag("default.jpg", alt: "Art Image")	
+    12: 						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
+  
+app/views/project/load_art.html.slim:9:in `block in _app_views_project_load_art_html_slim___3610046633215182545_69957429879880'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim___3610046633215182545_69957429879880'
+Started GET "/art" for ::1 at 2019-06-19 04:39:27 +0100
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (24.3ms)
+  Rendered layouts/_navigation.html.slim (35.3ms)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 (yes)[0m
+[36m  Disk Storage (2.2ms) [0m[34mGenerated URL for file at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 ()[0m
+  Rendered project/load_art.html.slim within layouts/application (6982.2ms)
+Completed 500 Internal Server Error in 7026ms (ActiveRecord: 33.2ms)
+
+
+  
+ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+     6: 				.uk-width-1-3.uk-height-1-3
+     7: 					.uk-inline-clip.uk-transition-toggle
+     8: 						- if p.image.attached?
+     9: 							= image_tag(p.image.variant(resize: '550x550').processed.service_url ,  alt: "Art Image",)	
+    10: 						- else
+    11: 							= image_tag("default.jpg", alt: "Art Image")	
+    12: 						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
+  
+app/views/project/load_art.html.slim:9:in `block in _app_views_project_load_art_html_slim__3313716016158749230_70368333964880'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim__3313716016158749230_70368333964880'
+Started GET "/art" for ::1 at 2019-06-19 04:40:48 +0100
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (25.8ms)
+  Rendered layouts/_navigation.html.slim (32.7ms)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+[36m  Disk Storage (0.2ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 (yes)[0m
+[36m  Disk Storage (2.0ms) [0m[34mGenerated URL for file at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 ()[0m
+  Rendered project/load_art.html.slim within layouts/application (6849.9ms)
+Completed 500 Internal Server Error in 6889ms (ActiveRecord: 42.2ms)
+
+
+  
+ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+     6: 				.uk-width-1-3.uk-height-1-3
+     7: 					.uk-inline-clip.uk-transition-toggle
+     8: 						- if p.image.attached?
+     9: 							= image_tag(p.image.variant(resize: '550x550').processed.service_url ,  alt: "Art Image",)	
+    10: 						- else
+    11: 							= image_tag("default.jpg", alt: "Art Image")	
+    12: 						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
+  
+app/views/project/load_art.html.slim:9:in `block in _app_views_project_load_art_html_slim__550481411143129404_70368652906620'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim__550481411143129404_70368652906620'
+Started GET "/" for ::1 at 2019-06-19 04:41:03 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (8.7ms)
+  Rendered home/index.html.slim within layouts/application (16.5ms)
+Completed 200 OK in 71ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/software" for ::1 at 2019-06-19 04:41:13 +0100
+Processing by ProjectController#load_software as HTML
+  Rendering project/load_software.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (3.8ms)
+  Rendered layouts/_navigation.html.slim (12.4ms)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Software'[0m
+  ↳ app/views/project/load_software.html.slim:3
+  Rendered project/load_software.html.slim within layouts/application (20.6ms)
+Completed 200 OK in 69ms (Views: 59.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-06-19 04:41:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (4.8ms)
+  Rendered home/index.html.slim within layouts/application (12.0ms)
+Completed 200 OK in 58ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-06-19 04:41:22 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (4.5ms)
+  Rendered layouts/_navigation.html.slim (33.5ms)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+[36m  Disk Storage (0.3ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 (yes)[0m
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 ()[0m
+  Rendered project/load_art.html.slim within layouts/application (71.6ms)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+     6: 				.uk-width-1-3.uk-height-1-3
+     7: 					.uk-inline-clip.uk-transition-toggle
+     8: 						- if p.image.attached?
+     9: 							= image_tag(p.image.variant(resize: '550x550').processed.service_url ,  alt: "Art Image",)	
+    10: 						- else
+    11: 							= image_tag("default.jpg", alt: "Art Image")	
+    12: 						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
+  
+app/views/project/load_art.html.slim:9:in `block in _app_views_project_load_art_html_slim__550481411143129404_69995617210840'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim__550481411143129404_69995617210840'
+Started GET "/art" for ::1 at 2019-06-19 04:43:26 +0100
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (24.0ms)
+  Rendered layouts/_navigation.html.slim (32.0ms)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+[36m  Disk Storage (0.3ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 (yes)[0m
+[36m  Disk Storage (1.4ms) [0m[34mGenerated URL for file at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/70616eb17c6176f06bc018298dd3d62bb8ee10f14eb77a1586c4361e5c1168f0 ()[0m
+  Rendered project/load_art.html.slim within layouts/application (6918.5ms)
+Completed 500 Internal Server Error in 6961ms (ActiveRecord: 36.1ms)
+
+
+  
+ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+     6: 				.uk-width-1-3.uk-height-1-3
+     7: 					.uk-inline-clip.uk-transition-toggle
+     8: 						- if p.image.attached?
+     9: 							= image_tag(p.image.variant(resize: '550x550').processed.service_url ,  alt: "Art Image",)	
+    10: 						- else
+    11: 							= image_tag("default.jpg", alt: "Art Image")	
+    12: 						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
+  
+app/views/project/load_art.html.slim:9:in `block in _app_views_project_load_art_html_slim__2922648681463875261_70368310935560'
+app/views/project/load_art.html.slim:5:in `_app_views_project_load_art_html_slim__2922648681463875261_70368310935560'

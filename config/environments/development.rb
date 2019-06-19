@@ -39,7 +39,7 @@ Rails.application.configure do
   #SECURE THIS
   ActionMailer::Base.smtp_settings = {
     :user_name => 'apikey',
-    :password => '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',
+    :password => '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',
     :domain => 'localhost:3000',
     :address => 'smtp.sendgrid.net',
     :port => 587,
@@ -47,8 +47,11 @@ Rails.application.configure do
     :enable_starttls_auto => true
   }
 
+  Rails.application.routes.default_url_options[:host] = 'localhost:3000'
+  config.active_storage.service = :local
+  config.default_url_options = { host: "localhost:3000" }
   config.action_mailer.default_url_options = {:host => 'localhost:3000'}
-
+  
   # Print deprecation notices to the Rails logger. 
   config.active_support.deprecation = :log
 
