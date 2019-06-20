@@ -1,18 +1,14 @@
-
 @import '~uikit/dist/css/uikit';
 @import '../src/stylesheets/trestle/_custom';
 @import '../src/stylesheets/trestle/_variables';
 @import '../src/stylesheets/scaffolds';
 @import '../src/stylesheets/session';
-@import '../src/stylesheets/contacts';
 @import '../src/stylesheets/home';
 @import '../src/stylesheets/project';
 
-$global-link-color: #DA7D02;
 
 * {
 	font-family: 'Allerta Stencil', sans-serif;
-	color: rgb(98, 102, 98);
 }
 html, body {
 	margin: 0;
@@ -36,10 +32,29 @@ img {
 	font-family: 'Allerta Stencil', sans-serif;
 	background-color: rgb(24,25,24);
 }
+.uk-heading-large {
+	font-family: 'Allerta Stencil', sans-serif;
+}
+.uk-modal-header {
+	border: none;
+}
 
-.uk-link-heading:hover {
-	color:rgb(159, 166, 159);
+.uk-link-heading:hover, #menu-trigger {
+	//color:rgb(159, 166, 159);
 	background-color: rgb(24,25,24);
 }
+.uk-modal-dialog, .uk-modal-header {
+	background-color: rgb(46, 51, 49);
+}
+.uk-button-primary {
+	background-color: rgb(46, 77, 63);
+}
+.uk-button-primary:hover {
+	background-color: rgb(77, 128, 105);
+}
+
+
+
+
 
 
