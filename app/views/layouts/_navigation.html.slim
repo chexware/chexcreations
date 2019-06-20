@@ -1,12 +1,12 @@
 .uk-width-1-6
-	<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav-primary">Default Nav</button>
+	button.uk-button.uk-button-default(type="button" uk-toggle="target: #offcanvas-nav-primary")Default
 	#offcanvas-nav-primary[uk-offcanvas="overlay: true"]
-		.uk-offcanvas-bar.uk-flex.uk-flex-column
+		#menu.uk-offcanvas-bar.uk-flex.uk-flex-column.uk-width-1-6
 			ul.uk-nav-primary.uk-nav
 				li.uk-nav-header
 					= link_to "CHEX", "/",  class: "uk-link-heading"
 				li
-					<a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Contact</a>
+					a.uk-link-heading(href="#modal-center" uk-toggle) Contact
     				= render 'layouts/contact'
 				li
 					= link_to "Software", "/software",  class: "uk-link-heading"

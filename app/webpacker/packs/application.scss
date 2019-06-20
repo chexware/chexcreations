@@ -8,12 +8,15 @@
 @import '../src/stylesheets/home';
 @import '../src/stylesheets/project';
 
+* {
+	font-family: 'Allerta Stencil', sans-serif;
+	color: rgb(98, 102, 98);
+}
 html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 	background-color: rgb(24,25,24); 
-	color: rgb(98, 102, 98);
 }
 .uk-container-expand {
 	height: 100%;	
@@ -27,13 +30,12 @@ img {
   max-width: 100%;
 }
 
-.uk-heading-xlarge, .uk-link-heading {
-	color: rgb(98, 102, 98);
+.uk-heading-xlarge, .uk-link-heading, #menu {
+	font-family: 'Allerta Stencil', sans-serif;
 	background-color: rgb(24,25,24);
 }
 
 .uk-heading-xlarge:hover ,.uk-link-heading:hover {
-	color:rgb(159, 166, 159);
 	background-color: rgb(24,25,24);
 }
 

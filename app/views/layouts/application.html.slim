@@ -6,8 +6,11 @@ html
     = csrf_meta_tags
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag  'application', 'data-turbolinks-track': 'reload'
+    // UIkit
     script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"
     script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"
+    // Font
+    link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet"
   body
     .uk-container-expand
 		  == yield
