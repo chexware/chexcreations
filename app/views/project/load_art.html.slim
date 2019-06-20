@@ -9,9 +9,10 @@
 							= image_tag(url_for(p.image.variant(resize: '400x400').processed) ,  alt: "Art Image",)	
 						- else
 							= image_tag("default.jpg", alt: "Art Image")	
-						.uk-transition-slide-bottom.uk-position-bottom.uk-overlay.uk-overlay-default
-								a.uk-h4.uk-margin-remove.uk-link-heading href="#{p.link}" 
-									| #{p.title} 
+						.uk-position-center
+							.uk-transition-fade.uk-position-bottom.uk-overlay.uk-overlay-default
+									a.uk-h4.uk-margin-remove.uk-link-heading href="#{p.link}" 
+										| #{p.title} 
 	- else
 		.uk-margin-xlarge-top.uk-text-center
 			.uk-heading-xlarge Embrace the digital void :()

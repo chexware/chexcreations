@@ -8,6 +8,8 @@
 @import '../src/stylesheets/home';
 @import '../src/stylesheets/project';
 
+$global-link-color: #DA7D02;
+
 * {
 	font-family: 'Allerta Stencil', sans-serif;
 	color: rgb(98, 102, 98);
@@ -35,7 +37,8 @@ img {
 	background-color: rgb(24,25,24);
 }
 
-.uk-heading-xlarge:hover ,.uk-link-heading:hover {
+.uk-link-heading:hover {
+	color:rgb(159, 166, 159);
 	background-color: rgb(24,25,24);
 }
 
