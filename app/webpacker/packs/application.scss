@@ -39,7 +39,7 @@ img {
 	border: none;
 }
 
-.uk-link-heading:hover, #menu-trigger {
+.uk-link-heading:hover, #menu-trigger, .uk-heading-xlarge:hover {
 	//color:rgb(159, 166, 159);
 	background-color: rgb(24,25,24);
 }
@@ -53,6 +53,25 @@ img {
 	background-color: rgb(77, 128, 105);
 }
 
+#menu-trigger {
+	border: none;
+}
+
+.chex-link {
+	color:rgb(102, 102, 102);
+}
+
+.chex-link:hover, .project-link:hover {
+	text-decoration: none;
+	color:rgb(255, 255, 255);
+}
+
+.project-link {
+	font-size: 60px;
+}
+.project-link:hover {
+	background-color: transparent;
+}
 
 
 

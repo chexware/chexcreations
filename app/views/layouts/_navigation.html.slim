@@ -1,10 +1,11 @@
-.uk-position-top(uk-sticky="show-on-up: true")
-	button.uk-button.uk-button-default(type="button" uk-toggle="target: #offcanvas-nav-primary" id="menu-trigger")Default
+.uk-position-top.uk-margin-small-top(uk-sticky="show-on-up: true")
+	button.uk-button.uk-button-default.chex-link(type="button" uk-toggle="target: #offcanvas-nav-primary" id="menu-trigger")Menu
 #offcanvas-nav-primary[uk-offcanvas="overlay: true"]
 	#menu.uk-offcanvas-bar.uk-flex.uk-flex-column.uk-width-1-6
 		ul.uk-nav-primary.uk-nav
 			li.uk-nav-header
-				= link_to "CHEX", "/",  class: "uk-link-heading"
+				//switch to .uk-logo + CHEX.svg
+				= link_to "CHEX", "/",  class: "uk-link-heading uk-logo"
 			li
 				a.uk-link-heading(href="#modal-center" uk-toggle) Contact
 				= render 'layouts/contact'
