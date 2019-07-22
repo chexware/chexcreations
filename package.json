@@ -23,6 +23,8 @@
     "heroku-postbuild": "npm run webpack:deploy"
   },
   "engines": {
-    "node": "12.4.0"
+    "node": "12.4.0",
+    "npm": "3.0.4",
+    "yarn": "1.16.0"
   }
 }
