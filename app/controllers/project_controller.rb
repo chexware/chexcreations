@@ -60,9 +60,16 @@ class ProjectController < ApplicationController
 	  end	
   end
   
-  def get_vimeo_videos
+ 
+	def  get_github_repos
+		client = Octokit::Client.new(:access_token => '')
+		user = client.user
+		@repos = client.repos({}, query: {type: 'owner', sort: 'asc'})
+	end
+
+	def get_vimeo_videos
 		video = Vimeo::Simple::Video.info(params[:id])
-		@videos = Vimeo::Simple::User.all_videos("chexvisuals")
+		@videos = Vimeo::Simple::User.all_videos("chexvisual")
 		unless params[:pid].blank?
 			@project = Project.find(params[:pid])
 		else
@@ -76,11 +83,6 @@ class ProjectController < ApplicationController
 		else
 			render 'new'
 		end
-	end
-	def  get_github_repos
-		client = Octokit::Client.new(:access_token => '')
-		user = client.user
-		@repos = client.repos({}, query: {type: 'owner', sort: 'asc'})
 	end
   
   private

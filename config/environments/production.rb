@@ -30,7 +30,6 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
-  config.assets.compile = false
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -61,12 +60,17 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "BeyondSE_#{Rails.env}"
-  config.action_mailer.perform_caching = true
+  # config.active_job.queue_name_prefix = "chexcreations_#{Rails.env}"
+
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
+   config.action_mailer.delivery_method = :smtp
+   config.action_mailer.perform_deliveries = true
    config.action_mailer.raise_delivery_errors = true
+   config.action_mailer.default :charset => "utf-8"
+   config.action_mailer.default_url_options = { host: 'https://chexcreations.herokuapp.com' }
+   config.action_mailer.perform_caching = true
    ActionMailer::Base.smtp_settings = {
     :user_name => ENV["SENDGRID_USERNAME"],
     :password => ENV["SENDGRID_PASSWORD"],
@@ -91,7 +95,7 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-  config.public_file_server.enabled = true
+  config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
       logger           = ActiveSupport::Logger.new(STDOUT)
@@ -102,21 +106,4 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   config.serve_static_assets = false
-  # Mail form 
-
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default :charset => "utf-8"
-  config.action_mailer.default_url_options = { host: 'https://chexcreations.herokuapp.com' }
-
-  ActionMailer::Base.smtp_settings = {
-  :user_name => ENV['SENDGRID_USERNAME'],
-  :password => ENV['SENDGRID_PASSWORD'],
-  :domain => 'chexcreations.herokuapp.com',
-  :address => 'smtp.sendgrid.net',
-  :port => 587,
-  :authentication => :plain,
-  :enable_starttls_auto => true
-  }
 end
