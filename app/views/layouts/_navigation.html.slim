@@ -5,7 +5,8 @@
 		ul.uk-nav-primary.uk-nav
 			li.uk-nav-header
 				//switch to .uk-logo + CHEX.svg
-				= link_to "CHEX", "/",  class: "uk-link-heading uk-logo"
+				a.uk-link-heading href="/"
+					img (src="/assets/chex-logo.svg" width="300" height="300" uk-svg)
 			li
 				a.uk-link-heading(href="#modal-center" uk-toggle) Contact
 				= render 'layouts/contact'
