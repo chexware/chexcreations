@@ -3,7 +3,7 @@
 		- unless @projects.blank?
 			.uk-grid.uk-grid-collapse
 				- @projects.each do |p|
-					.uk-width-1-3.uk-text-center
+					.uk-text-center[class="uk-width-1-3@s"]
 						.uk-inline-clip.uk-transition-toggle
 							- if p.image.attached?
 								= image_tag(url_for(p.image.variant(resize: '400x400').processed) ,  alt: "Art Image")	
