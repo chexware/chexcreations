@@ -8,5 +8,7 @@ class Contact < MailForm::Base
         :to => "aleksandar@chexvisual.co.uk",
         :from => %("#{name}" <#{email}>)
     }
+    end
+
     
 end
