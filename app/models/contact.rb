@@ -3,10 +3,11 @@ class Contact < MailForm::Base
     attribute :email, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
     attribute :message, :validate => true
     attribute :nickname, :captcha => true
-    def headers  {
-        :subject => "portfolio contact request",
-        :to => "aleksandar@chexvisual.co.uk",
-        :from => %("#{name}" <#{email}>)
-    }
+    def headers  
+        {
+            :subject => "portfolio contact request",
+            :to => "aleksandar@chexvisual.co.uk",
+            :from => %("#{name}" <#{email}>)
+        }
     end
 end
