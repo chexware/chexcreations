@@ -73,12 +73,12 @@ Rails.application.configure do
    config.action_mailer.default_url_options = { host: 'https://chexcreations.herokuapp.com' }
    config.action_mailer.perform_caching = true
    ActionMailer::Base.smtp_settings = {
-    :user_name => ENV["SENDGRID_USERNAME"],
-    :password => ENV["SENDGRID_PASSWORD"],
-    :domain => 'chexcreations.herokuapp.com',
     :address => 'smtp.sendgrid.net',
     :port => 587,
-    :authentication => :plain,
+    :domain => 'chexcreations.herokuapp.com',
+    :user_name => ENV["SENDGRID_USERNAME"],
+    :password => ENV["SENDGRID_PASSWORD"],
+    :authentication => :login,
     :enable_starttls_auto => true
   }
 
