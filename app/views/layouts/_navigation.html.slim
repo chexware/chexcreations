@@ -2,11 +2,10 @@
 	button.uk-button.uk-button-default.chex-link(type="button" uk-toggle="target: #offcanvas-nav-primary" id="menu-trigger")Menu
 #offcanvas-nav-primary[uk-offcanvas="overlay: true"]
 	#menu.uk-offcanvas-bar.uk-flex.uk-flex-column[ class ="uk-width-1-6@m"]
-		ul.uk-nav-primary.uk-nav
+		ul.uk-nav-primary.uk-nav.uk-align-center.uk-text-center[class="uk-align-left@m uk-text-left@m"]
 			li.uk-nav-header
-				//switch to .uk-logo + CHEX.svg
 				a.uk-link-heading.uk-logo href="/"
-					img (src="/assets/chex-logo.svg" width="40" height="50" uk-svg)
+					img (src="/assets/chex-logo.svg" width="100"  height="60" class="uk-responsive-width" uk-svg)
 			li
 				a.uk-link-heading(href="#modal-center" uk-toggle) Contact
 				= render 'layouts/contact'
@@ -23,6 +22,7 @@
 					a.uk-icon-button (uk-icon="github" href="https://github.com/albrayanov") 
 				.uk-width-1-3
 					a.uk-icon-button (uk-icon="instagram" href="https://instagram.com/chexvisual") 
-			li.uk-text-center
-				.uk-text-small Created by Aleksandar Brayanov #{Time.current.year}		
+			li.uk-text-center[class="uk-text-left@m"]
+				.uk-text-small Created by Aleksandar Brayanov 
+				.uk-text-small #{Time.current.year}		
 					

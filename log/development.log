@@ -39571,3 +39571,159 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 87ms (Views: 82.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-10-11 02:11:38 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (328.2ms)
+  Rendered home/index.html.slim within layouts/application (351.4ms)
+Completed 200 OK in 551ms (Views: 499.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-11 02:12:56 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (5.3ms)
+  Rendered home/index.html.slim within layouts/application (13.3ms)
+Completed 200 OK in 65ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-11 02:13:09 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (3.5ms)
+  Rendered home/index.html.slim within layouts/application (11.2ms)
+Completed 200 OK in 72ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-11 02:13:36 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (5.0ms)
+  Rendered home/index.html.slim within layouts/application (11.6ms)
+Completed 200 OK in 66ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-11 03:28:59 +0100
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (41.1ms)
+  Rendered home/index.html.slim within layouts/application (48.9ms)
+Completed 200 OK in 97ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-10-11 03:29:12 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+[36m  Disk Storage (0.5ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+  Rendered layouts/_contact.html.slim (3.6ms)
+  Rendered layouts/_navigation.html.slim (11.2ms)
+  Rendered project/load_art.html.slim within layouts/application (10464.6ms)
+Completed 200 OK in 10555ms (Views: 10484.5ms | ActiveRecord: 48.5ms)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f/aa.png" for ::1 at 2019-10-11 03:29:23 +0100
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::RepresentationsController#show as PNG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f", "filename"=>"aa"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.5ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMTFUMDI6MzQ6MjMuMjY5WiIsInB1ciI6ImJsb2Jfa2V5In19--62d94b6202defab58b81bbfd00c8d704913fb4d8/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMTFUMDI6MzQ6MjMuMjY5WiIsInB1ciI6ImJsb2Jfa2V5In19--62d94b6202defab58b81bbfd00c8d704913fb4d8/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png
+Completed 302 Found in 89ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMTFUMDI6MzQ6MjMuMjY5WiIsInB1ciI6ImJsb2Jfa2V5In19--62d94b6202defab58b81bbfd00c8d704913fb4d8/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-10-11 03:29:23 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMTFUMDI6MzQ6MjMuMjY5WiIsInB1ciI6ImJsb2Jfa2V5In19--62d94b6202defab58b81bbfd00c8d704913fb4d8", "filename"=>"aa"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-11 03:29:56 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (7.1ms)
+  Rendered home/index.html.slim within layouts/application (26.8ms)
+Completed 200 OK in 129ms (Views: 119.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-11 03:31:42 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (4.3ms)
+  Rendered home/index.html.slim within layouts/application (10.8ms)
+Completed 200 OK in 56ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-11 03:31:44 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (7.0ms)
+  Rendered home/index.html.slim within layouts/application (67.7ms)
+Completed 200 OK in 157ms (Views: 152.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-11 03:31:46 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (4.2ms)
+  Rendered home/index.html.slim within layouts/application (11.1ms)
+Completed 200 OK in 78ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-11 03:32:05 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (4.3ms)
+  Rendered home/index.html.slim within layouts/application (12.6ms)
+Completed 200 OK in 63ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-11 03:32:07 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (4.9ms)
+  Rendered home/index.html.slim within layouts/application (13.2ms)
+Completed 200 OK in 67ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-11 03:32:44 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (4.8ms)
+  Rendered home/index.html.slim within layouts/application (11.4ms)
+Completed 200 OK in 78ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/software" for ::1 at 2019-10-11 03:33:01 +0100
+Processing by ProjectController#load_software as HTML
+  Rendering project/load_software.html.slim within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Software'[0m
+  ↳ app/views/project/load_software.html.slim:3
+  Rendered layouts/_contact.html.slim (9.2ms)
+  Rendered layouts/_navigation.html.slim (23.5ms)
+  Rendered project/load_software.html.slim within layouts/application (76.8ms)
+Completed 200 OK in 171ms (Views: 161.1ms | ActiveRecord: 0.4ms)
+
+
