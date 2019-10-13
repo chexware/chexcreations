@@ -1,10 +1,11 @@
-.uk-grid-collapse.uk-text-center[uk-grid]
-    .uk-height-medium[ class ="uk-width-1-2@m uk-width-1-1@s"]
-        = link_to "Software", "/software",  class: "uk-heading-xlarge chex-link uk-text-truncate"
-    .uk-height-medium[ class ="uk-width-1-2@m uk-width-1-1@s"]
-        = link_to "Art", "/art",  class: "uk-heading-xlarge chex-link"
-    .uk-height-medium[ class ="uk-width-1-1"]
+.uk-grid-collapse.uk-text-center.uk-flex[uk-grid]
+    .uk-flex-last.uk-width-1-1.uk-grid[class ="uk-flex-first@m"]
+        .uk-height-medium.uk-width-1-1[ class ="uk-width-1-2@m"]
+            = link_to "Software", "/software",  class: "uk-heading-xlarge chex-link uk-text-truncate"
+        .uk-height-medium.uk-width-1-1[ class ="uk-width-1-2@m"]
+            = link_to "Art", "/art",  class: "uk-heading-xlarge chex-link"
+    .uk-height-medium.uk-flex-first.uk-width-1-1[ class ="uk-flex-last@m"]
         img (src="/assets/chex-logo.svg" width="320" height="180" class="uk-responsive-width"  uk-svg)
-    div[ class ="uk-width-1-1"]
+    .uk-width-1-1.uk-flex-last
         a.uk-heading-xlarge.chex-link(href="#modal-center" uk-toggle) Contact
         = render 'layouts/contact'
