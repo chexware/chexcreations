@@ -59,11 +59,13 @@ img {
 
 .chex-link {
 	color:rgb(102, 102, 102);
+	background-color: transparent;
 }
 
 .chex-link:hover, .project-link:hover {
 	text-decoration: none;
 	color:rgb(255, 255, 255);
+	background-color: transparent;
 }
 
 .project-link {
