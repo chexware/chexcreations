@@ -3,9 +3,9 @@
 #offcanvas-nav-primary[uk-offcanvas="overlay: true"]
 	#menu.uk-offcanvas-bar.uk-flex.uk-flex-column[ class ="uk-width-1-6@m"]
 		ul.uk-nav-primary.uk-nav.uk-align-center.uk-text-center[class="uk-align-left@m uk-text-left@m"]
-			li.uk-nav-header.uk-padding-small
+			li.uk-nav-header
 				a.uk-link-heading.uk-logo href="/"
-					img (src="/assets/chex-logo-web.svg" width="80"  height="40" uk-svg)
+					img (src="/assets/chex-logo-web.svg" width="80"  height="40" offsetTop="0" uk-svg)
 			li
 				a.uk-link-heading(href="#modal-center" uk-toggle) Contact
 				= render 'layouts/contact'
