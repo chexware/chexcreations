@@ -41227,3 +41227,69 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 208ms (Views: 191.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-10-14 06:28:56 +0100
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (69.2ms)
+  Rendered home/index.html.slim within layouts/application (99.8ms)
+Completed 200 OK in 300ms (Views: 269.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 06:29:06 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (13.6ms)
+  Rendered home/index.html.slim within layouts/application (40.3ms)
+Completed 200 OK in 214ms (Views: 193.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 06:29:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (13.0ms)
+  Rendered home/index.html.slim within layouts/application (40.2ms)
+Completed 200 OK in 213ms (Views: 196.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 06:29:39 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (13.2ms)
+  Rendered home/index.html.slim within layouts/application (39.6ms)
+Completed 200 OK in 224ms (Views: 196.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 06:29:47 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (9.8ms)
+  Rendered home/index.html.slim within layouts/application (27.6ms)
+Completed 200 OK in 164ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 06:29:49 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (8.4ms)
+  Rendered home/index.html.slim within layouts/application (24.2ms)
+Completed 200 OK in 169ms (Views: 160.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 06:31:43 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (15.0ms)
+  Rendered home/index.html.slim within layouts/application (42.7ms)
+Completed 200 OK in 232ms (Views: 194.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 06:32:45 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (13.2ms)
+  Rendered home/index.html.slim within layouts/application (41.5ms)
+Completed 200 OK in 242ms (Views: 206.9ms | ActiveRecord: 0.0ms)
+
+
