@@ -2,10 +2,11 @@
 	button.uk-button.uk-button-default.chex-link(type="button" uk-toggle="target: #offcanvas-nav-primary" id="menu-trigger")Menu
 #offcanvas-nav-primary[uk-offcanvas="overlay: true"]
 	#menu.uk-offcanvas-bar.uk-flex.uk-flex-column[ class ="uk-width-1-6@m"]
-		ul.uk-nav-primary.uk-nav.uk-align-center.uk-text-center[class="uk-align-left@m uk-text-left@m"]
+		ul.uk-nav-primary.uk-nav.uk-align-center.uk-text-center(class="uk-align-left@m uk-text-left@m")
 			li.uk-nav-header
-				a.uk-link-heading.uk-logo href="/"
-					img (src="/assets/chex-logo-web.svg" width="100"  height="69" uk-svg)
+				.uk-max-height-small.uk-flex-inline.uk-flex-center.uk-width-1-4(class="uk-width-1-6@s uk-width-1-1@m")
+					a.uk-link-heading.uk-logo href="/"
+						img.uk-responsive-height.uk-responsive-width(src="/assets/chex-logo.png" uk-img)
 			li
 				a.uk-link-heading(href="#modal-center" uk-toggle) Contact
 				= render 'layouts/contact'
