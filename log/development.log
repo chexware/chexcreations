@@ -42689,3 +42689,792 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 471ms (Views: 450.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-10-25 06:40:54 +0100
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (819.7ms)
+  Rendered home/index.html.slim within layouts/application (899.7ms)
+Completed 200 OK in 1563ms (Views: 1408.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/art" for ::1 at 2019-10-25 06:41:00 +0100
+Processing by ProjectController#load_art as HTML
+  Rendering project/load_art.html.slim within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Art'[0m
+  ↳ app/views/project/load_art.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (4.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (1.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_art.html.slim:8
+[36m  Disk Storage (2.1ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+  Rendered layouts/_contact.html.slim (14.1ms)
+  Rendered layouts/_navigation.html.slim (64.7ms)
+  Rendered project/load_art.html.slim within layouts/application (26398.9ms)
+Completed 200 OK in 26705ms (Views: 26470.2ms | ActiveRecord: 100.0ms)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f/aa.png" for ::1 at 2019-10-25 06:41:26 +0100
+Processing by ActiveStorage::RepresentationsController#show as PNG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f", "filename"=>"aa"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.6ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+[36m  Disk Storage (1.3ms) [0m[34mGenerated URL for file at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NDY6MjcuMDkxWiIsInB1ciI6ImJsb2Jfa2V5In19--aa2ed9fb1f2bb55c7a66d9f331915aabbdad300c/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NDY6MjcuMDkxWiIsInB1ciI6ImJsb2Jfa2V5In19--aa2ed9fb1f2bb55c7a66d9f331915aabbdad300c/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png
+Completed 302 Found in 57ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NDY6MjcuMDkxWiIsInB1ciI6ImJsb2Jfa2V5In19--aa2ed9fb1f2bb55c7a66d9f331915aabbdad300c/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-10-25 06:41:27 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NDY6MjcuMDkxWiIsInB1ciI6ImJsb2Jfa2V5In19--aa2ed9fb1f2bb55c7a66d9f331915aabbdad300c", "filename"=>"aa"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2019-10-25 06:41:51 +0100
+Processing by Trestle::DashboardController#index as HTML
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as :require_authenticated_user rendered or redirected
+Completed 302 Found in 44ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for ::1 at 2019-10-25 06:41:51 +0100
+Processing by Trestle::Auth::SessionsController#new as HTML
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth (5.4ms)
+Completed 200 OK in 3262ms (Views: 3153.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2019-10-25 06:42:42 +0100
+Processing by Trestle::Auth::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M6209p8VxBnA3hrFwo8Q3yjGtVeua1yrfc0QPTPlIwIzO+81lqHEREHQVfpU2MHmU7w9D36zqFEXyAsCuoibMQ==", "email"=>"aleksandar.brayanov@hotmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAdministrator Load (1.1ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`email` = 'aleksandar.brayanov@hotmail.com' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/login
+Completed 302 Found in 1225ms (ActiveRecord: 50.2ms)
+
+
+Started GET "/admin/login" for ::1 at 2019-10-25 06:42:43 +0100
+Processing by Trestle::Auth::SessionsController#new as HTML
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth (2.4ms)
+Completed 200 OK in 119ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2019-10-25 06:43:28 +0100
+Processing by Trestle::Auth::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UV2tvnPf1c6g6Vm8Gi3D8+FuWCDlAEoQorL8lMebBn1Ry/Z9emvVkyHnFoOMehLKmhTQeDXYvurIt+erTva+Tg==", "email"=>"aleksandar.brayanov@hotmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAdministrator Load (0.3ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`email` = 'aleksandar.brayanov@hotmail.com' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/login
+Completed 302 Found in 531ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/login" for ::1 at 2019-10-25 06:43:29 +0100
+Processing by Trestle::Auth::SessionsController#new as HTML
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth (2.7ms)
+Completed 200 OK in 121ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2019-10-25 06:44:41 +0100
+Processing by Trestle::Auth::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yht0Gm6XwroCssotXzmb/GNphu5SOk2oDn+RHm+0fNrKjS/ZZyPC54O8hRLJbkrFGBMOtoLiuVJkeooh5tnE6Q==", "email"=>"aleksadar,brayanov@hotmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAdministrator Load (0.4ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`email` = 'aleksadar,brayanov@hotmail.com' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/login
+Completed 302 Found in 541ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/login" for ::1 at 2019-10-25 06:44:42 +0100
+Processing by Trestle::Auth::SessionsController#new as HTML
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/sessions/new.html.erb within layouts/trestle/auth (2.4ms)
+Completed 200 OK in 89ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAdministrator Create (4.0ms)[0m  [1m[32mINSERT INTO `administrators` (`email`, `password_digest`, `first_name`, `last_name`, `created_at`, `updated_at`) VALUES ('aleksandar.brayanov@hotmail.com', '$2a$12$sS8Pna.7TyXXWz2Ryz4mduc7bTgAPL2u1gkBYsmSBnpyUFlNvMrha', 'Aleksandar', 'Brayanov', '2019-10-25 05:46:50', '2019-10-25 05:46:50')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/admin/login" for ::1 at 2019-10-25 06:49:22 +0100
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Trestle::Auth::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KLNZ7Slqo9l1sK+T7nvJS7GjDwmRxfnmOzeulVVAAPooJQIuIN6jhPS+4Kx4LBhyytmHUUEdDRxRMrWq3C24yQ==", "email"=>"aleksandar@chexvisual.co.uk", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAdministrator Load (0.8ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`email` = 'aleksandar@chexvisual.co.uk' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/
+Completed 302 Found in 249ms (ActiveRecord: 33.3ms)
+
+
+Started GET "/admin/" for ::1 at 2019-10-25 06:49:23 +0100
+Processing by Trestle::DashboardController#index as HTML
+  [1m[36mAdministrator Load (0.9ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/projects
+Completed 302 Found in 331ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/projects" for ::1 at 2019-10-25 06:49:23 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (0.8ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (127.1ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.9ms)
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` LIMIT 25 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (857.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (52.1ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (1553.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (1686.4ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.1ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (66.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (5.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (56.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.6ms)
+Completed 200 OK in 22122ms (Views: 21845.9ms | ActiveRecord: 107.3ms)
+
+
+Started GET "/admin/projects/new" for ::1 at 2019-10-25 06:49:53 +0100
+Processing by ProjectsAdmin::AdminController#new as HTML
+  [1m[36mAdministrator Load (1.0ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-active_storage-2.1.1/app/views/trestle/active_storage/_has_one_field.html.erb (30.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (4.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.4ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (2.1ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (480.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb within layouts/trestle/admin (572.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (28.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (3.2ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (28.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 1408ms (Views: 1281.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/admin/projects" for ::1 at 2019-10-25 06:50:22 +0100
+Processing by ProjectsAdmin::AdminController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IhUhsTI8K+XizlHD79mOvJ02KocWltMAZIZT8L/VEw/y3NYuWf3mMxm4QI/VzvEWpOqVIdbw8q7Z1ASi3t9f7w==", "project"=>{"title"=>"Software", "link"=>"localhost:3000", "kind"=>"Software"}, "button"=>""}
+  [1m[36mAdministrator Load (0.6ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-active_storage-2.1.1/app/views/trestle/active_storage/_has_one_field.html.erb (1.5ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (2.5ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_debug.html.erb (0.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_alert.html.erb (40.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (91.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (0.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (409.2ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/new.html.erb (462.5ms)
+Completed 422 Unprocessable Entity in 675ms (Views: 532.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/admin/projects" for ::1 at 2019-10-25 06:50:33 +0100
+Processing by ProjectsAdmin::AdminController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9QnLooUx5y+HaIp7j39ALHa6fnspio293zMsXH2DQwXRKIcDvCDq12owXcSi0aJgsfdQUs+4mcWt1rSupS52Ng==", "project"=>{"title"=>"Software", "link"=>"https://github.com/TrestleAdmin/trestle-auth", "kind"=>"Software"}, "button"=>""}
+  [1m[36mAdministrator Load (0.7ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Create (1.0ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `kind`, `link`, `created_at`, `updated_at`) VALUES ('Software', 'Software', 'https://github.com/TrestleAdmin/trestle-auth', '2019-10-25 05:50:33', '2019-10-25 05:50:33')[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/projects/9
+Completed 302 Found in 133ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/admin/projects/9" for ::1 at 2019-10-25 06:50:33 +0100
+Processing by ProjectsAdmin::AdminController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 9 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Project Load (0.1ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (1.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdministrator Load (0.7ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-active_storage-2.1.1/app/views/trestle/active_storage/_has_one_field.html.erb (1.5ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (4.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_alert.html.erb (0.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (18.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (336.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb (396.5ms)
+Completed 200 OK in 701ms (Views: 456.8ms | ActiveRecord: 3.3ms)
+
+
+Started PATCH "/admin/projects/9" for ::1 at 2019-10-25 06:50:57 +0100
+Processing by ProjectsAdmin::AdminController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XdJhVzLdzTrfcPacWIXXDcLz650glVBMRnHaodfP1Eu0VrFntOfKk8lS9fSePs7mL+d99NgD4tkN5wZirPfeFA==", "button"=>"", "project"=>{"title"=>"Software", "link"=>"https://github.com/TrestleAdmin/trestle-auth", "kind"=>"Software", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5d5ebe17f8 @tempfile=#<Tempfile:/tmp/RackMultipart20191025-545-jd0cj6.png>, @original_filename="FC Event Banner.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"project[image]\"; filename=\"C:\\Users\\Aleksandar Brayanov\\Downloads\\FC Event Banner.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"9"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 9 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Project Load (0.1ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdministrator Load (0.9ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (7.2ms) [0m[32mUploaded file to key: RWr7ZwcXAc1ZRJE65brbz7Yi (checksum: 7rbk1MfISP2R2nPdSg5mrw==)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (1.1ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('RWr7ZwcXAc1ZRJE65brbz7Yi', 'FC Event Banner.png', 'image/png', '{\"identified\":true}', 127856, '7rbk1MfISP2R2nPdSg5mrw==', '2019-10-25 05:50:57')[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Create (1.6ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('image', 'Project', 9, 3, '2019-10-25 05:50:57')[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Update (2.6ms)[0m  [1m[33mUPDATE `projects` SET `updated_at` = '2019-10-25 05:50:58' WHERE `projects`.`id` = 9[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 257201f0-ad10-4585-9ab9-a17e66ee263f) to Async(default) with arguments: #<GlobalID:0x00007f5d5f02cfd8 @uri=#<URI::GID gid://chex/ActiveStorage::Blob/3>>
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [257201f0-ad10-4585-9ab9-a17e66ee263f] Performing ActiveStorage::AnalyzeJob (Job ID: 257201f0-ad10-4585-9ab9-a17e66ee263f) from Async(default) with arguments: #<GlobalID:0x00007f5d5efcc3e0 @uri=#<URI::GID gid://chex/ActiveStorage::Blob/3>>
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/projects/9
+[ActiveJob] [ActiveStorage::AnalyzeJob] [257201f0-ad10-4585-9ab9-a17e66ee263f] [36m  Disk Storage (35.7ms) [0m[34mDownloaded file from key: RWr7ZwcXAc1ZRJE65brbz7Yi[0m
+Completed 302 Found in 1120ms (ActiveRecord: 18.4ms)
+
+
+Started GET "/admin/projects/9" for ::1 at 2019-10-25 06:50:58 +0100
+Processing by ProjectsAdmin::AdminController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 9 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Project Load (0.1ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (60.0ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdministrator Load (60.6ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb within layouts/trestle/admin
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-active_storage-2.1.1/app/views/trestle/active_storage/_has_one_field.html.erb (1735.1ms)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [257201f0-ad10-4585-9ab9-a17e66ee263f]   [1m[35m (86.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [257201f0-ad10-4585-9ab9-a17e66ee263f]   ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (8.3ms)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [257201f0-ad10-4585-9ab9-a17e66ee263f]   [1m[36mActiveStorage::Blob Update (0.8ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `metadata` = '{\"identified\":true,\"width\":820,\"height\":312,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 3[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [257201f0-ad10-4585-9ab9-a17e66ee263f]   ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_alert.html.erb (2.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (28.6ms)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [257201f0-ad10-4585-9ab9-a17e66ee263f]   [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [257201f0-ad10-4585-9ab9-a17e66ee263f]   ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.9ms)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [257201f0-ad10-4585-9ab9-a17e66ee263f] Performed ActiveStorage::AnalyzeJob (Job ID: 257201f0-ad10-4585-9ab9-a17e66ee263f) from Async(default) in 4189.74ms
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.2ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (2768.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb within layouts/trestle/admin (2819.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (21.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (2.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (19.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 4009ms (Views: 3352.5ms | ActiveRecord: 122.5ms)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf88057ba4b70c3890f3f46ffe1325c67b4a4215/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lOTXpBd2VETXdNRDRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--574fcaded64ba3e860f3225800f0f26cc7bf48cb/FC%20Event%20Banner.png" for ::1 at 2019-10-25 06:51:03 +0100
+Processing by ActiveStorage::RepresentationsController#show as PNG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf88057ba4b70c3890f3f46ffe1325c67b4a4215", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lOTXpBd2VETXdNRDRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--574fcaded64ba3e860f3225800f0f26cc7bf48cb", "filename"=>"FC Event Banner"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.7ms) [0m[34mChecked if file exists at key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/712e140e580a50031eb1245e654b72d583c439e40a0cb65ea4c637328fb889c4 (no)[0m
+[36m  Disk Storage (18.5ms) [0m[34mDownloaded file from key: RWr7ZwcXAc1ZRJE65brbz7Yi[0m
+[36m  Disk Storage (3.6ms) [0m[32mUploaded file to key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/712e140e580a50031eb1245e654b72d583c439e40a0cb65ea4c637328fb889c4[0m
+[36m  Disk Storage (2.3ms) [0m[34mGenerated URL for file at key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/712e140e580a50031eb1245e654b72d583c439e40a0cb65ea4c637328fb889c4 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6Y3hNbVV4TkRCbE5UZ3dZVFV3TURNeFpXSXhNalExWlRZMU5HSTNNbVExT0ROak5ETTVaVFF3WVRCallqWTFaV0UwWXpZek56TXlPR1ppT0RnNVl6UUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU2OjA0LjkwNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--65dada6cd6797a7ac0266f78962aa1a7be0a767d/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6Y3hNbVV4TkRCbE5UZ3dZVFV3TURNeFpXSXhNalExWlRZMU5HSTNNbVExT0ROak5ETTVaVFF3WVRCallqWTFaV0UwWXpZek56TXlPR1ppT0RnNVl6UUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU2OjA0LjkwNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--65dada6cd6797a7ac0266f78962aa1a7be0a767d/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png
+Completed 302 Found in 1797ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6Y3hNbVV4TkRCbE5UZ3dZVFV3TURNeFpXSXhNalExWlRZMU5HSTNNbVExT0ROak5ETTVaVFF3WVRCallqWTFaV0UwWXpZek56TXlPR1ppT0RnNVl6UUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU2OjA0LjkwNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--65dada6cd6797a7ac0266f78962aa1a7be0a767d/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png" for ::1 at 2019-10-25 06:51:04 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"FC Event Banner.png\"; filename*=UTF-8''FC%20Event%20Banner.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6Y3hNbVV4TkRCbE5UZ3dZVFV3TURNeFpXSXhNalExWlRZMU5HSTNNbVExT0ROak5ETTVaVFF3WVRCallqWTFaV0UwWXpZek56TXlPR1ppT0RnNVl6UUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU2OjA0LjkwNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--65dada6cd6797a7ac0266f78962aa1a7be0a767d", "filename"=>"FC Event Banner"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-25 06:51:17 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Rendered layouts/_contact.html.slim (15.6ms)
+  Rendered home/index.html.slim within layouts/application (52.3ms)
+Completed 200 OK in 158ms (Views: 144.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/software" for ::1 at 2019-10-25 06:51:19 +0100
+Processing by ProjectController#load_software as HTML
+  Rendering project/load_software.html.slim within layouts/application
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Software'[0m
+  ↳ app/views/project/load_software.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+[36m  Disk Storage (1.0ms) [0m[34mChecked if file exists at key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (no)[0m
+[36m  Disk Storage (36.8ms) [0m[34mDownloaded file from key: RWr7ZwcXAc1ZRJE65brbz7Yi[0m
+[36m  Disk Storage (5.6ms) [0m[32mUploaded file to key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad[0m
+  Rendered layouts/_contact.html.slim (13.7ms)
+  Rendered layouts/_navigation.html.slim (38.8ms)
+  Rendered project/load_software.html.slim within layouts/application (1718.0ms)
+Completed 200 OK in 1891ms (Views: 1861.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf88057ba4b70c3890f3f46ffe1325c67b4a4215/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f/FC%20Event%20Banner.png" for ::1 at 2019-10-25 06:51:21 +0100
+Processing by ActiveStorage::RepresentationsController#show as PNG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf88057ba4b70c3890f3f46ffe1325c67b4a4215", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f", "filename"=>"FC Event Banner"}
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.9ms) [0m[34mChecked if file exists at key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+[36m  Disk Storage (1.6ms) [0m[34mGenerated URL for file at key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU2OjIxLjU4MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--f5ada0cddd6a17bcc6313a50ff1601fbdecc2105/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU2OjIxLjU4MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--f5ada0cddd6a17bcc6313a50ff1601fbdecc2105/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png
+Completed 302 Found in 136ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU2OjIxLjU4MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--f5ada0cddd6a17bcc6313a50ff1601fbdecc2105/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png" for ::1 at 2019-10-25 06:51:21 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"FC Event Banner.png\"; filename*=UTF-8''FC%20Event%20Banner.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU2OjIxLjU4MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--f5ada0cddd6a17bcc6313a50ff1601fbdecc2105", "filename"=>"FC Event Banner"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/projects" for ::1 at 2019-10-25 06:53:05 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (0.8ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (3.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.1ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.1ms)
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` LIMIT 25 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (315.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (14.5ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (564.1ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (630.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (20.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (2.4ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (16.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 1108ms (Views: 1043.3ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/admin/projects/8" for ::1 at 2019-10-25 06:53:09 +0100
+Processing by ProjectsAdmin::AdminController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 8 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 8 LIMIT 1[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdministrator Load (0.6ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb within layouts/trestle/admin
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-active_storage-2.1.1/app/views/trestle/active_storage/_has_one_field.html.erb (3.2ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (4.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (0.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (0.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (276.2ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb within layouts/trestle/admin (312.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (21.1ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (2.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (21.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 895ms (Views: 754.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lOTXpBd2VETXdNRDRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--574fcaded64ba3e860f3225800f0f26cc7bf48cb/aa.png" for ::1 at 2019-10-25 06:53:10 +0100
+Processing by ActiveStorage::RepresentationsController#show as PNG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lOTXpBd2VETXdNRDRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--574fcaded64ba3e860f3225800f0f26cc7bf48cb", "filename"=>"aa"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.8ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/712e140e580a50031eb1245e654b72d583c439e40a0cb65ea4c637328fb889c4 (no)[0m
+[36m  Disk Storage (17.8ms) [0m[34mDownloaded file from key: 1ThQYzwXMu3hUY5PdUgCT9TK[0m
+[36m  Disk Storage (4.4ms) [0m[32mUploaded file to key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/712e140e580a50031eb1245e654b72d583c439e40a0cb65ea4c637328fb889c4[0m
+[36m  Disk Storage (1.1ms) [0m[34mGenerated URL for file at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/712e140e580a50031eb1245e654b72d583c439e40a0cb65ea4c637328fb889c4 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6Y3hNbVV4TkRCbE5UZ3dZVFV3TURNeFpXSXhNalExWlRZMU5HSTNNbVExT0ROak5ETTVaVFF3WVRCallqWTFaV0UwWXpZek56TXlPR1ppT0RnNVl6UUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6MTIuMzQwWiIsInB1ciI6ImJsb2Jfa2V5In19--4dfc9dcd3103b2ef4f058e4d9408b7f1547f5bd6/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6Y3hNbVV4TkRCbE5UZ3dZVFV3TURNeFpXSXhNalExWlRZMU5HSTNNbVExT0ROak5ETTVaVFF3WVRCallqWTFaV0UwWXpZek56TXlPR1ppT0RnNVl6UUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6MTIuMzQwWiIsInB1ciI6ImJsb2Jfa2V5In19--4dfc9dcd3103b2ef4f058e4d9408b7f1547f5bd6/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png
+Completed 302 Found in 1787ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6Y3hNbVV4TkRCbE5UZ3dZVFV3TURNeFpXSXhNalExWlRZMU5HSTNNbVExT0ROak5ETTVaVFF3WVRCallqWTFaV0UwWXpZek56TXlPR1ppT0RnNVl6UUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6MTIuMzQwWiIsInB1ciI6ImJsb2Jfa2V5In19--4dfc9dcd3103b2ef4f058e4d9408b7f1547f5bd6/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-10-25 06:53:12 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6Y3hNbVV4TkRCbE5UZ3dZVFV3TURNeFpXSXhNalExWlRZMU5HSTNNbVExT0ROak5ETTVaVFF3WVRCallqWTFaV0UwWXpZek56TXlPR1ppT0RnNVl6UUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6MTIuMzQwWiIsInB1ciI6ImJsb2Jfa2V5In19--4dfc9dcd3103b2ef4f058e4d9408b7f1547f5bd6", "filename"=>"aa"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started PATCH "/admin/projects/8" for ::1 at 2019-10-25 06:53:17 +0100
+Processing by ProjectsAdmin::AdminController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NqSyasHVTSaBSn4WM2Mi7sx32bwf+trIUBBCktbdnhvmbUX1qhSA8Ho8b1oJdF1E9atmGt+c+2btQhXAt9fS+w==", "project"=>{"title"=>"TEst", "link"=>"https://vimeo.com/chexvisual", "kind"=>"Software", "delete_image"=>"0"}, "button"=>"", "id"=>"8"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 8 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 8 LIMIT 1[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdministrator Load (1.1ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Update (2.2ms)[0m  [1m[33mUPDATE `projects` SET `kind` = 'Software', `updated_at` = '2019-10-25 05:53:17' WHERE `projects`.`id` = 8[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/projects/8
+Completed 302 Found in 193ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/admin/projects/8" for ::1 at 2019-10-25 06:53:17 +0100
+Processing by ProjectsAdmin::AdminController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 8 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Project Load (0.1ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 8 LIMIT 1[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdministrator Load (0.9ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-active_storage-2.1.1/app/views/trestle/active_storage/_has_one_field.html.erb (6.4ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (7.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_alert.html.erb (3.4ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (76.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (1.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (2.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (582.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb (657.0ms)
+Completed 200 OK in 891ms (Views: 725.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/software" for ::1 at 2019-10-25 06:53:21 +0100
+Processing by ProjectController#load_software as HTML
+  Rendering project/load_software.html.slim within layouts/application
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Software'[0m
+  ↳ app/views/project/load_software.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+[36m  Disk Storage (0.9ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+[36m  Disk Storage (0.7ms) [0m[34mChecked if file exists at key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+  Rendered layouts/_contact.html.slim (11.9ms)
+  Rendered layouts/_navigation.html.slim (35.0ms)
+  Rendered project/load_software.html.slim within layouts/application (273.1ms)
+Completed 200 OK in 412ms (Views: 394.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f/aa.png" for ::1 at 2019-10-25 06:53:21 +0100
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf88057ba4b70c3890f3f46ffe1325c67b4a4215/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f/FC%20Event%20Banner.png" for ::1 at 2019-10-25 06:53:21 +0100
+Processing by ActiveStorage::RepresentationsController#show as PNG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f", "filename"=>"aa"}
+Processing by ActiveStorage::RepresentationsController#show as PNG
+  [1m[36mActiveStorage::Blob Load (3.1ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf88057ba4b70c3890f3f46ffe1325c67b4a4215", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f", "filename"=>"FC Event Banner"}
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+[36m  Disk Storage (1.0ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (3.8ms) [0m[34mGenerated URL for file at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6MjEuNzA3WiIsInB1ciI6ImJsb2Jfa2V5In19--34cc17970508a4ac6a80a44b3eb42e0212fd7e2b/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png)[0m
+[36m  Disk Storage (1.0ms) [0m[34mChecked if file exists at key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6MjEuNzA3WiIsInB1ciI6ImJsb2Jfa2V5In19--34cc17970508a4ac6a80a44b3eb42e0212fd7e2b/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png
+[36m  Disk Storage (1.6ms) [0m[34mGenerated URL for file at key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU4OjIxLjc1NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--0c908e3152d3d2656ad3498f8e5490529587016d/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png)[0m
+Completed 302 Found in 109ms (ActiveRecord: 3.1ms)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU4OjIxLjc1NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--0c908e3152d3d2656ad3498f8e5490529587016d/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png
+Completed 302 Found in 126ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6MjEuNzA3WiIsInB1ciI6ImJsb2Jfa2V5In19--34cc17970508a4ac6a80a44b3eb42e0212fd7e2b/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-10-25 06:53:21 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU4OjIxLjc1NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--0c908e3152d3d2656ad3498f8e5490529587016d/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png" for ::1 at 2019-10-25 06:53:21 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6MjEuNzA3WiIsInB1ciI6ImJsb2Jfa2V5In19--34cc17970508a4ac6a80a44b3eb42e0212fd7e2b", "filename"=>"aa"}
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"FC Event Banner.png\"; filename*=UTF-8''FC%20Event%20Banner.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU4OjIxLjc1NFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--0c908e3152d3d2656ad3498f8e5490529587016d", "filename"=>"FC Event Banner"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/projects" for ::1 at 2019-10-25 06:53:26 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (0.6ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (5.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.1ms)
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` LIMIT 25 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (466.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (29.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (851.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (948.4ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.2ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (29.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (2.4ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (18.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.8ms)
+Completed 200 OK in 1676ms (Views: 1583.4ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/admin/projects" for ::1 at 2019-10-25 06:53:29 +0100
+Processing by ProjectsAdmin::AdminController#index as HTML
+  [1m[36mAdministrator Load (0.8ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (2.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (0.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.3ms)
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` LIMIT 25 OFFSET 0[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/table/_table.html.erb (164.5ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/table/_pagination.html.erb (18.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_layout.html.erb (528.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/index.html.erb within layouts/trestle/admin (660.4ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (20.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (2.1ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (17.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 1262ms (Views: 1145.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/admin/projects/7" for ::1 at 2019-10-25 06:53:31 +0100
+Processing by ProjectsAdmin::AdminController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 7 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdministrator Load (0.6ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb within layouts/trestle/admin
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-active_storage-2.1.1/app/views/trestle/active_storage/_has_one_field.html.erb (1.4ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (4.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (0.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (265.6ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb within layouts/trestle/admin (297.8ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_title.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_sidebar.html.erb (26.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-auth-0.2.5/app/views/trestle/auth/_userbox.html.erb (2.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_header.html.erb (18.1ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 868ms (Views: 762.5ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/admin/projects/7" for ::1 at 2019-10-25 06:53:36 +0100
+Processing by ProjectsAdmin::AdminController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HW7LMk0rbig7cLyjeyi2MUikvCA2L6F/bhXq6DPad1zNpzytJuqj/sAGre9BP8mbcXgDhvZJgNHTR726UtA7vA==", "project"=>{"title"=>"Test 4", "link"=>"https://www.facebook.com/albrayanov", "kind"=>"Software"}, "button"=>"", "id"=>"7"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 7 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Project Load (0.1ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdministrator Load (0.5ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Update (1.7ms)[0m  [1m[33mUPDATE `projects` SET `kind` = 'Software', `updated_at` = '2019-10-25 05:53:36' WHERE `projects`.`id` = 7[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/projects/7
+Completed 302 Found in 194ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/admin/projects/7" for ::1 at 2019-10-25 06:53:36 +0100
+Processing by ProjectsAdmin::AdminController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 7 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` WHERE `projects`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdministrator Load (0.6ms)[0m  [1m[34mSELECT  `administrators`.* FROM `administrators` WHERE `administrators`.`id` = 1 LIMIT 1[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-active_storage-2.1.1/app/views/trestle/active_storage/_has_one_field.html.erb (2.2ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_header.html.erb (6.1ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_alert.html.erb (1.3ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/flash/_flash.html.erb (30.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_utilities.html.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/application/_tabs.html.erb (1.7ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/_form.html.erb (472.9ms)
+  Rendered /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/trestle-0.8.12/app/views/trestle/resource/show.html.erb (540.8ms)
+Completed 200 OK in 885ms (Views: 602.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/software" for ::1 at 2019-10-25 06:53:39 +0100
+Processing by ProjectController#load_software as HTML
+  Rendering project/load_software.html.slim within layouts/application
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`kind` = 'Software'[0m
+  ↳ app/views/project/load_software.html.slim:3
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+[36m  Disk Storage (1.0ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'Project' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/project/load_software.html.slim:8
+[36m  Disk Storage (0.9ms) [0m[34mChecked if file exists at key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+  Rendered layouts/_contact.html.slim (12.5ms)
+  Rendered layouts/_navigation.html.slim (39.8ms)
+  Rendered project/load_software.html.slim within layouts/application (240.8ms)
+Completed 200 OK in 391ms (Views: 373.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f/aa.png" for ::1 at 2019-10-25 06:53:40 +0100
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf88057ba4b70c3890f3f46ffe1325c67b4a4215/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f/FC%20Event%20Banner.png" for ::1 at 2019-10-25 06:53:40 +0100
+Processing by ActiveStorage::RepresentationsController#show as PNG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce903e1ff71fae7dee2c1937c003012c1f8483b0", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f", "filename"=>"aa"}
+Processing by ActiveStorage::RepresentationsController#show as PNG
+  [1m[36mActiveStorage::Blob Load (5.9ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf88057ba4b70c3890f3f46ffe1325c67b4a4215", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTkRBd2VEUXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--9fe1a3ab2ea1b6b15043fc1e3ee5b7681c333f2f", "filename"=>"FC Event Banner"}
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+[36m  Disk Storage (1.1ms) [0m[34mChecked if file exists at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+  ↳ /root/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: variants/1ThQYzwXMu3hUY5PdUgCT9TK/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6NDAuMjM1WiIsInB1ciI6ImJsb2Jfa2V5In19--6b6fe25e9724624beb5ae3cf7029af1cd9855c99/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png)[0m
+[36m  Disk Storage (1.4ms) [0m[34mChecked if file exists at key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (yes)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6NDAuMjM1WiIsInB1ciI6ImJsb2Jfa2V5In19--6b6fe25e9724624beb5ae3cf7029af1cd9855c99/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png
+[36m  Disk Storage (1.5ms) [0m[34mGenerated URL for file at key: variants/RWr7ZwcXAc1ZRJE65brbz7Yi/797c1609b7dee872fa00dbfce2a8121281acbc49885ae1e56929a76bcb6e28ad (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU4OjQwLjI3OFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--42ea00d7c891e35c37ab985c896d5636791533ae/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png)[0m
+Completed 302 Found in 118ms (ActiveRecord: 5.9ms)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU4OjQwLjI3OFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--42ea00d7c891e35c37ab985c896d5636791533ae/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png
+Completed 302 Found in 137ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU4OjQwLjI3OFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--42ea00d7c891e35c37ab985c896d5636791533ae/FC%20Event%20Banner.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22FC+Event+Banner.png%22%3B+filename%2A%3DUTF-8%27%27FC%2520Event%2520Banner.png" for ::1 at 2019-10-25 06:53:40 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"FC Event Banner.png\"; filename*=UTF-8''FC%20Event%20Banner.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbGR5TjFwM1kxaEJZekZhVWtwRk5qVmljbUo2TjFscEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJbFZwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pHUXlCRmRtVnVkQ0JDWVc1dVpYSXVjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkR1F5VXlNRVYyWlc1MEpUSXdRbUZ1Ym1WeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDE5LTEwLTI1VDA1OjU4OjQwLjI3OFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--42ea00d7c891e35c37ab985c896d5636791533ae", "filename"=>"FC Event Banner"}
+Completed 200 OK in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6NDAuMjM1WiIsInB1ciI6ImJsb2Jfa2V5In19--6b6fe25e9724624beb5ae3cf7029af1cd9855c99/aa.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22aa.png%22%3B+filename%2A%3DUTF-8%27%27aa.png" for ::1 at 2019-10-25 06:53:40 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"aa.png\"; filename*=UTF-8''aa.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZNVlJvVVZsNmQxaE5kVE5vVlZrMVVHUlZaME5VT1ZSTEx6YzVOMk14TmpBNVlqZGtaV1U0TnpKbVlUQXdaR0ptWTJVeVlUZ3hNakV5T0RGaFkySmpORGs0T0RWaFpURmxOVFk1TWpsaE56WmlZMkkyWlRJNFlXUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJamRwYm14cGJtVTdJR1pwYkdWdVlXMWxQU0poWVM1d2JtY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMkZoTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMTktMTAtMjVUMDU6NTg6NDAuMjM1WiIsInB1ciI6ImJsb2Jfa2V5In19--6b6fe25e9724624beb5ae3cf7029af1cd9855c99", "filename"=>"aa"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
