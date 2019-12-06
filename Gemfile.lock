@@ -137,7 +137,7 @@ GEM
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     public_suffix (3.1.0)
-    puma (3.12.1)
+    puma (3.12.2)
     rack (2.0.7)
     rack-proxy (0.6.5)
       rack
@@ -268,7 +268,7 @@ DEPENDENCIES
   mini_racer
   mysql2 (>= 0.3.18, < 0.5)
   octokit (~> 4.0)
-  puma (~> 3.7)
+  puma (~> 3.12)
   rack (>= 2.0.6)
   rails (~> 5.2.0)
   sass-rails (~> 5.0)
