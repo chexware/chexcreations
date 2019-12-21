@@ -22,7 +22,7 @@
     "webpack:deploy": "webpack --config=webpack/webpack.config.js -p"
   },
   "engines": {
-    "node": "12.4.0",
-    "yarn": "1.16.0"
+    "node": "12.13.0",
+    "yarn": "1.19.1"
   }
 }

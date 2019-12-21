@@ -1,17 +1,9 @@
 Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   root to: 'home#index'
-  get 'thoughts', to: 'thoughts#load_all'
   get 'art', to: 'project#load_art'
   get 'software', to: 'project#load_software'
-  get 'thoughts/new', to: 'thoughts#new_thought'
-  post 'thoughts/new', to: 'thoughts#create_thought'
-  get 'thoughts/:id/edit', to: 'thoughts#edit_thought'
-  post 'thoughts/:id/edit', to: 'thoughts#update_thought'
-  post 'thoughts/:id/delete', to: 'thoughts#destroy_thought'
-  post 'thoughts/:id/comment', to: 'thoughts#create_comment'
-  post 'thoughts/:tid/comment/:cid/delete', to: 'thoughts#destroy_comment'
-  get 'thoughts/:id', to: 'thoughts#load_post'
+  get 'support', to: 'suppport#support'
   get 'projects/new/:mode', to: 'project#new'
   post 'projects/new', to: 'project#create'
   get  'projects/:id/edit', to: 'project#edit'
