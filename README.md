@@ -1,1 +1,1 @@
-# CHEX Visual Portfolio Website
+# CHEX Portfolio Website
