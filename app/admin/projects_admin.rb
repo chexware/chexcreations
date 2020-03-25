@@ -9,7 +9,7 @@ Trestle.resource(:projects) do
     text_field :title
     text_field :link
     select :kind, ["Art", "Software"]
-    active_storage_field :image
+    active_storage_field :image 
   end
 
 

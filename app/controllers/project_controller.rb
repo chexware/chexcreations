@@ -10,54 +10,19 @@ class ProjectController < ApplicationController
   end
   
   def new
-		@project
-		if params[:mode] == "art"
-			get_vimeo_videos
-		else
-			get_github_repos
-		end
-	end
+  end
 	
-  
   def create
-  	@project = Project.new(project_params)
-  
-    if @project.save
-	    if  project_params[:kind]  == 'Software'
-		    redirect_to '/software'
-	    else
-		    redirect_to '/art'
-	    end	
-    else
-      render 'new'
-    end
   end
   
   def edit
-		@project = Project.find(params[:id])
   end
   
   def update
-  	@project = Project.find(params[:id])
-    if @project.update_attributes(project_params)
-      if project_params[:kind] == 'Software'
-		    redirect_to '/software'
-	    else
-		    redirect_to '/art'
-	    end	
-    else
-      render 'edit'
-    end
   end
   
   def delete
-    @project = Project.find(params[:id])
-    @project.destroy
-	  if @project.kind == 'Software'
-		  redirect_to '/software'
-	  else
-		  redirect_to '/art'
-	  end	
+    	
   end
   
  

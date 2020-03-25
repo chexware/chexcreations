@@ -1,6 +1,5 @@
 .uk-cover-background[uk-height-viewport]
-    video.uk-cover-object(loop muted playsinline uk-video="autoplay: inview" uk-height-match="body" class="uk-visible@l")
-        source(src="/assets/chex-cover.mp4")
+    = cl_video_tag "chex-cover", loop: true, autoplay: true,class: "uk-visible@l uk-cover-object", fallback_content: "Your browser does not support HTML5 video tags" 
     .uk-position-cover.uk-grid-collapse.uk-text-center.uk-flex[uk-grid]
         .uk-flex-last.uk-width-1-1.uk-grid[class ="uk-flex-first@m"]
             .uk-height-medium.uk-width-1-1[ class ="uk-width-1-2@m"]
