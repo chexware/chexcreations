@@ -7,3 +7,7 @@ node_modules
 yarn-debug.log*
 .yarn-integrity
 sendgrid.env
+/config/initializers/cloudinary.rb
+/package.json
+/vendor/bundle
+
