@@ -11,7 +11,10 @@
         .uk-height-medium.uk-flex-first.uk-width-1-1.uk-animation-toggle[ class ="uk-flex-last@m"]
             .uk-width-medium.uk-height-small.uk-flex-inline.uk-flex-center.uk-animation-scale-up
                 a.uk-heading-xlarge.chex-link(href="#modal-about" uk-toggle) 
-                    img.uk-responsive-height.uk-responsive-width(src='/assets/chex-logo.png'  uk-img)
+                    picture
+                        source srcset="/assets/chex-logo-small.png" media="(max-width: 640px)"
+                        source srcset="/assets/chex-logo.png"
+                        img.uk-responsive-height.uk-responsive-width(src='/assets/chex-logo.png'  uk-img)
                 = render 'layouts/about'
                
         .uk-width-1-1.uk-flex-last
