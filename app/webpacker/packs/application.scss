@@ -36,17 +36,15 @@ img {
 .uk-heading-large, .uk-heading-medium, .uk-heading-small {
 	font-family: 'Allerta Stencil', sans-serif;
 }
-.uk-modal-header {
+.uk-modal-header, .uk-modal-footer, #menu-trigger {
 	border: none;
 }
 
-.uk-link-heading:hover, #menu-trigger, .uk-heading-xlarge:hover {
+.uk-link-heading:hover, #menu-trigger, .uk-heading-xlarge:hover, .uk-icon-button,.uk-modal-dialog, .uk-modal-header, .uk-modal-footer {
 	//color:rgb(159, 166, 159);
 	background-color: rgb(24,25,24);
 }
-.uk-modal-dialog, .uk-modal-header {
-	background-color: rgb(46, 51, 49);
-}
+ 
 .uk-button-primary {
 	background-color: rgb(46, 77, 63);
 }
@@ -54,30 +52,38 @@ img {
 	background-color: rgb(77, 128, 105);
 }
 
-#menu-trigger {
-	border: none;
-}
 
 .chex-link {
+	
 	color:rgb(102, 102, 102);
 	background-color: transparent;
 }
-.custom-error {
+.custom-error  {
 	color:rgb(102, 102, 102);
 }
+.support-link {
+	color:rgb(159, 166, 159);
+	//color:rgb(192, 193, 193);
+	background-color: transparent;
 
-.chex-link:hover, .project-link:hover {
+}
+
+.uk-icon-button {
+	background-color: transparent;
+}
+
+
+.chex-link:hover, .project-link:hover, .support-link:hover, .uk-icon-button:hover {
 	text-decoration: none;
 	color:rgb(255, 255, 255);
 	background-color: transparent;
 }
 
+
 .project-link {
 	font-size: 60px;
 }
-.project-link:hover {
-	background-color: transparent;
-}
+
 
 
 

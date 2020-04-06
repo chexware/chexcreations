@@ -1,17 +1,29 @@
-#modal-about.uk-modal-container.uk-position-z-index[uk-modal]
+#modal-about[uk-modal]
   .uk-modal-dialog.uk-margin-auto-vertical
-        <button class="uk-light uk-modal-close-default" type="button" uk-close></button>
-        .uk-modal-header.uk-text-center
-          .uk-heading-small.uk-light About
-        .uk-modal-body.uk-text-center
-            .uk-text-small.uk-light I perform as a live visual artist under the name CHEX.
-            .uk-text-small.uk-light In my creative practice, I distort recorded footage 
-            .uk-text-small.uk-light with digitally generated content and scripts that I wrote.
-            .uk-text-small.uk-light Through this, I aim to reflect on the relationship between humans and technology.
-            .uk-container[ class ="uk-child-width-1-2@m"]
-                    a.uk-link-medium.uk-logo href="https://www.patreon.com/chexvisual"
-                        img.uk-responsive-height.uk-responsive-width(src="/assets/become_a_patron_button@2x.png" uk-img)
-                    a.uk-link-medium.uk-logo href="https://brave.com/che990"
-                        img.uk-responsive-height.uk-responsive-width(src="/assets/switch_banner_2@2x.png" uk-img)
+    <button class="uk-light uk-modal-close-default" type="button" uk-close></button>
+    .uk-modal-header.uk-text-center
+      .uk-heading-small.uk-light About
+    .uk-modal-body.uk-text-center.uk-margin-remove.uk-padding-small
+        .uk-text-small.uk-light I perform as a live visual artist under the name CHEX.
+        .uk-text-small.uk-light In my creative practice, I distort recorded footage 
+        .uk-text-small.uk-light with digitally generated content and scripts that I wrote.
+        .uk-text-small.uk-light Through this, I aim to reflect on the relationship between humans and technology.
+        .uk-width-1-1.uk-grid.uk-grid-collapse.uk-margin-medium-top
+          .uk-width-1-3
+          .uk-width-1-3.uk-grid.uk-grid-collapse.uk-child-width-expand
+            .uk-margin-remove
+              a.uk-icon-button (uk-icon="vimeo" href="https://vimeo.com/chexvisual") 
+            .uk-margin-remove
+              a.uk-icon-button (uk-icon="github" href="https://github.com/chexware") 
+            .uk-margin-remove
+              a.uk-icon-button (uk-icon="instagram" href="https://instagram.com/chexvisual") 
+          .uk-width-1-3
+    .uk-modal-footer.uk-text-center.uk-margin-remove-top.uk-padding-small-bottom
+        .uk-width-1-1
+          = link_to "Become a Patron", "https://www.patreon.com/bePatron?u=9199967",  class: "uk-text-small support-link uk-light"
+        .uk-width-1-1
+          = link_to "Support me through Brave", "https://brave.com/che990",  class: "uk-text-small support-link uk-light"
+        .uk-text-small.uk-light Created by Aleksandar Brayanov #{Time.current.year}
+
                 
 			
