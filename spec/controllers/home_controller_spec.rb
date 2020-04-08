@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Homes", type: :request do
+RSpec.describe "Home", type: :request do
     describe 'GET home' do
         it 'renders the home template' do
           get("/")

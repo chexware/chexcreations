@@ -1,10 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "ExceptionsController", type: :controller do
-  @controller = ExceptionsController;
+RSpec.describe "Exceptions", type: :request do
   describe 'GET 404' do
     it 'renders the not_found template' do
-      get("/actually")
+      get("/404")
       expect(response).to render_template('exceptions/not_found')
     end
   end

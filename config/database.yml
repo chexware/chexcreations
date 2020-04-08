@@ -52,9 +52,9 @@ test:
 #
 production:
   <<: *default
-  username: nky5ksc7bp12cqmi
-  password: c8zfojj8ta1vvo9n
+  username: <%= ENV['JAWSDB_USERNAME'] %>
+  password: <%= ENV['JAWSDB_PASSWORD'] %>
   port: 3306
-  host: b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com
-  url: <%= ENV['DATABASE_URL'] %>
+  host:  <%= ENV['JAWSDB_HOST'] %>
+  url: <%= ENV['JAWSDB_URL'] %>
   database: nvecamje46qnv4x2

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Projects", type: :request do
+RSpec.describe "Project", type: :request do
     describe 'GET art' do
         it 'renders the load_art template' do
           get("/art")
