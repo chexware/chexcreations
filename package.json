@@ -1,4 +1,5 @@
 {
+  "license": "UNLICENSED",
   "dependencies": {
     "@babel/preset-react": "^7.0.0",
     "@rails/actioncable": "^6.0.0-alpha",
