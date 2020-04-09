@@ -17,7 +17,7 @@ default: &default
 development:
   <<: *default
   username: root
-  password:
+  password: test
   host: localhost
   database: chexcreations_development
 

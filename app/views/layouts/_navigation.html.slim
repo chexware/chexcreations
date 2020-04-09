@@ -11,6 +11,9 @@
 							source srcset="/assets/chex-logo-menu.png"
 							img.uk-responsive-height.uk-responsive-width(src='/assets/chex-logo-menu.png'  uk-img)
 			li
+				a.uk-link-heading(href="#modal-about" uk-toggle) About
+				= render 'layouts/about'
+			li
 				a.uk-link-heading(href="#modal-center" uk-toggle) Contact
 				= render 'layouts/contact'
 			li
