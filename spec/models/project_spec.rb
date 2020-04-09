@@ -49,7 +49,7 @@ RSpec.describe Project, type: :model do
   end
 
   describe "Project entry is valid" do
-    it "is valid without an image" do
+    it "without an image" do
       project = Project.new
       project.title = "Test"
       project.link = "https://testl.com"
@@ -57,9 +57,9 @@ RSpec.describe Project, type: :model do
       expect(project).to be_valid
     end    
 
-    it "is valid with an uploaded image" do
-      pending "add some examples to (or delete) #{__FILE__}"
-    end   
+  pending "TO DO project valid with uploaded image #{__FILE__}"
+     
+
   end
 
 end

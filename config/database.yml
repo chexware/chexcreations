@@ -57,4 +57,4 @@ production:
   port: 3306
   host:  <%= ENV['JAWSDB_HOST'] %>
   url: <%= ENV['DATABASE_URL'] %>
-  database: nvecamje46qnv4x2
+  database: <%= ENV['JAWSDB_NAME'] %>
