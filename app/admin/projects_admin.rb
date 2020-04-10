@@ -10,6 +10,9 @@ Trestle.resource(:projects) do
     text_field :link
     select :kind, ["Art", "Software"]
     active_storage_field :image 
+    #TO DO: Select GitHub repositories as projects (VERSION 2)
+    #TO DO: Select Vimeo showcases as projects (VERSION 2)
+    
   end
 
 
