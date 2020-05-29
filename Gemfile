@@ -27,7 +27,7 @@ gem 'image_processing', '~> 1.2'
 gem 'mail_form'
 gem 'sendgrid-ruby'
 # Use trestle as admin panel
-gem "trestle"
+gem "trestle", "=0.9.2"
 gem 'trestle-auth'
 gem 'trestle-active_storage'
 # gem 'therubyracer', platforms: :ruby
