@@ -18,6 +18,12 @@
               a.uk-icon-button (uk-icon="github" href="https://github.com/chexware") 
             .uk-margin-remove
               a.uk-icon-button (uk-icon="instagram" href="https://instagram.com/chexvisual") 
+            .uk-margin-remove
+              a.chex-link.cv-link.uk-text-bold.uk-margin-small-left( href="#modal-cv" uk-toggle) CV
+              #modal-cv[uk-modal]
+                 .uk-modal-dialog.uk-margin-auto-vertical.flex-top.uk-width-auto
+                    <button class="uk-light uk-modal-close-default" type="button" uk-close></button>
+                    = cl_image_tag("art-cv-image_hx6sxd.jpg", alt: "CV")
           .uk-width-1-3
     .uk-modal-footer.uk-text-center.uk-margin-remove-top.uk-padding-small-bottom
         .uk-width-1-1
