@@ -1,10 +1,10 @@
 .uk-position-top.uk-margin-small-top(uk-sticky="show-on-up: true")
 	button.uk-button.uk-button-default.chex-link(type="button" uk-toggle="target: #offcanvas-nav-primary" id="menu-trigger")Menu
 #offcanvas-nav-primary[uk-offcanvas="overlay: true"]
-	#menu.uk-offcanvas-bar[ class ="uk-width-1-6@m"]
+	#menu.uk-offcanvas-bar[ class ="uk-width-1-5@m"]
 		ul.uk-nav-primary.uk-nav.uk-align-center.uk-text-center.uk-flex.uk-flex-column(class="uk-align-left@m uk-text-left@m")
 			li.uk-nav-header.uk-animation-toggle
-				.uk-max-height-small.uk-flex-inline.uk-flex-center.uk-width-1-4.uk-animation-shake(class="uk-width-1-6@s uk-width-1-1@m")
+				.uk-max-height-small.uk-flex-inline.uk-flex-center.uk-width-1-4.uk-animation-shake(class="uk-width-1-5@s uk-width-1-1@m")
 					a.uk-link-heading.uk-logo href="/"
 						picture
 							source srcset="/assets/chex-logo-menu-small.png" media="(max-width: 640px)"
@@ -17,7 +17,7 @@
 				a.uk-link-heading(href="#modal-center" uk-toggle) Contact
 				= render 'layouts/contact'
 			li
-				= link_to "Software", "/software",  class: "uk-link-heading"
+				= link_to "?Technology", "/blog",  class: "uk-link-heading"
 			li
 				= link_to "Art", "/art",  class: "uk-link-heading"
 					
