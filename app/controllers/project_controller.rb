@@ -1,10 +1,5 @@
 class ProjectController < ApplicationController
-	def load_art
-		@contact = Contact.new
-		@projects = Project.all
-	end
-	
-	def load_software
+	def load
 		@contact = Contact.new
 		@projects = Project.all
 	end
