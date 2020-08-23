@@ -1,12 +1,7 @@
 class ProjectController < ApplicationController
-	def load_art
+	def load
 		@contact = Contact.new
-		@projects = Project.where(kind: "Art")
-	end
-	
-	def load_software
-		@contact = Contact.new
-		@projects = Project.where(kind: "Software")
+		@projects = Project.all
 	end
 	
 	def  get_github_repos
@@ -27,7 +22,6 @@ class ProjectController < ApplicationController
 		end
 		@project.title = video[0]["title"]
 		@project.link = video[0]["url"]
-		@project.kind = 'Art'
 		if params[:mode] == 'edit'
 			render 'edit'
 		else
@@ -38,7 +32,7 @@ class ProjectController < ApplicationController
   private
   
   def project_params
-    params.require(:project).permit(:title, :link, :kind, :image)
+    params.require(:project).permit(:title, :link,  :image)
   end
   
 end
