@@ -30,6 +30,7 @@ gem 'sendgrid-ruby'
 gem "trestle", ">=0.9.3"
 gem 'trestle-auth'
 gem 'trestle-active_storage'
+gem 'trestle-tinymce'
 # gem 'therubyracer', platforms: :ruby
 # Use Cloudinary as media cloud storage
 gem "cloudinary"
@@ -54,7 +55,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'rspec-rails'
   gem 'rails-controller-testing'
-  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'master'
   gem 'factory_bot_rails'
   gem 'selenium-webdriver'
 end
