@@ -12,7 +12,9 @@ Trestle.resource(:projects) do
     active_storage_field :image 
     #TO DO: Select GitHub repositories as projects (VERSION 2)
     #TO DO: Select Vimeo showcases as projects (VERSION 2)
-    
+    sidebar do
+      render "sidebar"
+    end
   end
 
 
