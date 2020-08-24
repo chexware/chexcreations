@@ -9,5 +9,5 @@ yarn-debug.log*
 sendgrid.env
 /config/initializers/cloudinary.rb
 /vendor/bundle
-
+/tmp
 
