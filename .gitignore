@@ -10,4 +10,5 @@ sendgrid.env
 /config/initializers/cloudinary.rb
 /vendor/bundle
 /tmp
+/config/initializers/sendgrid.rb
 
