@@ -2,13 +2,14 @@ Trestle.resource(:projects) do
   menu do
     item :projects, icon: "fa fa-star"
   end
+  
   active_storage_fields do
     [:image]
   end
+  
   form do |project|
     text_field :title
     text_field :link
-    # select :kind, ["Art", "Software"]
     active_storage_field :image 
     #TO DO: Select GitHub repositories as projects (VERSION 2)
     #TO DO: Select Vimeo showcases as projects (VERSION 2)

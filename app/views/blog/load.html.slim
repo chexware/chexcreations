@@ -1,5 +1,6 @@
 .uk-inline
 	.uk-grid.uk-grid-collapse.uk-child-width-expand
 		.uk-margin-xlarge-top.uk-text-center
-			.uk-heading-xlarge.uk-light This digital void will be filled with some thoughts soon :()
+			- @albums.each do |a|
+				p #{a.name} Showcase
 	= render 'layouts/navigation'

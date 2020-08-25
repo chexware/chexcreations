@@ -1,3 +1,16 @@
-= check_box_tag 'Use Vimeo Albums', true
 
-= check_box_tag 'Use GitHub Project', false
+= radio_button_tag :project_info, "vimeo", true 
+= label_tag "vimeo", "Vimeo Showcases"
+br
+= radio_button_tag :project_info, "github"  
+= label_tag "github", "GitHub Projects"
+br
+= radio_button_tag :project_info,  "manual" 
+= label_tag "manual", "Enter Info Manually"
+
+
+ul.uk-switcher.uk-margin
+- Octokit::Client.new(:access_token => API_KEYS['github']).repos({}, query: {type: 'owner', sort: 'asc'}).each do |r|
+    li #{r.name}  #{r.html_url}  
+    buttton.btn.btn-dark SELECT
+        
