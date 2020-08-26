@@ -12,5 +12,11 @@ br
 ul.uk-switcher.uk-margin
 - Octokit::Client.new(:access_token => API_KEYS['github']).repos({}, query: {type: 'owner', sort: 'asc'}).each do |r|
     li #{r.name}  #{r.html_url}  
-    buttton.btn.btn-dark SELECT
+    button.btn.btn-darkon type="button"  onclick="setFieldValues('#{r.name}','#{r.html_url}')" SELECT
+    javascript:
+        function setFieldValues(title, link) {
+            $('#title_field').val(title);
+            $('#link_field').val(link);
+        }
+
         

@@ -1,6 +1,6 @@
 .uk-inline
 	.uk-grid.uk-grid-collapse.uk-child-width-expand
 		.uk-margin-xlarge-top.uk-text-center
-			- @albums.each do |a|
-				p #{a.name} Showcase
+			- Vimeo.user('61857635').albums.index.each do |a|
+				p test
 	= render 'layouts/navigation'
