@@ -1,22 +1,18 @@
-
-= radio_button_tag :project_info, "vimeo", true 
-= label_tag "vimeo", "Vimeo Showcases"
-br
-= radio_button_tag :project_info, "github"  
-= label_tag "github", "GitHub Projects"
-br
-= radio_button_tag :project_info,  "manual" 
-= label_tag "manual", "Enter Info Manually"
-
-
-ul.uk-switcher.uk-margin
+//TO DO: Select Vimeo showcases as projects (VERSION 2)
+// Display GitHub Projects Info
+.card-deck
 - Octokit::Client.new(:access_token => API_KEYS['github']).repos({}, query: {type: 'owner', sort: 'asc'}).each do |r|
-    li #{r.name}  #{r.html_url}  
-    button.btn.btn-darkon type="button"  onclick="setFieldValues('#{r.name}','#{r.html_url}')" SELECT
-    javascript:
-        function setFieldValues(title, link) {
-            $('#title_field').val(title);
-            $('#link_field').val(link);
-        }
+    .card.mb-2
+        .card-body.text-decoration-none.row
+            .col-10.col-md-8.mt-2.pr-2
+                p.lead.text-decoration-none.card-subtitle: a.text-decoration-none href="#{r.html_url}" #{r.name} 
+            .col-2.col-md-4
+                button.btn.btn-dark type="button"  onclick="setFieldValues('#{r.name}','#{r.html_url}')" SELECT
+                javascript:
+                    function setFieldValues(title, link) {
+                        $('#title_field').val(title);
+                        $('#link_field').val(link);
+                    }
+    
 
         

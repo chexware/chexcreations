@@ -8,11 +8,10 @@ Trestle.resource(:projects) do
   end
   
   form do |project|
-    text_field :title
-    text_field :link
+    text_field :title, id: "title_field"
+    text_field :link, id: "link_field"
     active_storage_field :image 
-    #TO DO: Select GitHub repositories as projects (VERSION 2)
-    #TO DO: Select Vimeo showcases as projects (VERSION 2)
+   
     sidebar do
       render "sidebar"
     end
