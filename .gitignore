@@ -10,5 +10,5 @@ sendgrid.env
 /config/initializers/cloudinary.rb
 /vendor/bundle
 /tmp
-/config/api_keys.yml
+/config/local_env.yml
 
