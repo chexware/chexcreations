@@ -1,18 +1,45 @@
-//TO DO: Select Vimeo showcases as projects (VERSION 2)
-// Display GitHub Projects Info
-.card-deck
-- Octokit::Client.new(:access_token => API_KEYS['github']).repos({}, query: {type: 'owner', sort: 'asc'}).each do |r|
-    .card.mb-2
-        .card-body.text-decoration-none.row
-            .col-10.col-md-8.mt-2.pr-2
-                p.lead.text-decoration-none.card-subtitle: a.text-decoration-none href="#{r.html_url}" #{r.name} 
-            .col-2.col-md-4
-                button.btn.btn-dark type="button"  onclick="setFieldValues('#{r.name}','#{r.html_url}')" SELECT
-                javascript:
-                    function setFieldValues(title, link) {
-                        $('#title_field').val(title);
-                        $('#link_field').val(link);
-                    }
+.project-selection-widget   
+    .btn-group role="group" 
+    button.btn.btn-outline-dark.rounded-0 type="button" onclick="viewGitHubProjects()" GitHub Projects
+    button.btn.btn-outline-dark.rounded-0 type="button" onclick="viewVimeoAlbums()" Vimeo Albums
+
+    // Display Vimeo Albums List 
+    .card-block id="collapseVimeo" 
+        .card.mt-2.shadow
+            .card-body
+                p.lead.card-subtitle Can't access Vimeo Albums Yet :(
+        //TO-DO: Add Vimeo Albums 
+
+    // Display GitHub Projects Info
+    .card-block id="collapseGitHub"
+        - Octokit::Client.new(:access_token => API_KEYS['github']).repos({}, query: {type: 'owner', sort: 'asc'}).each do |r|
+            .card.mt-2.shadow
+                .card-body.row
+                    .col-10.col-md-8.mt-2.pr-2
+                        p.lead.text-decoration-none.card-subtitle: a.text-decoration-none href="#{r.html_url}" #{r.name} 
+                    .col-2.col-md-4
+                        button.btn.btn-dark.rounded-0 type="button"  onclick="setFieldValues('#{r.name}','#{r.html_url}')" SELECT
+
+javascript:
+    $(function () {
+        $('#collapseGitHub').css({display: "none"});
+        $('#collapseVimeo').css({display: "none"});
+    });
+    function setFieldValues(title, link) {
+        $('#title_field').val(title);
+        $('#link_field').val(link);
+    };  
+
+    function viewGitHubProjects() {
+        $('#collapseGitHub').css({display: "block"});
+        $('#collapseVimeo').css({display: "none"});
+    };
+
+    function viewVimeoAlbums() {
+        $('#collapseGitHub').css({display: "none"});
+        $('#collapseVimeo').css({display: "block"});
+    };
+
     
 
         
