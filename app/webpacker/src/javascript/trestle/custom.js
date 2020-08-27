@@ -4,6 +4,8 @@
 // For organizational purposes, you may wish to define your customizations
 // within individual partials and `require` them here.
 //
+require("trestle/custom/projects")
 $(function () {
     console.log('Hello World from Trestle');
 });
+

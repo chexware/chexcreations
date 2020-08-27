@@ -12,7 +12,7 @@
 
     // Display GitHub Projects Info
     .card-block id="collapseGitHub"
-        - Octokit::Client.new(:access_token => API_KEYS['github']).repos({}, query: {type: 'owner', sort: 'asc'}).each do |r|
+        - Octokit::Client.new(:access_token => ENV['GITHUB_KEY']).repos({}, query: {type: 'owner', sort: 'asc'}).each do |r|
             .card.mt-2.shadow
                 .card-body.row
                     .col-10.col-md-8.mt-2.pr-2
