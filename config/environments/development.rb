@@ -45,7 +45,7 @@ Rails.application.configure do
   #SECURE THIS
   ActionMailer::Base.smtp_settings = {
     :user_name => 'apikey',
-    :password => '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',
+    :password => ENV["SENDGRID_KEY"],
     :domain => 'localhost:3000',
     :address => 'smtp.sendgrid.net',
     :port => 587,
