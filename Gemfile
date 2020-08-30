@@ -18,6 +18,8 @@ gem 'puma', '~> 3.12'
 gem 'slim-rails'
 # Use webpacker instead of sprockets
 gem 'webpacker', '~> 4.x'
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5.0'
 # Enable image resizing
 gem 'image_processing', '~> 1.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
