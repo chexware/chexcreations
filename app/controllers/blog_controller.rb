@@ -1,7 +1,7 @@
 class BlogController < ApplicationController
     def load
         @contact = Contact.new
-        @articles = Article.all
+        @articles = Article.all.reverse_order
     end
 
     private

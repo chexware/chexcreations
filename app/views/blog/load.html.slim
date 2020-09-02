@@ -1,14 +1,15 @@
 .uk-flex.uk-flex-column
 	- unless @articles.blank?
 		- @articles.each do |r|
-			.uk-card.chex-card.uk-height-medium.uk-width-1-1.uk-margin-small 
-				.uk-card-body.uk-margin-top
-					a.uk-heading-large.chex-link (href="#modal-article-#{r.id}"  uk-toggle) #{r.title}
-					.uk-modal-full (id="modal-article-#{r.id}" uk-modal)
-				 		.uk-modal-dialog.uk-height-1-1
-						 	button.uk-light.uk-modal-close-default.uk-close-large (type="button" uk-close)
-							.uk-modal-body
-    							= r.content.html_safe
+			.uk-card.chex-card.uk-height-viewport.uk-width-1-1.uk-margin-small (id="article-#{r.id}")
+				.uk-card-body.uk-margin-xlarge-top
+					.uk-margin-large-top
+						a.uk-heading-large.chex-link.uk-padding-large (href="#modal-article-#{r.id}" uk-parallax="blur: 30,0; viewport: 0.45;"  tarrget="#article-#{r.id}" uk-toggle) #{r.title}
+						.uk-modal-full (id="modal-article-#{r.id}" uk-modal)
+				 			.uk-modal-dialog.uk-height-1-1
+						 		button.uk-light.uk-modal-close-default.uk-close-large (type="button" uk-close)
+								.uk-modal-body
+    								= r.content.html_safe
 	- else
 		.uk-margin-xlarge-top.uk-text-center
 			.uk-heading-xlarge.uk-light Embrace the digital void while waiting for content:()

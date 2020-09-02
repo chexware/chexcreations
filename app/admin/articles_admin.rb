@@ -1,8 +1,11 @@
 Trestle.resource(:articles) do
   menu do
-    item :articles, icon: "fa fa-pencil-square"
+    item :articles, icon: "fa fa-star"
   end
 
+  active_storage_fields do
+    [:cover]
+  end
   # Customize the table columns shown on the index view.
   #
   # table do
@@ -12,15 +15,18 @@ Trestle.resource(:articles) do
   # end
 
   # Customize the form fields shown on the new/edit views.
-  #
+  
   form do |article|
-     text_field :title
-     editor :content
+    text_field :title
+    active_storage_field :cover
+    editor :content
+  #   text_field :name
+  #
   #   row do
   #     col { datetime_field :updated_at }
   #     col { datetime_field :created_at }
   #   end
-  # end
+   end
 
   # By default, all parameters passed to the update and create actions will be
   # permitted. If you do not have full trust in your users, you should explicitly
@@ -31,5 +37,5 @@ Trestle.resource(:articles) do
   #
   # params do |params|
   #   params.require(:article).permit(:name, ...)
-   end
+  # end
 end
