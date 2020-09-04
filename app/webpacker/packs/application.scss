@@ -84,7 +84,16 @@ img {
 .chex-card {
 	background-color: rgb(46, 77, 63);
 }
-
+.chex-cursor{
+	height: 130px;
+	width: 130px;
+	position: absolute;
+	z-index: 100;
+	display: none;
+}
+.chex-overlay {
+	background-color: rgba(46, 77, 63,0.6);
+}
 
 
 
