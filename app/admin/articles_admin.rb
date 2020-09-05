@@ -1,6 +1,6 @@
 Trestle.resource(:articles) do
   menu do
-    item :articles, icon: "fa fa-star"
+    item :articles, icon: "fas fa-file-alt"
   end
 
   active_storage_fields do
@@ -17,9 +17,9 @@ Trestle.resource(:articles) do
   # Customize the form fields shown on the new/edit views.
   
   form do |article|
-    text_field :title
+    text_field :title, class: "rounded-0"
     active_storage_field :cover
-    editor :content
+    editor :content, class: "rounded-0"
   #   text_field :name
   #
   #   row do
