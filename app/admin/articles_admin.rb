@@ -18,7 +18,7 @@ Trestle.resource(:articles) do
   
   form do |article|
     text_field :title, class: "rounded-0"
-    active_storage_field :cover
+    active_storage_field :cover 
     editor :content, class: "rounded-0"
   #   text_field :name
   #

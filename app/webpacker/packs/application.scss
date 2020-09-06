@@ -110,7 +110,7 @@ img {
 	border-radius: 0px !important;
 	color: rgb(255, 255, 255) !important;
 }
-.dropdown-menu, .custom-control-input, #article_delete_cover {
+.dropdown-menu, .custom-control-input, #article_delete_cover, .custom-control-input[type="checkbox"] {
 	border-radius: 0px !important;
 }
 .card  {
@@ -168,4 +168,20 @@ img {
 }
 .app-nav .active a {
 	border-color: rgb(46, 77, 63);
+}
+.active-storage__field {
+	display: none !important;
+}
+.control-label[for="article_cover"],.control-label[for="project_image"] {
+	display: block;
+	box-shadow: 0 0 0 0.2rem  rgb(102,102,102) !important;
+	width: 10%;
+	padding: 1%;
+	text-align: center;
+}
+.control-label[for="article_cover"]:hover, .control-label[for="project_image"]:hover {
+	display: block;
+	background-color: rgb(102,102,102) !important;
+	color :rgba(255, 255, 255, 0.7);
+	box-shadow: none;
 }
