@@ -7,7 +7,6 @@
 @import '../src/stylesheets/project';
 @import '../src/stylesheets/exceptions';
 
-
 * {
 	font-family: 'Allerta Stencil', sans-serif;
 }
@@ -22,7 +21,6 @@ html, body {
 	padding: 0;
 }
 
-
 img {
   height: auto;
   width: 100%;
@@ -33,41 +31,44 @@ img {
 	font-family: 'Allerta Stencil', sans-serif;
 	background-color: rgb(24,25,24);
 }
-.uk-heading-large, .uk-heading-medium, .uk-heading-small {
+.uk-heading-large, .uk-heading-medium, .uk-heading-small, h1, td, .pagination-container > p, .card-body > p {
 	font-family: 'Allerta Stencil', sans-serif;
 }
-.uk-modal-header, .uk-modal-footer, #menu-trigger {
-	border: none;
+.uk-modal-header, .uk-modal-footer, #menu-trigger, .card {
+	border: none ;
 }
 
-.uk-link-heading:hover, #menu-trigger, .uk-heading-xlarge:hover, .uk-icon-button,.uk-modal-dialog, .uk-modal-header, .uk-modal-footer {
+.uk-link-heading:hover, #menu-trigger, .uk-heading-xlarge:hover, .uk-icon-button,.uk-modal-dialog
+	, .uk-modal-header, .uk-modal-footer, .app-footer, .app-header, .content-header, .dropdown-menu
+	, .main-content, .main-content-footer, .table-container, td, th,  .app-sidebar-header
+	,.project-selection-widget ,.main-content-sidebar  {
 	//color:rgb(159, 166, 159);
 	background-color: rgb(24,25,24);
 }
  
-.uk-button-primary {
-	background-color: rgb(46, 77, 63);
+.uk-button-primary, .btn-success {
+	background-color: rgb(46, 77, 63) !important;
 }
-.uk-button-primary:hover {
-	background-color: rgb(77, 128, 105);
+.uk-button-primary:hover, .btn-success:hover {
+	background-color: rgb(77, 128, 105) !important;
 }
 
-.chex-link, .support-link {
-	
+.chex-link, .support-link,.userbox > a,.dropdown-item,h1, .breadcrumb, .breadcrumb-item > a, .sort {
 	color:rgb(102, 102, 102);
+	background-color: transparent ;
+}
+
+.custom-error, td, .pagination-container, .pagination-container > p > strong, .app-footer 
+	,.app-footer > .version, .control-label, .form-control, .active-storage__field, .card-body > p, .chex-project {
+	color:rgb(102, 102, 102);
+}
+
+.uk-icon-button, .app-sidebar-title:hover {
 	background-color: transparent;
 }
 
-.custom-error  {
-	color:rgb(102, 102, 102);
-}
-
-
-.uk-icon-button {
-	background-color: transparent;
-}
-
-.chex-link:hover, .project-link:hover, .support-link:hover, .uk-icon-button:hover {
+.chex-link:hover, .project-link:hover, .support-link:hover, .uk-icon-button:hover
+	, .userbox > a:hover, .dropdown-item:hover, .breadcrumb-item > a:hover, .sort:hover, td > a:hover, .chex-project:hover {
 	text-decoration: none;
 	color:rgb(255, 255, 255);
 	background-color: transparent;
@@ -92,12 +93,72 @@ img {
 	display: none;
 }
 .chex-overlay {
-	background-color: rgba(46, 77, 63,0.6);
+	background-color: rgba(46, 77, 63, 0.6);
+}
+.btn-danger, .btn-danger:hover, .btn-danger:visited
+	, .btn-light, .btn-light:hover, .btn-light:visited
+	, .btn-success, .btn-success:hover, .btn-success:visited, .fa-trash, .fa-trash:hover{
+	border-radius: 0px !important;
+	color: rgb(255, 255, 255) !important;
+}
+.dropdown-menu {
+	border-radius: 0px !important;
+}
+.card  {
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
+.app-sidebar-header {
+	height: 30%;
+}
 
+.form-control {
+	background-color: rgba(255, 255, 255, 0.1);
+	color :rgba(255, 255, 255, 0.7);
+	border-color: rgba(255, 255, 255, 0.2);
+}
+.form-control:focus {
+	background-color: rgba(255, 255, 255, 0.1);
+	color :rgba(255, 255, 255, 0.7);
+	border-color: rgba(255, 255, 255, 0.7);
+	box-shadow: none;
+}
+.btn-outline-dark {
+	color:rgb(102, 102, 102) !important;
+}
+.btn-outline-dark:hover {
+	background-color:rgb(102, 102, 102) !important;
+	color:rgb(255, 255, 255)!important;
+	
+}
 
+.btn-danger{
+	background-color:rgb(70, 50, 46) !important;
+}
+.btn-danger:hover {
+	background-color:rgb(153, 74, 61) !important;
+}
 
+.btn-outline-dark:focus, .btn-light:hover {
+	box-shadow: 0 0 0 0.2rem rgb(102, 102, 102) !important;
+}
+.btn-dark {
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
 
+.btn-dark:hover {
+	box-shadow: 0 0 0 0.2rem  rgb(24,25,24) !important;
+}
+.card {
+	padding-right: 10%;
+}
+.btn-light {
+	background-color: transparent !important;
+	box-shadow: none !important;
+} 
+.table {
+	border-color: rgb(102, 102, 102) !important;
+}
 
 

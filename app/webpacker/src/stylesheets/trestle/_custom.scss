@@ -5,3 +5,6 @@
 // within individual partials and `import` them here, e.g.
 //
 //@import "trestle/custom/my_custom_css";
+.btn, .btn-danger {
+    border-radius: 0px;
+}
