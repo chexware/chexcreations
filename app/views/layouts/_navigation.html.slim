@@ -15,9 +15,8 @@
 				= render 'layouts/about'
 			li
 				a.uk-link-heading(href="#modal-center" uk-toggle) Contact
-				= render 'layouts/contact'
+				= render 'contacts/contact'
 			li
-				= link_to "?Technology", "/blog",  class: "uk-link-heading"
-			li
-				= link_to "Art", "/art",  class: "uk-link-heading"
+				a.uk-link-heading(href="#modal-projects" uk-toggle) Art
+				= render 'project/load'
 					

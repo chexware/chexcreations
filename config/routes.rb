@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   root to: 'home#index'
-  get 'art', to: 'project#load'
   get 'blog', to: 'blog#load'
   get '404', to: 'exceptions#not_found'
   get '422', to: 'exceptions#unacceptable'
