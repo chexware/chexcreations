@@ -1,0 +1,27 @@
+.project-selection-widget    
+    button.btn.btn-outline-dark.rounded-0 type="button" onclick="viewMediumArticles()" Medium Articles
+
+    // Display Medium Articles 
+    .card-block id="collapseMedium" 
+        .card.mt-2
+            .card-body
+                p.lead.card-subtitle Don't forgt to include content here soon :()
+
+javascript:
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("collapseMedium").style.display = "none";
+    });  
+
+    function viewMediumArticles() {
+        if (document.getElementById("collapseMedium").style.display == "none") {
+            document.getElementById("collapseMedium").style.display = "block";
+        }
+        else {
+            document.getElementById("collapseMedium").style.display = "none";
+        }
+    };
+
+
+    
+
+        

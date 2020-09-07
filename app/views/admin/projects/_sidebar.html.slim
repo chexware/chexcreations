@@ -5,7 +5,7 @@
 
     // Display Vimeo Albums List 
     .card-block id="collapseVimeo" 
-        .card.mt-2.shadow
+        .card.mt-2
             .card-body
                 p.lead.card-subtitle Can't access Vimeo Albums Yet :(
         //TO-DO: Add Vimeo Albums 
@@ -13,31 +13,32 @@
     // Display GitHub Projects Info
     .card-block id="collapseGitHub"
         - Octokit::Client.new(:access_token => ENV['GITHUB_KEY']).repos({}, query: {type: 'owner', sort: 'asc'}).each do |r|
-            .card.mt-2.shadow
+            .card.mt-2
                 .card-body.row
                     .col-10.col-md-8.mt-2.pr-2
-                        p.lead.text-decoration-none.card-subtitle: a.text-decoration-none href="#{r.html_url}" #{r.name} 
+                        p.lead.text-decoration-none.card-subtitle: a.text-decoration-none.chex-project href="#{r.html_url}" #{r.name} 
                     .col-2.col-md-4.pr-2
                         button.btn.btn-dark.rounded-0 type="button"  onclick="setFieldValues('#{r.name}','#{r.html_url}')" SELECT
 
 javascript:
-    $(function () {
-        $('#collapseGitHub').css({display: "none"});
-        $('#collapseVimeo').css({display: "none"});
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("collapseGitHub").style.display = "none";
+        document.getElementById("collapseVimeo").style.display = "none";
     });
+
     function setFieldValues(title, link) {
-        $('#title_field').val(title);
-        $('#link_field').val(link);
+        document.getElementById("title_field").value = title;
+        document.getElementById("link_field").value = link;
     };  
 
     function viewGitHubProjects() {
-        $('#collapseGitHub').css({display: "block"});
-        $('#collapseVimeo').css({display: "none"});
+        document.getElementById("collapseGitHub").style.display = "block";
+        document.getElementById("collapseVimeo").style.display = "none";
     };
 
     function viewVimeoAlbums() {
-        $('#collapseGitHub').css({display: "none"});
-        $('#collapseVimeo').css({display: "block"});
+        document.getElementById("collapseGitHub").style.display = "none";
+        document.getElementById("collapseVimeo").style.display = "block";
     };
 
     

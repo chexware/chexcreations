@@ -7,7 +7,6 @@
 @import '../src/stylesheets/project';
 @import '../src/stylesheets/exceptions';
 
-
 * {
 	font-family: 'Allerta Stencil', sans-serif;
 }
@@ -22,7 +21,6 @@ html, body {
 	padding: 0;
 }
 
-
 img {
   height: auto;
   width: 100%;
@@ -33,41 +31,50 @@ img {
 	font-family: 'Allerta Stencil', sans-serif;
 	background-color: rgb(24,25,24);
 }
-.uk-heading-large, .uk-heading-medium, .uk-heading-small {
+.uk-heading-large, .uk-heading-medium, .uk-heading-small, h1, td
+	, .pagination-container > p, .card-body > p, .alert-content > h3
+	, .alert-content > p {
 	font-family: 'Allerta Stencil', sans-serif;
 }
-.uk-modal-header, .uk-modal-footer, #menu-trigger {
-	border: none;
+.uk-modal-header, .uk-modal-footer, #menu-trigger, .card
+	,.alert-success,.main-content-footer {
+	border: none !important;
 }
 
-.uk-link-heading:hover, #menu-trigger, .uk-heading-xlarge:hover, .uk-icon-button,.uk-modal-dialog, .uk-modal-header, .uk-modal-footer {
+.uk-link-heading:hover, #menu-trigger, .uk-heading-xlarge:hover, .uk-icon-button,.uk-modal-dialog
+	, .uk-modal-header, .uk-modal-footer, .app-footer, .app-header, .content-header, .dropdown-menu
+	,  .main-content, .main-content-footer, .app-sidebar-header,.project-selection-widget ,.main-content-sidebar
+	, .app-sidebar-inner, .app-sidebar-header, .app-nav .active a {
 	//color:rgb(159, 166, 159);
 	background-color: rgb(24,25,24);
 }
  
-.uk-button-primary {
-	background-color: rgb(46, 77, 63);
+.uk-button-primary, .btn-success, .alert-success {
+	background-color: rgb(46, 77, 63) !important;
 }
-.uk-button-primary:hover {
-	background-color: rgb(77, 128, 105);
+.uk-button-primary:hover, .btn-success:hover {
+	background-color: rgb(77, 128, 105) !important;
 }
 
-.chex-link, .support-link {
-	
+.chex-link, .support-link,.userbox > a,.dropdown-item,h1, .breadcrumb, .breadcrumb-item > a, .toggle-sidebar {
 	color:rgb(102, 102, 102);
+	background-color: transparent ;
+}
+
+.custom-error, .pagination-container, .pagination-container > p > strong, .app-footer 
+	,.app-footer > .version, .control-label, .form-control, .active-storage__field, .card-body > p
+	, .chex-project, .nav-label, .custom-control-label, .active-storage__preview  {
+	color:rgb(102, 102, 102);
+}
+
+.uk-icon-button, .app-sidebar-title:hover  {
 	background-color: transparent;
 }
 
-.custom-error  {
-	color:rgb(102, 102, 102);
-}
-
-
-.uk-icon-button {
-	background-color: transparent;
-}
-
-.chex-link:hover, .project-link:hover, .support-link:hover, .uk-icon-button:hover {
+.chex-link:hover, .project-link:hover, .support-link:hover, .uk-icon-button:hover
+	, .userbox > a:hover, .dropdown-item:hover, .breadcrumb-item > a:hover
+	,  .chex-project:hover, .close:hover, .app-nav > ul > li > a:hover
+	, .nav-label:hover, .toggle-sidebar:hover {
 	text-decoration: none;
 	color:rgb(255, 255, 255);
 	background-color: transparent;
@@ -84,10 +91,117 @@ img {
 .chex-card {
 	background-color: rgb(46, 77, 63);
 }
+#chex-cursor{
+	height: 130px;
+	width: 130px;
+	position: absolute;
+	z-index: 100;
+	display: none;
+}
+.chex-overlay {
+	background-color: rgba(46, 77, 63, 0.6);
+}
+.btn-danger, .btn-danger:hover, .btn-danger:visited
+	, .btn-light, .btn-light:hover, .btn-light:visited
+	, .btn-success, .btn-success:hover, .btn-success:visited
+	, .fa-trash, .fa-trash:hover, .alert-content > h3 {
+	border-radius: 0px !important;
+	color: rgb(255, 255, 255) !important;
+}
+.dropdown-menu, .custom-control-input, #article_delete_cover, .custom-control-input[type="checkbox"]
+	, .tox.tox-tinymce {
+	border-radius: 0px !important;
+}
+.card  {
+	background-color: rgba(255, 255, 255, 0.1);
+}
 
+.app-sidebar-header {
 
+	background-color: rgb(24,25,24) !important;
+}
 
+.form-control {
+	background-color: rgba(255, 255, 255, 0.1);
+	color :rgba(255, 255, 255, 0.7);
+	border-color: rgba(255, 255, 255, 0.2);
+}
+.form-control:focus {
+	background-color: rgba(255, 255, 255, 0.1);
+	color :rgba(255, 255, 255, 0.7);
+	border-color: rgba(255, 255, 255, 0.7);
+	box-shadow: none;
+}
+.btn-outline-dark {
+	color:rgb(102, 102, 102) !important;
+}
+.btn-outline-dark:hover {
+	background-color:rgb(102, 102, 102) !important;
+	color:rgb(255, 255, 255)!important;
+}
 
+.btn-danger{
+	background-color:rgb(70, 50, 46) !important;
+}
+.btn-danger:hover {
+	background-color:rgb(153, 74, 61) !important;
+}
 
+.btn-outline-dark:focus, .btn-light:hover {
+	box-shadow: 0 0 0 0.2rem rgb(102, 102, 102) !important;
+}
+.btn-dark, .btn-light {
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
 
+.btn-dark:hover {
+	box-shadow: 0 0 0 0.2rem  rgb(24,25,24) !important;
+}
+.card {
+	padding-right: 10%;
+}
 
+.alert-content > p, .close {
+	color :rgba(255, 255, 255, 0.7);
+}
+.app-nav .active a {
+	border-color: rgb(46, 77, 63);
+}
+.active-storage__field {
+	display: none !important;
+}
+// Upload Fields Styles
+.control-label[for="article_cover"],.control-label[for="project_image"] {
+	display: block;
+	box-shadow: 0 0 0 0.2rem  rgb(102,102,102) !important;
+	width: 20%;
+	padding: 1%;
+	text-align: center;
+}
+.control-label[for="article_cover"]:hover, .control-label[for="project_image"]:hover {
+	display: block;
+	background-color: rgb(102,102,102) !important;
+	color :rgba(255, 255, 255, 0.7);
+	box-shadow: none;
+}
+.control-label[for="article_cover"]::before, .control-label[for="project_image"]::before {
+	content: "Upload ";
+}
+// Table Styles
+.trestle-table > * {
+	background-color: rgb(102,102,102);
+}
+.sort, .sort-asc, td, td > a{
+	color :rgba(255, 255, 255, 0.7) !important;
+}
+.sort:hover, .sort-asc:hover, td:hover, td > a:hover {
+	color :rgb(255, 255, 255) !important;
+	background-color: transparent !important;
+	text-decoration: none !important;
+}
+
+// Editor Styles
+.tox.tox-tinymce {
+	border-color: rgba(255, 255, 255, 0.2) !important;
+}

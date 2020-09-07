@@ -9,11 +9,11 @@ Trestle.configure do |config|
   # expanded/desktop navigation. These images should be placed within your
   # asset paths, e.g. app/assets/images.
   #
-  config.site_logo = "chex-logo-medium.png"
+  config.site_logo = "chex-logo-large.png"
 
   # Specify a custom image to be used for the collapsed/tablet navigation.
   #
-  # config.site_logo_small = "logo-small.png"
+  config.site_logo_small = "chex-logo-menu-small.png"
 
   # Speficy a favicon to be used within the admin.
   #
@@ -22,7 +22,7 @@ Trestle.configure do |config|
   # Set the text shown in the page footer within the admin.
   # Defaults to 'Powered by Trestle'.
   #
-  # config.footer = "Powered by Trestle"
+  config.footer = "Powered by Trestle. Modified by CHEX"
 
   # Sets the default precision for timestamps (either :minutes or :seconds).
   # Defaults to :minutes.
@@ -89,9 +89,9 @@ Trestle.configure do |config|
 
   # Specify a custom hook to be injected into the admin.
   #
-  # config.hook(:stylesheets) do
-  #   stylesheet_link_tag "custom"
-  # end
+  config.hook(:stylesheets) do
+     stylesheet_pack_tag "application"
+  end
 
   # Toggle whether Turbolinks is enabled within the admin.
   # Defaults to true if Turbolinks is available.

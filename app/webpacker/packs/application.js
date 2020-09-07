@@ -21,3 +21,6 @@ require("src/javascript/channels")
 require("src/javascript/trestle/custom")
 require.context('../images', true)
 const imagePath = (name) => images(name, true)
+
+
+

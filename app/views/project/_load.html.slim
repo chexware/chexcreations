@@ -1,0 +1,35 @@
+#modal-projects.uk-modal-full.uk-flex-top[uk-modal]
+   .uk-modal-dialog.uk-margin-auto-vertical
+        <button class="uk-light uk-modal-close-default" type="button" uk-close></button>
+		.uk-modal-body
+			.uk-inline
+				.uk-grid.uk-grid-collapse.uk-child-width-expand
+					- unless @projects.blank?
+						.uk-grid.uk-grid-collapse
+							- @projects.each do |p|
+								- if  @projects.size == 1
+									.uk-text-center.uk-width-1-1
+										.uk-inline-clip.uk-transition-toggle
+											- if p.image.attached?
+												= cl_image_tag(url_for(p.image), alt: "Art Image")	
+											- else
+												= cl_image_tag("default.jpg", alt: "Art Image")
+											
+											.uk-position-cover.uk-transition-fade.uk-margin-remove.uk-overlay.uk-overlay-primary.uk-text-center.uk-text-truncate
+												a.project-link.uk-position-center href="#{p.link}" 
+													| #{p.title} 
+								- else 
+									.uk-text-center[class="uk-width-1-2@m"]
+										.uk-inline-clip.uk-transition-toggle
+											- if p.image.attached?
+												= cl_image_tag(url_for(p.image), alt: "Art Image")	
+											- else
+												= cl_image_tag("default.jpg", alt: "Art Image")
+											
+											.uk-position-cover.uk-transition-fade.uk-margin-remove.uk-overlay.uk-overlay-primary.uk-text-center.uk-text-truncate
+												a.project-link.uk-position-center href="#{p.link}" 
+													| #{p.title} 
+					- else
+						.uk-margin-xlarge-top.uk-text-center
+							.uk-heading-xlarge.uk-light Embrace the digital void :()
+				

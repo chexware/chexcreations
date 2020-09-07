@@ -1,6 +1,6 @@
 Trestle.resource(:projects) do
   menu do
-    item :projects, icon: "fa fa-star"
+    item :projects, icon: "fas fa-palette"
   end
   
   active_storage_fields do
@@ -8,9 +8,9 @@ Trestle.resource(:projects) do
   end
   
   form do |project|
-    text_field :title, id: "title_field"
-    text_field :link, id: "link_field"
-    active_storage_field :image 
+    text_field :title, id: "title_field", class: "rounded-0"
+    text_field :link, id: "link_field", class: "rounded-0"
+    active_storage_field :image
    
     sidebar do
       render "sidebar"
