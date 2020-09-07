@@ -44,7 +44,7 @@ img {
 .uk-link-heading:hover, #menu-trigger, .uk-heading-xlarge:hover, .uk-icon-button,.uk-modal-dialog
 	, .uk-modal-header, .uk-modal-footer, .app-footer, .app-header, .content-header, .dropdown-menu
 	,  .main-content, .main-content-footer, .app-sidebar-header,.project-selection-widget ,.main-content-sidebar
-	, .app-sidebar-inner, .app-sidebar-header, .app-nav .active a{
+	, .app-sidebar-inner, .app-sidebar-header, .app-nav .active a {
 	//color:rgb(159, 166, 159);
 	background-color: rgb(24,25,24);
 }
@@ -108,7 +108,8 @@ img {
 	border-radius: 0px !important;
 	color: rgb(255, 255, 255) !important;
 }
-.dropdown-menu, .custom-control-input, #article_delete_cover, .custom-control-input[type="checkbox"] {
+.dropdown-menu, .custom-control-input, #article_delete_cover, .custom-control-input[type="checkbox"]
+	, .tox.tox-tinymce {
 	border-radius: 0px !important;
 }
 .card  {
@@ -170,6 +171,7 @@ img {
 .active-storage__field {
 	display: none !important;
 }
+// Upload Fields Styles
 .control-label[for="article_cover"],.control-label[for="project_image"] {
 	display: block;
 	box-shadow: 0 0 0 0.2rem  rgb(102,102,102) !important;
@@ -183,11 +185,14 @@ img {
 	color :rgba(255, 255, 255, 0.7);
 	box-shadow: none;
 }
+.control-label[for="article_cover"]::before, .control-label[for="project_image"]::before {
+	content: "Upload ";
+}
 // Table Styles
 .trestle-table > * {
 	background-color: rgb(102,102,102);
 }
-.sort, .sort-asc, td, td > a {
+.sort, .sort-asc, td, td > a{
 	color :rgba(255, 255, 255, 0.7) !important;
 }
 .sort:hover, .sort-asc:hover, td:hover, td > a:hover {
@@ -196,5 +201,7 @@ img {
 	text-decoration: none !important;
 }
 
-	
-	
+// Editor Styles
+.tox.tox-tinymce {
+	border-color: rgba(255, 255, 255, 0.2) !important;
+}

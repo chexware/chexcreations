@@ -20,6 +20,10 @@ Trestle.resource(:articles) do
     text_field :title, class: "rounded-0"
     active_storage_field :cover 
     editor :content, class: "rounded-0"
+    
+    sidebar do
+      render "sidebar"
+    end
   #   text_field :name
   #
   #   row do

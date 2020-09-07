@@ -2,6 +2,7 @@ class ProjectController < ApplicationController
 	def load
 		@contact = Contact.new
 		@projects = Project.all
+		render partial: 'project/load'
 	end
 	
 
