@@ -37,15 +37,14 @@ img {
 	font-family: 'Allerta Stencil', sans-serif;
 }
 .uk-modal-header, .uk-modal-footer, #menu-trigger, .card
-	,.alert-success {
+	,.alert-success,.main-content-footer {
 	border: none !important;
 }
 
 .uk-link-heading:hover, #menu-trigger, .uk-heading-xlarge:hover, .uk-icon-button,.uk-modal-dialog
 	, .uk-modal-header, .uk-modal-footer, .app-footer, .app-header, .content-header, .dropdown-menu
-	, .main-content, .main-content-footer, .table-container, td, th,  .app-sidebar-header
-	,.project-selection-widget ,.main-content-sidebar, .app-sidebar-inner, .app-sidebar-header
-	, .app-nav .active a{
+	,  .main-content, .main-content-footer, .app-sidebar-header,.project-selection-widget ,.main-content-sidebar
+	, .app-sidebar-inner, .app-sidebar-header, .app-nav .active a{
 	//color:rgb(159, 166, 159);
 	background-color: rgb(24,25,24);
 }
@@ -57,15 +56,14 @@ img {
 	background-color: rgb(77, 128, 105) !important;
 }
 
-.chex-link, .support-link,.userbox > a,.dropdown-item,h1, .breadcrumb, .breadcrumb-item > a
-	, .sort, .toggle-sidebar {
+.chex-link, .support-link,.userbox > a,.dropdown-item,h1, .breadcrumb, .breadcrumb-item > a, .toggle-sidebar {
 	color:rgb(102, 102, 102);
 	background-color: transparent ;
 }
 
-.custom-error, td, .pagination-container, .pagination-container > p > strong, .app-footer 
+.custom-error, .pagination-container, .pagination-container > p > strong, .app-footer 
 	,.app-footer > .version, .control-label, .form-control, .active-storage__field, .card-body > p
-	, .chex-projec, .nav-label, .custom-control-label, .active-storage__preview  {
+	, .chex-project, .nav-label, .custom-control-label, .active-storage__preview  {
 	color:rgb(102, 102, 102);
 }
 
@@ -74,8 +72,8 @@ img {
 }
 
 .chex-link:hover, .project-link:hover, .support-link:hover, .uk-icon-button:hover
-	, .userbox > a:hover, .dropdown-item:hover, .breadcrumb-item > a:hover, .sort:hover
-	, td > a:hover, .chex-project:hover, .close:hover, .app-nav > ul > li > a:hover
+	, .userbox > a:hover, .dropdown-item:hover, .breadcrumb-item > a:hover
+	,  .chex-project:hover, .close:hover, .app-nav > ul > li > a:hover
 	, .nav-label:hover, .toggle-sidebar:hover {
 	text-decoration: none;
 	color:rgb(255, 255, 255);
@@ -175,7 +173,7 @@ img {
 .control-label[for="article_cover"],.control-label[for="project_image"] {
 	display: block;
 	box-shadow: 0 0 0 0.2rem  rgb(102,102,102) !important;
-	width: 10%;
+	width: 20%;
 	padding: 1%;
 	text-align: center;
 }
@@ -185,3 +183,18 @@ img {
 	color :rgba(255, 255, 255, 0.7);
 	box-shadow: none;
 }
+// Table Styles
+.trestle-table > * {
+	background-color: rgb(102,102,102);
+}
+.sort, .sort-asc, td, td > a {
+	color :rgba(255, 255, 255, 0.7) !important;
+}
+.sort:hover, .sort-asc:hover, td:hover, td > a:hover {
+	color :rgb(255, 255, 255) !important;
+	background-color: transparent !important;
+	text-decoration: none !important;
+}
+
+	
+	

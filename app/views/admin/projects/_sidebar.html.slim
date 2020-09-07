@@ -21,23 +21,25 @@
                         button.btn.btn-dark.rounded-0 type="button"  onclick="setFieldValues('#{r.name}','#{r.html_url}')" SELECT
 
 javascript:
-    $(function () {
-        $('#collapseGitHub').css({display: "none"});
-        $('#collapseVimeo').css({display: "none"});
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("collapseGitHub").style.display = "none";
+        document.getElementById("collapseVimeo").style.display = "none";
+        document.querySelector(".control-label[for='project_image']").innerHTML = "Upload Image";
     });
+
     function setFieldValues(title, link) {
         document.getElementById("title_field").value = title;
         document.getElementById("link_field").value = link;
     };  
 
     function viewGitHubProjects() {
-        $('#collapseGitHub').css({display: "block"});
-        $('#collapseVimeo').css({display: "none"});
+        document.getElementById("collapseGitHub").style.display = "block";
+        document.getElementById("collapseVimeo").style.display = "none";
     };
 
     function viewVimeoAlbums() {
-        $('#collapseGitHub').css({display: "none"});
-        $('#collapseVimeo').css({display: "block"});
+        document.getElementById("collapseGitHub").style.display = "none";
+        document.getElementById("collapseVimeo").style.display = "block";
     };
 
     
