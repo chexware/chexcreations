@@ -20,7 +20,7 @@ gem 'slim-rails'
 # Use webpacker instead of sprockets
 gem 'webpacker', '~> 4.x'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '~> 5.0'
 #gem 'sassc'
 #gem 'sass-rails', '~> 5.0'
 # Enable image resizing
