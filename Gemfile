@@ -5,15 +5,14 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby ENV['CUSTOM_RUBY_VERSION'] || '2.5.5'
+ruby ENV['CUSTOM_RUBY_VERSION'] || '2.7.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'mini_racer', platforms: :ruby
 gem 'rails', '~> 6.0.1'
 gem 'bootsnap'
 # Use mysql as the database for Active Record
-gem 'mysql2', '>= 0.3.18', '< 0.5'
-# Use neo4j as the database for Active Record
-
+gem 'mysql2', '~> 0.4.10'
+# Use neo4j as the database 
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
 # Use SLIM as template language
@@ -21,7 +20,9 @@ gem 'slim-rails'
 # Use webpacker instead of sprockets
 gem 'webpacker', '~> 4.x'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails'
+#gem 'sassc'
+#gem 'sass-rails', '~> 5.0'
 # Enable image resizing
 gem 'image_processing', '~> 1.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
