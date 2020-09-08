@@ -5,9 +5,10 @@
 
     // Display Vimeo Albums List 
     .card-block id="collapseVimeo" 
-        .card.mt-2
-            .card-body
-                p.lead.card-subtitle Can't access Vimeo Albums Yet :(
+        - VimeoMe2::VimeoObject.new(ENV['VIMEO_KEY']).get("/me/albums").each do |s|
+            .card.mt-2
+                .card-body               
+                    p #{s}
         //TO-DO: Add Vimeo Albums 
 
     // Display GitHub Projects Info

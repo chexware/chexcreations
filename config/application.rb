@@ -16,7 +16,7 @@ module CHEX
       g.test_framework :rspec
       g.integration_tool :rspec
     end
-   
+
     config.exceptions_app = self.routes
     config.consider_all_requests_local = false
     
