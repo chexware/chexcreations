@@ -1,29 +1,29 @@
-.uk-height-viewport
-    .uk-cover-container[class="uk-visible@l"]
-        = cl_video_tag "video-cover", loop: true, autoplay: true,class: "uk-visible@l", fallback_content: "Your browser does not support HTML5 video tags" 
+div
+    .uk-cover-container[class="uk-visible@l" uk-height-viewport]
+        = cl_video_tag "video-cover", loop: true, autoplay: true, class: "uk-visible@l", fallback_content: "Your browser does not support HTML5 video tags" 
     .uk-cover-container[class="uk-hidden@l"]
         = cl_image_tag "image-cover", alt: "Cover Image", class: "uk-background-cover"	
-    .uk-position-fixed.uk-position-cover.uk-grid-collapse.uk-text-center.uk-flex.uk-flex-center.uk-margin-xlarge-top(  uk-grid)
-        .uk-width-1-1.uk-grid.uk-flex.uk-flex-row.uk-flex-between[ class = "uk-flex-first@m  uk-child-width-1-3@m " ]
+    .uk-position-cover.uk-text-center.uk-overlay.uk-flex.uk-flex-center.uk-margin-large-top(uk-grid)
+        .uk-width-1-1.uk-grid.uk-flex.uk-flex-row.uk-flex-between[ class="uk-flex-first@m  uk-child-width-1-3@m " ]
             div
                 a.uk-heading-xlarge.chex-link (href="#modal-center" onmouseover="showDedgy()" onmouseout="hideDedgy()" onmousemove="moveDedgy()" uk-toggle) Contact
                 = render 'contacts/contact'
-            div
+            div.uk-padding.uk-padding-remove-horizontal.uk-margin-medium-left(class="uk-margin-remove-left@l")
                 a.uk-heading-xlarge.chex-link (href="#modal-projects" onmouseover="showDedgy()" onmouseout="hideDedgy()" onmousemove="moveDedgy()" uk-toggle) Art
                 = render 'project/load'
-        .uk-flex-first.uk-width-1-1.uk-child-width-expand.uk-animation-toggle
+        .uk-flex-first.uk-width-1-1.uk-child-width-expand.uk-animation-toggle[ class="uk-flex-last@m"   ]
             .uk-animation-scale-up
-                a.uk-heading-xlarge.chex-link.uk-padding-remove (href="#modal-about" onmouseover="showDedgy()" onmouseout="hideDedgy()" onmousemove="moveDedgy()" uk-toggle)
+                a.uk-heading-xlarge.chex-link.uk-padding-remove.uk-margin-remove (href="#modal-about" onmouseover="showDedgy()" onmouseout="hideDedgy()" onmousemove="moveDedgy()" uk-toggle)
                     picture
                         source srcset="/assets/chex-logo-medium.png" media="(max-width: 959px)"
                         source srcset="/assets/chex-logo-large.png"
                         img.uk-responsive-height.uk-responsive-width(src='/assets/chex-logo-large.png'  uk-img)
                 = render 'layouts/about'
                
-        .uk-width-1-1
-            .uk-text-truncate
+        .uk-width-1-1.uk-flex-last
+            .uk-text-truncate.uk-padding.uk-padding-remove-horizontal.uk-padding-remove-top
                 a.uk-heading-xlarge.chex-link (href="/blog" onmouseover="showDedgy()" onmouseout="hideDedgy()" onmousemove="moveDedgy()" ) ?Technology
-        = cl_image_tag "chex-cursor_ve8qw1.gif", alt: "cursor", id: "chex-cursor" 
+            = cl_image_tag "chex-cursor_ve8qw1.gif", alt: "cursor", id: "chex-cursor" 
 
 javascript:
     function showDedgy() {
