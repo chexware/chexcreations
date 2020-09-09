@@ -116,9 +116,12 @@ img {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-.app-sidebar-header {
+.app-sidebar-header,.app-sidebar-title {
 
 	background-color: rgb(24,25,24) !important;
+}
+.app-sidebar-header {
+	text-align: center !important;
 }
 
 .form-control {
@@ -200,4 +203,5 @@ img {
 	background-color: transparent !important;
 	text-decoration: none !important;
 }
+
 

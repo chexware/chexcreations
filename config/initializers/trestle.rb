@@ -3,17 +3,17 @@ Trestle.configure do |config|
   #
   # Set the page title shown in the main header within the admin.
   #
-  config.site_title = "CHEX"
+  config.site_title = "CHEXWORKS ADMIN"
 
   # Specify a custom image to be used in place of the site title for mobile and
   # expanded/desktop navigation. These images should be placed within your
   # asset paths, e.g. app/assets/images.
   #
-  config.site_logo = "chex-logo-large.png"
+  #config.site_logo = "chex-logo-admin-menu.png"
 
   # Specify a custom image to be used for the collapsed/tablet navigation.
   #
-  config.site_logo_small = "chex-logo-menu-small.png"
+  #config.site_logo_small = "chex-logo-menu-small.png"
 
   # Speficy a favicon to be used within the admin.
   #

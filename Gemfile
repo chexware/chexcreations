@@ -39,7 +39,8 @@ gem "cloudinary"
 # Add GitHub REST API as projects source
 gem "octokit", "~> 4.0"
 # Add Vimeo REST API as projects source 
-gem 'vimeo_api_client', git: 'https://github.com/agilie/vimeo-api-gem'
+gem 'vimeo_me2', :git => "https://github.com/bo-oz/vimeo_me2.git"
+#gem 'vimeo_api_client', git: 'https://github.com/agilie/vimeo-api-gem'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
