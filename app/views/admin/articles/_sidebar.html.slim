@@ -1,11 +1,13 @@
 .project-selection-widget    
     button.btn.btn-outline-dark.rounded-0 type="button" onclick="viewMediumArticles()" Medium Articles
 
-    // Display Medium Articles 
+    // Display Medium Articles  TO-DO: update this page to add Medium articles once you publish your first one !
     .card-block id="collapseMedium" 
-        .card.mt-2
-            .card-body
-                p.lead.card-subtitle Don't forgt to include content here soon :()
+        - Medium::Client.new(ENV['MEDIUM_KEY']).publications.each do |a|
+            .card.mt-2
+                .card-body.row
+                    .col-10.col-md-8.mt-2.pr-2
+                       p.lead.card-subtitle.chex-project Don't forgt to include content here soon :()
 
 javascript:
     document.addEventListener("DOMContentLoaded", function() {

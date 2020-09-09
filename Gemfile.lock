@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/benpickles/medium.git
+  revision: 6228089151fc77baf825d5f054e236dc9c2c0957
+  specs:
+    medium (0.1.0)
+
+GIT
   remote: https://github.com/bo-oz/vimeo_me2.git
   revision: 23fecd8dbe36ff965ebc8d20ec186a132955fd2e
   specs:
@@ -389,6 +395,7 @@ DEPENDENCIES
   listen
   loofah (>= 2.2.3)
   mail_form
+  medium!
   mini_racer
   mysql2 (~> 0.4.10)
   octokit (~> 4.0)
