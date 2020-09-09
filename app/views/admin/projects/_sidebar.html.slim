@@ -5,11 +5,14 @@
 
     // Display Vimeo Albums List 
     .card-block id="collapseVimeo" 
-        - VimeoMe2::VimeoObject.new(ENV['VIMEO_KEY']).get("/me/albums").each do |s|
+        - VimeoMe2::VimeoObject.new(ENV['VIMEO_KEY']).get("/me/albums",query:{fields: "name,link" ,pages: 1, sort: "videos"})["data"].each do |s|
             .card.mt-2
-                .card-body               
-                    p #{s}
-        //TO-DO: Add Vimeo Albums 
+                .card-body.row
+                    .col-10.col-md-8.mt-2.pr-2
+                        p.lead.text-decoration-none.card-subtitle: a.text-decoration-none.chex-project href="#{s['link']}" #{s['name']}                
+                    .col-2.col-md-4.pr-2
+                        button.btn.btn-dark.rounded-0 type="button"  onclick="setFieldValues('#{s['name']}', '#{s['link']}')" SELECT
+   
 
     // Display GitHub Projects Info
     .card-block id="collapseGitHub"
