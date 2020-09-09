@@ -36,10 +36,12 @@ gem 'trestle-active_storage'
 gem 'trestle-tinymce'
 # Use Cloudinary as media cloud storage
 gem "cloudinary"
-# Add GitHub REST API as projects source
+# Add GitHub REST API as project' source
 gem "octokit", "~> 4.0"
-# Add Vimeo REST API as projects source 
-gem 'vimeo_me2', :git => "https://github.com/bo-oz/vimeo_me2.git"
+# Add Vimeo REST API as projects' source 
+gem 'vimeo_me2', git: "https://github.com/bo-oz/vimeo_me2.git"
+# Add Medium REST API as articles' source
+gem 'medium', git: "https://github.com/benpickles/medium.git"
 #gem 'vimeo_api_client', git: 'https://github.com/agilie/vimeo-api-gem'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
