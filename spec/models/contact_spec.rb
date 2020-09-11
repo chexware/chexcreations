@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Contact, type: :model do
-  describe "form is  not valid" do
+  describe "Contact form is  not valid" do
     it "when name is empty" do
       contact = Contact.new
       contact.email = "hello@test.om"
@@ -32,7 +32,7 @@ RSpec.describe Contact, type: :model do
     end  
   end
 
-  describe "form is valid" do
+  describe "Contact form is valid" do
     it "when all fields are filled with correct information" do
       contact = Contact.new
       contact.name = "Test"
