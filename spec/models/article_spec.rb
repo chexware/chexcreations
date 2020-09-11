@@ -20,6 +20,6 @@ RSpec.describe Article, type: :model do
       article.content = "<p>Test Content</p>"
       expect(article).to be_valid
     end
-    pending "TO DO aricle valid with cover image #{__FILE__}"
+    pending "TO DO aricle valid with cover image "
   end
 end
