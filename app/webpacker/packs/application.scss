@@ -62,7 +62,7 @@ img {
 	color:rgb(102, 102, 102);
 }
 
-.uk-icon-button, .app-sidebar-title:hover  {
+.uk-icon-button, .app-sidebar-title:hover, .uk-alert-close:hover {
 	background-color: transparent;
 }
 
@@ -83,8 +83,12 @@ img {
 	margin-top: 28%;
 	font-size: 1.5em;
 }
-.chex-card {
+.chex-card, .chex-success-notification {
 	background-color: rgb(46, 77, 63);
+}
+.chex-success-notification {
+	background-color: rgba(46, 77, 63,0.7);
+	color: rgb(255, 255, 255) ;
 }
 #chex-cursor{
 	height: 130px;
@@ -119,12 +123,12 @@ img {
 	text-align: center !important;
 }
 
-.form-control {
+.form-control, .uk-input, .uk-textarea {
 	background-color: rgba(255, 255, 255, 0.1);
 	color :rgba(255, 255, 255, 0.7);
 	border-color: rgba(255, 255, 255, 0.2);
 }
-.form-control:focus {
+.form-control:focus, .uk-input:focus, .uk-textarea:focus {
 	background-color: rgba(255, 255, 255, 0.1);
 	color :rgba(255, 255, 255, 0.7);
 	border-color: rgba(255, 255, 255, 0.7);
@@ -138,7 +142,7 @@ img {
 	color:rgb(255, 255, 255)!important;
 }
 
-.btn-danger{
+.btn-danger, .chex-error-notification{
 	background-color:rgb(70, 50, 46) !important;
 }
 .btn-danger:hover {
@@ -169,7 +173,7 @@ img {
 .active-storage__field {
 	display: none !important;
 }
-// Upload Fields Styles
+
 .control-label[for="article_cover"],.control-label[for="project_image"] {
 	display: block;
 	box-shadow: 0 0 0 0.2rem  rgb(102,102,102) !important;
@@ -186,11 +190,10 @@ img {
 .control-label[for="article_cover"]::before, .control-label[for="project_image"]::before {
 	content: "Upload ";
 }
-// Table Styles
 .trestle-table > * {
 	background-color: rgb(102,102,102);
 }
-.sort, .sort-asc, td, td > a{
+.sort, .sort-asc, td, td > a, .contact-headline, .chex-error-notification, .chex-success-notification, .uk-form-label {
 	color :rgba(255, 255, 255, 0.7) !important;
 }
 .sort:hover, .sort-asc:hover, td:hover, td > a:hover {
