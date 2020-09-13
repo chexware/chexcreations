@@ -8,7 +8,7 @@ end
 ruby ENV['CUSTOM_RUBY_VERSION'] || '2.7.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'mini_racer', platforms: :ruby
-gem 'rails', '~> 6.0.1'
+gem 'rails', '~> 6.0.3.3'
 gem 'bootsnap'
 # Use mysql as the database for Active Record
 gem 'mysql2', '~> 0.4.10'
@@ -52,7 +52,7 @@ gem 'bcrypt', '~> 3.1.7'
 # Prevent security vulnerabilities
 gem "rack", ">= 2.0.6"
 gem "loofah", ">= 2.2.3"
-gem "actionview", ">= 5.1.6.2"
+gem "actionview", ">= 6.0.3.3"
 gem "kaminari", ">=1.2.1"
 
 group :development, :test do
@@ -74,8 +74,8 @@ group :development do
 end
 
 group :test do
-  gem 'cucumber-rails', require: false
   gem 'database_cleaner'
+  gem 'webmock'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

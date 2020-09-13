@@ -1,0 +1,35 @@
+.uk-text-center
+    .uk-heading-large.contact-headline Contact
+    - unless flash[:error] == nil
+        .uk-flex.uk-flex-center
+            div.uk-width-1-3.chex-error-notification [uk-alert]
+                    a.uk-alert-close[uk-close]
+                    .uk-margin-auto-top
+                        = flash[:error]
+    - unless flash[:info] == nil
+        .uk-flex.uk-flex-center
+            div.uk-width-1-3.chex-success-notification [uk-alert]
+                a.uk-alert-close [uk-close]
+                .uk-margin-auto-top
+                    = flash[:info] 
+.uk-flex.uk-flex-center.uk-child-width-1-1.uk-padding-large.uk-padding-remove-vertical
+    = form_for @contact do |f|
+        .uk-form-stacked.uk-margin-remove
+        .uk-margin
+            = f.label :name, class: "uk-form-label uk-dark"
+            .uk-form-controls
+            = f.text_field  :name, required: true, class: "uk-input uk-form-width-xlarge"
+        .uk-margin
+            = f.label :email, class: "uk-form-label uk-dark"
+            .uk-form-controls
+            = f.text_field :email, required: true, class: "uk-input uk-form-width-lxarge"
+        .uk-margin
+            = f.label :message, class: "uk-form-label uk-dark"
+            .uk-form-controls
+            = f.text_area :message, rows: 8, cols: 40, required: true, placeholder: "Send me a message", class: " uk-textarea uk-form-width-xlarge"                                                        
+        .uk-hidden
+            = f.label :nickname
+            = f.text_field :nickname, :hint => 'Leave this field blank!'
+        = f.submit 'Send Message', class: 'uk-button uk-button-primary uk-width-1-1 uk-button-large'
+
+= render 'layouts/navigation'
