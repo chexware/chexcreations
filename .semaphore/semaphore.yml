@@ -19,8 +19,8 @@ blocks:
             - sem-service start mysql
             - sem-version ruby 2.7.1
             - nvm ls-remote
-						- nvm install 12.18.3
-						- nvm use 12.18.3
+            - nvm install 12.18.3
+            - nvm use 12.18.3
             - cache restore
             - bundle install --deployment --path vendor/bundle
             - yarn install
