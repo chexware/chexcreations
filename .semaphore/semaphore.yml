@@ -1,0 +1,31 @@
+version: v1.0
+name: Test MyApp
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: CHEXWORK Test
+    task:
+      env_vars:
+        - name: DB_URL
+          value: 'mysql2://root@localhost/chexcreations_test'
+        - name: RAILS_ENV
+          value: test
+      secrets:
+        - name: cloudinary
+      jobs:
+        - name: Test
+          commands:
+            - checkout
+            - sem-service start mysql
+            - sem-version ruby 2.7.1
+            - nvm ls-remote
+            - nvm install 12.18.3
+            - nvm use 12.18.3
+            - cache restore
+            - bundle install --deployment --path vendor/bundle
+            - yarn install
+            - cache store
+            - 'bundle exec rake db:setup'
+            - bundle exec rspec
