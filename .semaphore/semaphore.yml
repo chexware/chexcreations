@@ -18,8 +18,11 @@ blocks:
             - checkout
             - sem-service start mysql
             - sem-version ruby 2.7.1
+            - sem-version node 12.8.3
+            - sem-version yarn 1.22.4
             - cache restore
             - bundle install --deployment --path vendor/bundle
+            - yarn install
             - cache store
             - 'bundle exec rake db:setup'
             - bundle exec rspec
