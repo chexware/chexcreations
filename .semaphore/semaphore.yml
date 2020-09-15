@@ -12,6 +12,8 @@ blocks:
           value: 'mysql2://root@localhost/chexcreations_test'
         - name: RAILS_ENV
           value: test
+      secrets:
+        - name: cloudinary
       jobs:
         - name: Test
           commands:
