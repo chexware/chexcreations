@@ -9,14 +9,14 @@ blocks:
     task:
       env_vars:
         - name: DB_URL
-          value: 'mysql2://root:@localhost/chexcreations_test'
+          value: 'mysql2://root@localhost/chexcreations_test'
         - name: RAILS_ENV
           value: test
       jobs:
         - name: Test
           commands:
             - checkout
-            - sem-service start mysql 8
+            - sem-service start mysql
             - sem-version ruby 2.7.1
             - cache restore
             - bundle install --deployment --path vendor/bundle
