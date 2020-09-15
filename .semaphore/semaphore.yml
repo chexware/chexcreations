@@ -8,15 +8,15 @@ blocks:
   - name: CHEXWORK Test
     task:
       env_vars:
-        - name: DATABASE_URL
-          value: 'postgresql://postgres:@0.0.0.0:5432/myapp_test'
+        - name: DB_URL
+          value: 'mysql2://root:@localhost/chexcreations_test'
         - name: RAILS_ENV
           value: test
       jobs:
         - name: Test
           commands:
             - checkout
-            - sem-service start mysql
+            - sem-service start mysql 8
             - sem-version ruby 2.7.1
             - cache restore
             - bundle install --deployment --path vendor/bundle
