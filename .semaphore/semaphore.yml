@@ -18,7 +18,9 @@ blocks:
             - checkout
             - sem-service start mysql
             - sem-version ruby 2.7.1
-            - sem-version node 12.8.3
+            - nvm ls-remote
+						- nvm install 12.18.3
+						- nvm use 12.18.3
             - cache restore
             - bundle install --deployment --path vendor/bundle
             - yarn install
