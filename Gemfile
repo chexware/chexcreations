@@ -21,8 +21,6 @@ gem 'slim-rails'
 gem 'webpacker', '~> 4.x'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-#gem 'sassc'
-#gem 'sass-rails', '~> 5.0'
 # Enable image resizing
 gem 'image_processing', '~> 1.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -42,7 +40,6 @@ gem "octokit", "~> 4.0"
 gem 'vimeo_me2', git: "https://github.com/bo-oz/vimeo_me2.git"
 # Add Medium REST API as articles' source
 gem 'medium', git: "https://github.com/benpickles/medium.git"
-#gem 'vimeo_api_client', git: 'https://github.com/agilie/vimeo-api-gem'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
