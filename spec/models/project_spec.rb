@@ -37,9 +37,13 @@ RSpec.describe Project, type: :model do
       expect(project).to be_valid
     end    
 
-  pending "TO DO project valid with uploaded image #{__FILE__}"
-     
-
+    it "with an image" do
+      project = Project.new
+      project.title = "Test"
+      project.link = "https://testl.com"
+      project.image = file_fixture("chex-logo-small.png")
+      expect(project).to be_valid
+    end
   end
 
 end

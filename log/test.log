@@ -23624,3 +23624,1549 @@ Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.2ms | Allocations: 424
   [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'chexcreations_test'[0m
+  [1m[35m (35.9ms)[0m  [1m[35mTRUNCATE TABLE `active_storage_attachments`;[0m
+  [1m[35m (60.2ms)[0m  [1m[35mTRUNCATE TABLE `active_storage_blobs`;[0m
+  [1m[35m (30.6ms)[0m  [1m[35mTRUNCATE TABLE `administrators`;[0m
+  [1m[35m (30.7ms)[0m  [1m[35mTRUNCATE TABLE `articles`;[0m
+  [1m[35m (30.2ms)[0m  [1m[35mTRUNCATE TABLE `projects`;[0m
+  [1m[35m (31.5ms)[0m  [1m[35mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.2ms | Allocations: 61)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 3.8ms | ActiveRecord: 0.7ms | Allocations: 3025)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.1ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 481)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:25:03', '2020-09-16 01:25:03')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:25:03', '2020-09-16 01:25:03')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.2ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 481)
+  [1m[36mProject Load (1.8ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (2.6ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mArticle Create (0.4ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('test', '<p>test content</p>', '2020-09-16 01:25:03.968232', '2020-09-16 01:25:03.968232')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('test2', '<p>more test content</p>', '2020-09-16 01:25:03.970853', '2020-09-16 01:25:03.970853')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.1ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 481)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY `articles`.`id` DESC[0m
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms | Allocations: 7083)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:25:04', '2020-09-16 01:25:04')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:25:04', '2020-09-16 01:25:04')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (2.7ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:25:04', '2020-09-16 01:25:04')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:25:04', '2020-09-16 01:25:04')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered home/index.html.slim within layouts/application (Duration: 0.1ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1407)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered home/index.html.slim within layouts/application (Duration: 0.1ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 457)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:25:04', '2020-09-16 01:25:04')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.4ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:25:04', '2020-09-16 01:25:04')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered home/index.html.slim within layouts/application (Duration: 0.2ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 457)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (2.6ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/blog" for 127.0.0.1 at 2020-09-16 02:25:04 +0100
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY `articles`.`id` DESC[0m
+  Rendered layouts/_about.html.slim (Duration: 8.0ms | Allocations: 15189)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 4.7ms | Allocations: 10308)
+  Rendered layouts/_navigation.html.slim (Duration: 20.7ms | Allocations: 37640)
+  Rendered blog/load.html.slim within layouts/application (Duration: 30.4ms | Allocations: 54357)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7600ms (Views: 7598.7ms | ActiveRecord: 0.6ms | Allocations: 1747526)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/blog" for 127.0.0.1 at 2020-09-16 02:25:11 +0100
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY `articles`.`id` DESC[0m
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 144)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 0.8ms | Allocations: 364)
+  Rendered blog/load.html.slim within layouts/application (Duration: 1.4ms | Allocations: 526)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.4ms | Allocations: 3561)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:11 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.3ms | Allocations: 143)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.8ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.3ms | Allocations: 363)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 12.6ms | Allocations: 11156)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.3ms | Allocations: 15112)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:11 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 143)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.0ms | Allocations: 363)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.6ms | Allocations: 1450)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.2ms | Allocations: 4459)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:11 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.3ms | Allocations: 143)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.2ms | Allocations: 363)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.8ms | Allocations: 1450)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.2ms | Allocations: 4458)
+Started POST "/contact" for 127.0.0.1 at 2020-09-16 02:25:11 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Test Name", "email"=>"test-email.com", "message"=>"test message"}}
+Redirected to http://www.example.com/contact
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 537)
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:11 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 142)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.2ms | Allocations: 362)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.5ms | Allocations: 1549)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.3ms | Allocations: 4555)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:11 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 143)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 0.8ms | Allocations: 363)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.1ms | Allocations: 1450)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.2ms | Allocations: 4458)
+Started POST "/contact" for 127.0.0.1 at 2020-09-16 02:25:11 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Test Name", "email"=>"test@email.com", "message"=>"test message"}}
+  Rendering /home/albrayanov/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/mail_form-1.8.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /home/albrayanov/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/mail_form-1.8.0/lib/mail_form/views/mail_form/contact.erb (Duration: 1.1ms | Allocations: 584)
+MailForm::Notifier#contact: processed outbound mail in 6.2ms
+Delivered mail 5f616977f0ea4_24d1c98878b3@CHEXPS.mail (4.3ms)
+Date: Wed, 16 Sep 2020 02:25:11 +0100
+From: Test Name <test@email.com>
+To: aleksandar@chexvisual.co.uk
+Message-ID: <5f616977f0ea4_24d1c98878b3@CHEXPS.mail>
+Subject: portfolio contact request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">portfolio contact request</h4>
+
+
+  <p><b>Name:</b>
+  Test Name</p>
+
+  <p><b>Email:</b>
+  test@email.com</p>
+
+  <p><b>Message:</b>
+  test message</p>
+
+
+Redirected to http://www.example.com/contact
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms | Allocations: 6621)
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:11 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 142)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 0.8ms | Allocations: 362)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.1ms | Allocations: 1566)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.2ms | Allocations: 4573)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/404" for 127.0.0.1 at 2020-09-16 02:25:12 +0100
+Processing by ExceptionsController#not_found as HTML
+  Rendering exceptions/not_found.html.slim within layouts/application
+  Rendered exceptions/not_found.html.slim within layouts/application (Duration: 1.8ms | Allocations: 2317)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms | Allocations: 6261)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/422" for 127.0.0.1 at 2020-09-16 02:25:12 +0100
+Processing by ExceptionsController#unacceptable as HTML
+  Rendering exceptions/unacceptable.html.slim within layouts/application
+  Rendered exceptions/unacceptable.html.slim within layouts/application (Duration: 1.9ms | Allocations: 2317)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms | Allocations: 5448)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/500" for 127.0.0.1 at 2020-09-16 02:25:12 +0100
+Processing by ExceptionsController#internal_error as HTML
+  Rendering exceptions/internal_error.html.slim within layouts/application
+  Rendered exceptions/internal_error.html.slim within layouts/application (Duration: 2.8ms | Allocations: 2327)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms | Allocations: 5457)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-09-16 02:25:12 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.6ms | Allocations: 117)
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 140)
+  Rendered home/index.html.slim within layouts/application (Duration: 11.1ms | Allocations: 17580)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.2ms | Allocations: 20590)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-09-16 02:25:12 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.5ms | Allocations: 117)
+  Rendered layouts/_about.html.slim (Duration: 0.3ms | Allocations: 140)
+  Rendered home/index.html.slim within layouts/application (Duration: 1.8ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.2ms | Allocations: 4246)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'chexcreations_test'[0m
+  [1m[35m (33.0ms)[0m  [1m[35mTRUNCATE TABLE `active_storage_attachments`;[0m
+  [1m[35m (31.0ms)[0m  [1m[35mTRUNCATE TABLE `active_storage_blobs`;[0m
+  [1m[35m (30.9ms)[0m  [1m[35mTRUNCATE TABLE `administrators`;[0m
+  [1m[35m (30.0ms)[0m  [1m[35mTRUNCATE TABLE `articles`;[0m
+  [1m[35m (34.3ms)[0m  [1m[35mTRUNCATE TABLE `projects`;[0m
+  [1m[35m (31.3ms)[0m  [1m[35mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.1ms | Allocations: 61)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 0.7ms | Allocations: 3025)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.2ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 481)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.4ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:25:34', '2020-09-16 01:25:34')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:25:34', '2020-09-16 01:25:34')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.2ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 482)
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('test', '<p>test content</p>', '2020-09-16 01:25:34.291242', '2020-09-16 01:25:34.291242')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('test2', '<p>more test content</p>', '2020-09-16 01:25:34.292953', '2020-09-16 01:25:34.292953')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.2ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 481)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY `articles`.`id` DESC[0m
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms | Allocations: 7083)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.5ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:25:34', '2020-09-16 01:25:34')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:25:34', '2020-09-16 01:25:34')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:25:34', '2020-09-16 01:25:34')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:25:34', '2020-09-16 01:25:34')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (2.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered home/index.html.slim within layouts/application (Duration: 0.2ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 1407)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered home/index.html.slim within layouts/application (Duration: 0.2ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 457)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:25:34', '2020-09-16 01:25:34')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:25:34', '2020-09-16 01:25:34')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered home/index.html.slim within layouts/application (Duration: 0.1ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 457)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/blog" for 127.0.0.1 at 2020-09-16 02:25:34 +0100
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY `articles`.`id` DESC[0m
+  Rendered layouts/_about.html.slim (Duration: 7.9ms | Allocations: 15189)
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 5.4ms | Allocations: 10308)
+  Rendered layouts/_navigation.html.slim (Duration: 19.4ms | Allocations: 37640)
+  Rendered blog/load.html.slim within layouts/application (Duration: 31.3ms | Allocations: 54357)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7447ms (Views: 7445.4ms | ActiveRecord: 0.8ms | Allocations: 1747528)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/blog" for 127.0.0.1 at 2020-09-16 02:25:41 +0100
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY `articles`.`id` DESC[0m
+  Rendered layouts/_about.html.slim (Duration: 0.5ms | Allocations: 144)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.8ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.6ms | Allocations: 364)
+  Rendered blog/load.html.slim within layouts/application (Duration: 2.2ms | Allocations: 526)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.5ms | Allocations: 3561)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:41 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 143)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.8ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.4ms | Allocations: 363)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 13.4ms | Allocations: 11156)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.3ms | Allocations: 15112)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:41 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 143)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 0.9ms | Allocations: 363)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.2ms | Allocations: 1450)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.2ms | Allocations: 4459)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:42 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 143)
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 0.8ms | Allocations: 363)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.0ms | Allocations: 1450)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.1ms | Allocations: 4458)
+Started POST "/contact" for 127.0.0.1 at 2020-09-16 02:25:42 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Test Name", "email"=>"test-email.com", "message"=>"test message"}}
+Redirected to http://www.example.com/contact
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 537)
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:42 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 142)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 0.9ms | Allocations: 362)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.2ms | Allocations: 1551)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 32.8ms | ActiveRecord: 0.2ms | Allocations: 4557)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:42 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 142)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 0.8ms | Allocations: 362)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.0ms | Allocations: 1449)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.2ms | Allocations: 4457)
+Started POST "/contact" for 127.0.0.1 at 2020-09-16 02:25:42 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Test Name", "email"=>"test@email.com", "message"=>"test message"}}
+  Rendering /home/albrayanov/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/mail_form-1.8.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /home/albrayanov/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/mail_form-1.8.0/lib/mail_form/views/mail_form/contact.erb (Duration: 1.0ms | Allocations: 584)
+MailForm::Notifier#contact: processed outbound mail in 7.4ms
+Delivered mail 5f61699625f74_2691c983c6@CHEXPS.mail (4.0ms)
+Date: Wed, 16 Sep 2020 02:25:42 +0100
+From: Test Name <test@email.com>
+To: aleksandar@chexvisual.co.uk
+Message-ID: <5f61699625f74_2691c983c6@CHEXPS.mail>
+Subject: portfolio contact request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">portfolio contact request</h4>
+
+
+  <p><b>Name:</b>
+  Test Name</p>
+
+  <p><b>Email:</b>
+  test@email.com</p>
+
+  <p><b>Message:</b>
+  test message</p>
+
+
+Redirected to http://www.example.com/contact
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms | Allocations: 6620)
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:25:42 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 142)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.0ms | Allocations: 362)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.2ms | Allocations: 1566)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.2ms | Allocations: 4573)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/404" for 127.0.0.1 at 2020-09-16 02:25:42 +0100
+Processing by ExceptionsController#not_found as HTML
+  Rendering exceptions/not_found.html.slim within layouts/application
+  Rendered exceptions/not_found.html.slim within layouts/application (Duration: 2.2ms | Allocations: 2317)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.0ms | Allocations: 6261)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/422" for 127.0.0.1 at 2020-09-16 02:25:42 +0100
+Processing by ExceptionsController#unacceptable as HTML
+  Rendering exceptions/unacceptable.html.slim within layouts/application
+  Rendered exceptions/unacceptable.html.slim within layouts/application (Duration: 2.8ms | Allocations: 2317)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms | Allocations: 5448)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/500" for 127.0.0.1 at 2020-09-16 02:25:42 +0100
+Processing by ExceptionsController#internal_error as HTML
+  Rendering exceptions/internal_error.html.slim within layouts/application
+  Rendered exceptions/internal_error.html.slim within layouts/application (Duration: 1.9ms | Allocations: 2327)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms | Allocations: 5456)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-09-16 02:25:42 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.7ms | Allocations: 117)
+  Rendered layouts/_about.html.slim (Duration: 0.3ms | Allocations: 140)
+  Rendered home/index.html.slim within layouts/application (Duration: 7.6ms | Allocations: 17565)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.3ms | Allocations: 20575)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-09-16 02:25:42 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.6ms | Allocations: 117)
+  Rendered layouts/_about.html.slim (Duration: 0.4ms | Allocations: 140)
+  Rendered home/index.html.slim within layouts/application (Duration: 1.9ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.2ms | Allocations: 4246)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'chexcreations_test'[0m
+  [1m[35m (31.0ms)[0m  [1m[35mTRUNCATE TABLE `active_storage_attachments`;[0m
+  [1m[35m (36.0ms)[0m  [1m[35mTRUNCATE TABLE `active_storage_blobs`;[0m
+  [1m[35m (32.9ms)[0m  [1m[35mTRUNCATE TABLE `administrators`;[0m
+  [1m[35m (30.0ms)[0m  [1m[35mTRUNCATE TABLE `articles`;[0m
+  [1m[35m (40.2ms)[0m  [1m[35mTRUNCATE TABLE `projects`;[0m
+  [1m[35m (31.1ms)[0m  [1m[35mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.3ms | Allocations: 61)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 0.7ms | Allocations: 3026)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.6ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 481)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:28:02', '2020-09-16 01:28:02')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:28:02', '2020-09-16 01:28:02')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.2ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 481)
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('test', '<p>test content</p>', '2020-09-16 01:28:02.167034', '2020-09-16 01:28:02.167034')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `content`, `created_at`, `updated_at`) VALUES ('test2', '<p>more test content</p>', '2020-09-16 01:28:02.169848', '2020-09-16 01:28:02.169848')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered blog/load.html.slim within layouts/application (Duration: 0.1ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 481)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY `articles`.`id` DESC[0m
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms | Allocations: 7083)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:28:02', '2020-09-16 01:28:02')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:28:02', '2020-09-16 01:28:02')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:28:02', '2020-09-16 01:28:02')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:28:02', '2020-09-16 01:28:02')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by ContactsController#create as HTML
+Redirected to http://test.host/contact
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1003)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (2.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered home/index.html.slim within layouts/application (Duration: 0.2ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1407)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered home/index.html.slim within layouts/application (Duration: 0.1ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 457)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test', 'http://link.test.com', '2020-09-16 01:28:02', '2020-09-16 01:28:02')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO `projects` (`title`, `link`, `created_at`, `updated_at`) VALUES ('test2', 'http://link.test2.com', '2020-09-16 01:28:02', '2020-09-16 01:28:02')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered home/index.html.slim within layouts/application (Duration: 0.1ms | Allocations: 55)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 457)
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/blog" for 127.0.0.1 at 2020-09-16 02:28:02 +0100
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY `articles`.`id` DESC[0m
+  Rendered layouts/_about.html.slim (Duration: 14.8ms | Allocations: 15192)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 5.6ms | Allocations: 10313)
+  Rendered layouts/_navigation.html.slim (Duration: 26.2ms | Allocations: 37649)
+  Rendered blog/load.html.slim within layouts/application (Duration: 37.2ms | Allocations: 54366)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7480ms (Views: 7479.0ms | ActiveRecord: 0.7ms | Allocations: 1747536)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/blog" for 127.0.0.1 at 2020-09-16 02:28:09 +0100
+Processing by BlogController#load as HTML
+  Rendering blog/load.html.slim within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY `articles`.`id` DESC[0m
+  Rendered layouts/_about.html.slim (Duration: 0.3ms | Allocations: 144)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 0.9ms | Allocations: 364)
+  Rendered blog/load.html.slim within layouts/application (Duration: 1.5ms | Allocations: 526)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.4ms | Allocations: 3560)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:28:09 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 143)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.0ms | Allocations: 363)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 13.0ms | Allocations: 11158)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.2ms | Allocations: 15114)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:28:09 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 143)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.9ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.4ms | Allocations: 363)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 3.1ms | Allocations: 1450)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.3ms | Allocations: 4459)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:28:09 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 143)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.2ms | Allocations: 363)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.5ms | Allocations: 1450)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.9ms | ActiveRecord: 0.2ms | Allocations: 4458)
+Started POST "/contact" for 127.0.0.1 at 2020-09-16 02:28:09 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Test Name", "email"=>"test-email.com", "message"=>"test message"}}
+Redirected to http://www.example.com/contact
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 537)
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:28:09 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 142)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.1ms | Allocations: 362)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 3.6ms | Allocations: 1555)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.3ms | Allocations: 4561)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:28:09 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 143)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.8ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 1.3ms | Allocations: 363)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.6ms | Allocations: 1450)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.3ms | Allocations: 4458)
+Started POST "/contact" for 127.0.0.1 at 2020-09-16 02:28:10 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Test Name", "email"=>"test@email.com", "message"=>"test message"}}
+  Rendering /home/albrayanov/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/mail_form-1.8.0/lib/mail_form/views/mail_form/contact.erb
+  Rendered /home/albrayanov/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/mail_form-1.8.0/lib/mail_form/views/mail_form/contact.erb (Duration: 1.0ms | Allocations: 584)
+MailForm::Notifier#contact: processed outbound mail in 6.3ms
+Delivered mail 5f616a2aa655_2771c98-49d@CHEXPS.mail (3.8ms)
+Date: Wed, 16 Sep 2020 02:28:10 +0100
+From: Test Name <test@email.com>
+To: aleksandar@chexvisual.co.uk
+Message-ID: <5f616a2aa655_2771c98-49d@CHEXPS.mail>
+Subject: portfolio contact request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">portfolio contact request</h4>
+
+
+  <p><b>Name:</b>
+  Test Name</p>
+
+  <p><b>Email:</b>
+  test@email.com</p>
+
+  <p><b>Message:</b>
+  test message</p>
+
+
+Redirected to http://www.example.com/contact
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms | Allocations: 6620)
+Started GET "/contact" for 127.0.0.1 at 2020-09-16 02:28:10 +0100
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.slim within layouts/application
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 142)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navigation.html.slim (Duration: 0.9ms | Allocations: 362)
+  Rendered contacts/new.html.slim within layouts/application (Duration: 2.1ms | Allocations: 1574)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.2ms | Allocations: 4581)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/404" for 127.0.0.1 at 2020-09-16 02:28:10 +0100
+Processing by ExceptionsController#not_found as HTML
+  Rendering exceptions/not_found.html.slim within layouts/application
+  Rendered exceptions/not_found.html.slim within layouts/application (Duration: 2.7ms | Allocations: 2317)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms | Allocations: 6261)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/422" for 127.0.0.1 at 2020-09-16 02:28:10 +0100
+Processing by ExceptionsController#unacceptable as HTML
+  Rendering exceptions/unacceptable.html.slim within layouts/application
+  Rendered exceptions/unacceptable.html.slim within layouts/application (Duration: 1.8ms | Allocations: 2317)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms | Allocations: 5448)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/500" for 127.0.0.1 at 2020-09-16 02:28:10 +0100
+Processing by ExceptionsController#internal_error as HTML
+  Rendering exceptions/internal_error.html.slim within layouts/application
+  Rendered exceptions/internal_error.html.slim within layouts/application (Duration: 1.9ms | Allocations: 2327)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms | Allocations: 5456)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-09-16 02:28:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.6ms | Allocations: 117)
+  Rendered layouts/_about.html.slim (Duration: 0.2ms | Allocations: 140)
+  Rendered home/index.html.slim within layouts/application (Duration: 15.9ms | Allocations: 17566)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.2ms | Allocations: 20577)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-09-16 02:28:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.slim within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects`[0m
+  Rendered project/_load.html.slim (Duration: 0.5ms | Allocations: 117)
+  Rendered layouts/_about.html.slim (Duration: 0.1ms | Allocations: 140)
+  Rendered home/index.html.slim within layouts/application (Duration: 1.5ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.2ms | Allocations: 4246)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
