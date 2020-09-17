@@ -20,6 +20,13 @@ RSpec.describe Article, type: :model do
       article.content = "<p>Test Content</p>"
       expect(article).to be_valid
     end
-    pending "TO DO aricle valid with cover image "
+
+    it "with cover image." do
+      article = Article.new
+      article.title = "Test"
+      article.content = "<p>Test Content</p>"
+      article.cover = file_fixture("chex-logo-small.png")
+      expect(article).to be_valid
+    end
   end
 end
