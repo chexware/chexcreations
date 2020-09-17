@@ -19,8 +19,6 @@ RSpec.feature "Browsing the blog", type: :feature do
         find(:xpath, "//a[@href='#modal-article-#{article2.id}']").click
 
         expect(page).to have_css("#modal-article-#{article2.id}")
-
-
     end
   
 end
