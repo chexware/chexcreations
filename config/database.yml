@@ -52,9 +52,16 @@ test:
 #
 production:
   <<: *default
-  username: <%= ENV['JAWSDB_USERNAME'] %>
+  username: <%= ENV['JAWSDB_USERNAME'] %> 
   password: <%= ENV['JAWSDB_PASSWORD'] %>
   port: 3306
-  host:  <%= ENV['JAWSDB_HOST'] %>
+  host: <%= ENV['JAWSDB_HOST'] %>
   url: <%= ENV['DATABASE_URL'] %>
   database: <%= ENV['JAWSDB_NAME'] %>
+
+## Local Performance Testing
+#  <<: *default
+#  username: root
+#  password: 
+#  host: localhost 
+#  database: chexcreations_performance 
