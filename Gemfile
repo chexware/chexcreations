@@ -8,7 +8,7 @@ end
 ruby ENV['CUSTOM_RUBY_VERSION'] || '2.7.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'mini_racer', platforms: :ruby
-gem 'rails', '~> 6.0.3.3'
+gem 'rails', '~> 6.0.3.5'
 gem 'bootsnap'
 # Use mysql as the database for Active Record
 gem 'mysql2', '~> 0.4.10'
@@ -49,8 +49,8 @@ gem 'bcrypt', '~> 3.1.7'
 # Prevent security vulnerabilities
 gem "rack", ">= 2.0.6"
 gem "loofah", ">= 2.2.3"
-gem "actionview", ">= 6.0.3.3"
 gem "kaminari", ">=1.2.1"
+
 # Performance and optimisation
 gem "memory_profiler"
 gem "derailed_benchmarks"
