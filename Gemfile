@@ -7,7 +7,7 @@ end
 
 ruby ENV['CUSTOM_RUBY_VERSION'] || '2.7.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'mini_racer', platforms: :ruby
+gem 'mini_racer','0.4.0', platforms: :ruby
 gem 'rails', '~> 6.0.3.7'
 gem 'bootsnap'
 # Use mysql as the database for Active Record

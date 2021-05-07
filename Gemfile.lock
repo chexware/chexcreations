@@ -356,6 +356,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
+    unf_ext (0.0.7.7-x86-mingw32)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -397,7 +398,7 @@ DEPENDENCIES
   mail_form
   medium!
   memory_profiler
-  mini_racer
+  mini_racer (= 0.4.0)
   mysql2 (~> 0.4.10)
   octokit (~> 4.0)
   puma (~> 3.12)
