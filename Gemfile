@@ -22,7 +22,7 @@ gem 'webpacker', '~> 4.x'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Enable image resizing
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # Use mail_form as contact form and sendgrid as mail sending service
 gem 'mail_form'
