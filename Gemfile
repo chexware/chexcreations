@@ -14,7 +14,7 @@ gem 'bootsnap'
 gem 'mysql2', '~> 0.4.10'
 # Use neo4j as the database 
 # Use Puma as the app server
-gem 'puma', '~> 4.3'
+gem 'puma', '~> 5.6'
 # Use SLIM as template language
 gem 'slim-rails'
 # Use webpacker instead of sprockets
